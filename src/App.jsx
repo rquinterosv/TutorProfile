@@ -1,11 +1,14 @@
 import React from 'react';
-import './index.css';
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar'; 
+import Routes from './Router';  
 
-function App() {
+const App = () => {
   return (
-    <Navbar />
+    <div className="App">
+      <Navbar />
+      <Routes />  
+    </div>
   );
-}
+};
 
 export default App;

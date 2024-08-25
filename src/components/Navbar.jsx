@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [language, setLanguage] = useState('en');
@@ -48,10 +49,10 @@ const Navbar = () => {
           </button>
         </div>
         <div className="hidden md:flex items-center space-x-4">
-          <a href="#" className="text-white">{language === 'en' ? 'Home' : 'Inicio'}</a>
-          <a href="#" className="text-white">{language === 'en' ? 'Service' : 'Servicio'}</a>
-          <a href="#" className="text-white">{language === 'en' ? 'Contact' : 'Contacto'}</a>
-          <a href="#" className="text-white">{language === 'en' ? 'About Me' : 'Acerca de Mí'}</a>
+          <Link to="/" className="text-white">{language === 'en' ? 'Home' : 'Inicio'}</Link>
+          <Link to="/services" className="text-white">{language === 'en' ? 'Service' : 'Servicio'}</Link>
+          <Link to="/contact" className="text-white">{language === 'en' ? 'Contact' : 'Contacto'}</Link>
+          <Link to="/about" className="text-white">{language === 'en' ? 'About Me' : 'Acerca de Mí'}</Link>
           <div className="relative">
             <button
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -95,10 +96,10 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <div className="md:hidden">
-          <a href="#" className="block px-4 py-2 text-white">{language === 'en' ? 'Home' : 'Inicio'}</a>
-          <a href="#" className="block px-4 py-2 text-white">{language === 'en' ? 'Service' : 'Servicio'}</a>
-          <a href="#" className="block px-4 py-2 text-white">{language === 'en' ? 'Contact' : 'Contacto'}</a>
-          <a href="#" className="block px-4 py-2 text-white">{language === 'en' ? 'About Me' : 'Acerca de Mí'}</a>
+          <Link to="/" className="block px-4 py-2 text-white">{language === 'en' ? 'Home' : 'Inicio'}</Link>
+          <Link to="/services" className="block px-4 py-2 text-white">{language === 'en' ? 'Service' : 'Servicio'}</Link>
+          <Link to="/contact" className="block px-4 py-2 text-white">{language === 'en' ? 'Contact' : 'Contacto'}</Link>
+          <Link to="/about" className="block px-4 py-2 text-white">{language === 'en' ? 'About Me' : 'Acerca de Mí'}</Link>
         </div>
       )}
     </nav>
