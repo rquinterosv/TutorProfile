@@ -1,31 +1,21 @@
-// src/i18n.js
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-
-import enTranslation from '../public/locales/en/translation.json';
-import esTranslation from '../public/locales/es/translation.json';
-
-const resources = {
-  en: {
-    translation: enTranslation,
-  },
-  es: {
-    translation: esTranslation,
-  },
-};
+import XHR from 'i18next-http-backend';
 
 i18n
+  .use(XHR) // Use i18next-http-backend to load translations from files
   .use(initReactI18next)
   .init({
-    resources,
-    fallbackLng: 'en', // Idioma por defecto
+    backend: {
+      // Path to your translation files
+      loadPath: '/locales/{{lng}}/translation.json'
+    },
+    lng: localStorage.getItem('language') || 'en', // Default to 'en' if no language is stored
+    fallbackLng: 'en',
     interpolation: {
-      escapeValue: false,
-    },
-    detection: {
-      order: ['localStorage', 'navigator'],
-      caches: ['localStorage'],
-    },
+      escapeValue: false
+    }
   });
 
 export default i18n;
+

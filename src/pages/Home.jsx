@@ -1,9 +1,17 @@
 // src/pages/Home.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import LengSelect from '../components/LengSelect';
+import Hero from '../components/Hero'
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(true);
+
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem('language');
+    if (storedLanguage) {
+      setIsModalOpen(false); // Si ya hay un idioma guardado, no mostrar el modal
+    }
+  }, []);
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
@@ -12,8 +20,7 @@ const Home = () => {
   return (
     <div>
       {isModalOpen && <LengSelect onClose={handleCloseModal} />}
-      {/* Contenido de la página de inicio */}
-      <h1>Welcome to Rafa Tutoring</h1>
+      <Hero />
     </div>
   );
 };

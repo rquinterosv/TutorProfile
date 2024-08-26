@@ -1,4 +1,3 @@
-// src/components/LengSelect.jsx
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -6,6 +5,7 @@ const LengSelect = ({ onClose }) => {
   const { i18n } = useTranslation();
 
   const handleChangeLanguage = (lang) => {
+    localStorage.setItem('language', lang); // Guardar idioma en localStorage
     i18n.changeLanguage(lang);
     onClose(); // Cierra el modal después de seleccionar el idioma
   };
