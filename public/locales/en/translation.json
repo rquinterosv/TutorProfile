@@ -7,6 +7,9 @@
   },
   "home": {
     "welcome": "Welcome to Rafa Tutoring",
-    "description": "We offer the best tutoring services to help you excel."
+    "description": "We offer the best tutoring services to help you excel.",
+    "mentor_profile": "I'm Rafa, a business engineer and certified web developer with a passion for empowering others to master programming languages and remote work platforms. My goal is to help you build the skills needed to thrive in the digital world.",
+    "get_started": "More Info",
+    "contribute": "Contact"
   }
 }
