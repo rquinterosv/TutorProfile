@@ -2,7 +2,11 @@
   "navbar": {
     "home": "Inicio",
     "services": "Servicios",
-    "contact": "Contacto",
-    "about": "Sobre Mí"
+    "about": "Sobre Nosotros",
+    "contact": "Contacto"
+  },
+  "home": {
+    "welcome": "Bienvenido a Rafa Tutoring",
+    "description": "Ofrecemos los mejores servicios de tutoría para ayudarte a sobresalir."
   }
 }

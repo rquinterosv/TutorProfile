@@ -2,7 +2,11 @@
   "navbar": {
     "home": "Home",
     "services": "Services",
-    "contact": "Contact",
-    "about": "About Me"
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "home": {
+    "welcome": "Welcome to Rafa Tutoring",
+    "description": "We offer the best tutoring services to help you excel."
   }
 }
