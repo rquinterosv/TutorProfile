@@ -1,10 +1,10 @@
 import React from 'react';
+import Hero from './Hero'
 
 const Home = () => {
   return (
     <div>
-      <h1>Inicio</h1>
-      <p>Bienvenido a la página de inicio.</p>
+      <Hero />
     </div>
   );
 };
