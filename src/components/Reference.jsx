@@ -3,51 +3,37 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import person1 from '../assets/img/code.jpg';
-import person2 from '../assets/img/code.jpg';
-import person3 from '../assets/img/code.jpg';
+import person1 from '../assets/img/andres.jpeg';
+import person2 from '../assets/img/ivan.jpeg';
+import person3 from '../assets/img/ale.jpeg';
 
 const references = [
   {
     id: 1,
     photo: person1,
-    name: 'John Doe',
-    position: 'Software Engineer',
-    description: 'John is a skilled engineer with a passion for developing innovative solutions.'
+    name: 'Andres Gallardo',
+    position: 'General Manager at Desafío Latam',
+    description: "We count on Rafa commitment and leadership, which helped us in the creation of different businesses and services that we are still running today in Desafío Latam. I would like to highlight his dynamism and responsibility to work autonomously, where he has shown to deliver with quality and on time the challenges we entrust him with."
   },
   {
     id: 2,
     photo: person2,
-    name: 'Jane Smith',
-    position: 'Product Manager',
-    description: 'Jane has a knack for understanding user needs and delivering exceptional products.'
+    name: 'Iván Meneses',
+    position: 'Senior Ecosystem Manager at Huawei',
+    description: "We had Rafa in technology services sales at Huawei, where he responsibly demonstrated the integration of various technologies into the client portfolio he managed. Within his work, he demonstrated proactivity in order to attract more customers, creating projects and raising internal capital to meet the objectives entrusted to him."
   },
   {
     id: 3,
     photo: person3,
-    name: 'Alice Johnson',
-    position: 'UX Designer',
-    description: 'Alice excels in creating user-centric designs that enhance the overall user experience.'
+    name: 'Alejandro Harcha',
+    position: 'Product Manager at OOH Planning',
+    description: "Rafa has a strategic vision for product creation. By raising hypotheses and presenting the analysis for the continuous improvement of proposals, we manage to implement technological solutions and quantitatively demonstrate the success or learnings of our work. "
   },
-  {
-    id: 4,
-    photo: person1,
-    name: 'Michael Brown',
-    position: 'Data Scientist',
-    description: 'Michael uses data-driven insights to drive strategic decisions and improvements.'
-  },
-  {
-    id: 5,
-    photo: person2,
-    name: 'Emily Davis',
-    position: 'Marketing Specialist',
-    description: 'Emily specializes in crafting effective marketing strategies that resonate with target audiences.'
-  }
 ];
 
 const ReferenceCard = ({ photo, name, position, description }) => {
   return (
-    <div className=" p-6 rounded-lg shadow-lg bg-blue-500">
+    <div className="p-6 rounded-lg shadow-lg bg-blue-500">
       <div className="flex justify-center">
         <img 
           src={photo} 
@@ -70,7 +56,7 @@ const Reference = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000, // Cambié el tiempo a 5000ms para que sea más lento
     responsive: [
       {
         breakpoint: 768,
@@ -83,7 +69,7 @@ const Reference = () => {
   };
 
   return (
-    <section className="py-12">
+    <section className="py-12 overflow-x-hidden"> {/* overflow-x-hidden previene el desplazamiento horizontal */}
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold text-blue-500 mb-6">
           What People Are Saying
