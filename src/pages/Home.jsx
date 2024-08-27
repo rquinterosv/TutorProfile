@@ -1,7 +1,7 @@
-// src/pages/Home.jsx
 import React, { useState, useEffect } from 'react';
 import LengSelect from '../components/LengSelect';
 import Hero from '../components/Hero'
+import Courses from '../components/Courses'
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(true);
@@ -21,6 +21,7 @@ const Home = () => {
     <div>
       {isModalOpen && <LengSelect onClose={handleCloseModal} />}
       <Hero />
+      <Courses />
     </div>
   );
 };

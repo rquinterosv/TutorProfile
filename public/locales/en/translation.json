@@ -10,6 +10,18 @@
     "description": "We offer the best tutoring services to help you excel.",
     "mentor_profile": "I'm Rafa, a business engineer and certified web developer with a passion for empowering others to master programming languages and remote work platforms. My goal is to help you build the skills needed to thrive in the digital world.",
     "get_started": "More Info",
-    "contribute": "Contact"
+    "contribute": "Contact",
+    "courses": {
+      "services_title": "Our Services",
+      "offer_title": "What We Offer",
+      "offer_description": "Discover our range of services designed to help you achieve your goals with excellence.",
+      "html_basics": "HTML Basics",
+      "html_details": "Learn the fundamentals of HTML to build the structure of your web pages.",
+      "css_styling": "CSS Styling",
+      "css_details": "Enhance your web pages with stylish CSS to create visually appealing designs.",
+      "responsive_design": "Responsive Design",
+      "responsive_details": "Make your web pages look great on all devices with responsive design techniques.",
+      "show_more": "Show More"
+    }
   }
 }

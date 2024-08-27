@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
   const { t } = useTranslation();
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsVisible(true);
+    }, 200);
+  }, []);
+
   return (
-    <div className="relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 p-2">
+    <div className={`relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 p-2 transition-opacity duration-1000 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>   
       <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
         <div className="text-center md:text-left">
           <h2 className="text-6xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-7xl sm:leading-none md:text-7xl">
