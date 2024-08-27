@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import LengSelect from '../components/LengSelect';
 import Hero from '../components/Hero'
 import Courses from '../components/Courses'
+import Profile from '../components/Profile'
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(true);
@@ -22,6 +23,7 @@ const Home = () => {
       {isModalOpen && <LengSelect onClose={handleCloseModal} />}
       <Hero />
       <Courses />
+      <Profile />
     </div>
   );
 };
