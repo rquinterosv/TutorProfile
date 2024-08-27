@@ -3,6 +3,7 @@ import LengSelect from '../components/LengSelect';
 import Hero from '../components/Hero'
 import Courses from '../components/Courses'
 import Profile from '../components/Profile'
+import Reference from '../components/Reference'
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(true);
@@ -23,6 +24,7 @@ const Home = () => {
       {isModalOpen && <LengSelect onClose={handleCloseModal} />}
       <Hero />
       <Courses />
+      <Reference />
       <Profile />
     </div>
   );

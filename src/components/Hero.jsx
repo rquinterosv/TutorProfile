@@ -16,9 +16,9 @@ const Hero = () => {
     <div className={`relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 p-2 transition-opacity duration-1000 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>   
       <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
         <div className="text-center md:text-left">
-          <h2 className="text-6xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-7xl sm:leading-none md:text-7xl">
+          <h2 className="text-6xl font-bold leading-10 tracking-tight text-gray-800 sm:text-7xl sm:leading-none md:text-7xl">
           <span className="font-bold text-blue-500 block sm:inline p-2">Tech</span>
-            Mentor
+            Tutor
           </h2>
           <p className="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
           {t('home.mentor_profile')}
