@@ -2,12 +2,12 @@ import React from 'react';
 
 const Profile = () => {
   return (
-    <div className="relative flex items-top justify-center min-h-screen bg-white dark:bg-gray-900 sm:items-center sm:pt-0">
-      <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
-        <div className="mt-8 overflow-hidden">
-          <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg">
-              <h1 className="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight">
+    <div className="pb-12 pt-20 bg-gradient-to-r from-blue-500 to-blue-700 dark:bg-dark lg:pb-[90px] lg:pt-[120px] overflow-x-hidden">
+      <div className="max-w-6xl">
+        <div className="overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-2 p-4">
+            <div className="p-6 bg-gray-100">
+              <h1 className="text-4xl sm:text-5xl text-gray-800 font-extrabold tracking-tight">
                 Get in touch
               </h1>
               <p className="text-normal text-lg sm:text-2xl font-medium text-gray-600 dark:text-gray-400 mt-2">
