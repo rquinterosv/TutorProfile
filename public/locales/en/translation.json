@@ -8,19 +8,18 @@
   "home": {
     "welcome": "Welcome to Rafa Tutoring",
     "description": "We offer the best tutoring services to help you excel.",
-    "mentor_profile": "I'm Rafa, a business engineer and certified web developer with a passion for empowering others to master programming languages and remote work platforms. My goal is to help you build the skills needed to thrive in the digital world.",
-    "get_started": "More Info",
-    "contribute": "Contact",
+    "mentor_profile": "I'm Rafa, a business engineer and certified web developer with a passion for empowering others to master programming languages and remote work platforms. My goal is to help you build the skills needed to succeed in the digital world.",
+    "info": "More Info",
+    "contact": "Contact",
     "courses": {
-      "services_title": "Our Services",
-      "offer_title": "What We Offer",
-      "offer_description": "Discover our range of services designed to help you achieve your goals with excellence.",
-      "html_basics": "HTML Basics",
-      "html_details": "Learn the fundamentals of HTML to build the structure of your web pages.",
-      "css_styling": "CSS Styling",
-      "css_details": "Enhance your web pages with stylish CSS to create visually appealing designs.",
-      "responsive_design": "Responsive Design",
-      "responsive_details": "Make your web pages look great on all devices with responsive design techniques.",
+      "offer_title": "What you can learn",
+      "offer_description": "Teaching since 2021 and business experience since 2018. I offer mentoring and consulting on key tools and platforms to boost your digital skills.",
+      "web_development": "Web Development",
+      "web_details": "Develop the skills to expertly build a website using HTML, CSS, and JavaScript, while utilizing industry-leading platforms and tools like GitHub and Bootstrap for advanced development and design.",
+      "microsoft": "Microsoft Office",
+      "microsoft_details": "Learn to master Microsoft tools perfectly. Create documentation in Word, high-quality presentations in PowerPoint, or advanced Excel spreadsheets to manage, present, or handle data efficiently.",
+      "softwares": "Software Services",
+      "softwares_details": "Master valuable platforms for the IT job market such as Power BI, Jira, Hubspot, Miro, Basecamp, among many others. I can teach you the importance of platforms to empower your IT work. ",
       "show_more": "Show More"
     }
   }
