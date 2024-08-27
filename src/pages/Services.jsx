@@ -1,11 +1,9 @@
 import React from 'react';
+import Steps from '../components/Steps'
 
 const Services = () => {
   return (
-    <div>
-      <h1>Servicios</h1>
-      <p>Estos son nuestros servicios.</p>
-    </div>
+      <Steps />
   );
 };
 
