@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import LengSelect from '../components/LengSelect';
 import Hero from '../components/Hero'
 import Courses from '../components/Courses'
-import Form from '../components/Form'
 import Reference from '../components/Reference'
 
 const Home = () => {
@@ -25,7 +24,6 @@ const Home = () => {
       <Hero />
       <Courses />
       <Reference />
-      <Form />
     </div>
   );
 };

@@ -19,8 +19,18 @@
       "microsoft": "Microsoft Office",
       "microsoft_details": "Learn to master Microsoft tools perfectly. Create documentation in Word, high-quality presentations in PowerPoint, or advanced Excel spreadsheets to manage, present, or handle data efficiently.",
       "softwares": "Software Services",
-      "softwares_details": "Master valuable platforms for the IT job market such as Power BI, Jira, Hubspot, Miro, Basecamp, among many others. I can teach you the importance of platforms to empower your IT work. ",
+      "softwares_details": "Master valuable platforms for the IT job market such as Power BI, Jira, Hubspot, Miro, Basecamp, among many others. I can teach you the importance of platforms to empower your IT work.",
       "show_more": "Show More"
+    }
+  },
+  "services": {
+    "information": {
+      "web_development": "Web Development",
+      "web_details": "Develop the skills to expertly build a website using HTML, CSS, and JavaScript, while utilizing industry-leading platforms and tools like GitHub and Bootstrap for advanced development and design.",
+      "microsoft": "Microsoft Office",
+      "microsoft_details": "Learn to master Microsoft tools perfectly. Create documentation in Word, high-quality presentations in PowerPoint, or advanced Excel spreadsheets to manage, present, or handle data efficiently.",
+      "softwares": "Software Services",
+      "softwares_details": "Master valuable platforms for the IT job market such as Power BI, Jira, Hubspot, Miro, Basecamp, among many others. I can teach you the importance of platforms to empower your IT work."
     }
   }
 }

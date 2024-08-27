@@ -4,46 +4,43 @@ import { faCode, faPaintBrush, faMobileAlt } from '@fortawesome/free-solid-svg-i
 
 const Steps = () => {
   return (
-    <section className="py-12 bg-gray-100">
+    <section className="py-12">
       <div className="container mx-auto text-center">
-        {/* Título */}
-        <h2 className="text-3xl font-bold text-blue-500 mb-4">Our Process</h2>
-        
-        {/* Subtítulo */}
+        <h2 className="text-3xl font-bold text-blue-500 mb-4">My Process</h2>        
         <p className="text-lg text-gray-700 mb-8">
-          Follow these simple steps to achieve your goals.
-        </p>
-        
-        {/* Div con 3 columnas */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          {/* Columna 1 */}
+          This is how I manage my courses and tutoring
+        </p>        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">          
           <div className="flex flex-col items-center">
             <FontAwesomeIcon icon={faCode} size="3x" className="text-blue-500 mb-4" />
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Step 1: Coding</h3>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">We Meet!</h3>
             <p className="text-sm text-gray-600">
-              Learn the fundamentals of coding to create your first project.
+              Let's start with a conversation about your expectations and what you want to learn in order to prepare for our tutorials.
             </p>
           </div>
           
-          {/* Columna 2 */}
           <div className="flex flex-col items-center">
             <FontAwesomeIcon icon={faPaintBrush} size="3x" className="text-blue-500 mb-4" />
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Step 2: Design</h3>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">Schedule</h3>
             <p className="text-sm text-gray-600">
-              Design a user-friendly interface for your application.
+              We will coordinate a session for further tutoring via Google Meet.
             </p>
           </div>
           
-          {/* Columna 3 */}
           <div className="flex flex-col items-center">
             <FontAwesomeIcon icon={faMobileAlt} size="3x" className="text-blue-500 mb-4" />
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Step 3: Deploy</h3>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">We Learn</h3>
             <p className="text-sm text-gray-600">
-              Deploy your application and make it accessible on all devices.
+              Investiguemos, estudiemos y trabajemos en lo que tienes ganas de aprender.
             </p>
           </div>
-          
+        </div>
+
+        {/* Botón Let's Begin */}
+        <div className="mt-8">
+          <a href="#" className="px-6 py-3 text-lg font-semibold text-white bg-blue-500 hover:bg-blue-600 rounded-md">
+            Let's begin
+          </a>
         </div>
       </div>
     </section>
