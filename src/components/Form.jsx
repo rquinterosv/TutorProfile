@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import perfilImage from '../assets/img/perfil.jpeg';
+
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -28,11 +30,12 @@ const Hero = () => {
       <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pl-10">
         <div className="relative w-full p-3 rounded md:p-8">
           <div className="rounded-lg bg-white text-black w-full">
-            <img 
-              src="./src/assets/img/perfil.jpeg" 
-              alt="" 
+          <img 
+              src={perfilImage} 
+              alt="Profile" 
               className="rounded-full object-cover w-full h-full"
-            />
+          />
+
           </div>
         </div>
       </div>

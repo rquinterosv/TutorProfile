@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
+import perfilImage from '../assets/img/perfil.jpeg';
+
 
 
 const Hero = () => {
@@ -49,10 +51,10 @@ const Hero = () => {
         <div className="relative w-full p-3 rounded md:p-8">
             <div className="rounded-lg bg-white text-black w-full">
             <img 
-                src="./src/assets/img/perfil.jpeg" 
-                alt="" 
-                className="rounded-full object-cover w-full h-full"
-            />
+                  src={perfilImage} 
+                  alt="Profile" 
+                  className="rounded-full object-cover w-full h-full"
+              />
             </div>
         </div>
         </div>
