@@ -2,11 +2,54 @@
   "navbar": {
     "home": "Inicio",
     "services": "Servicios",
-    "about": "Sobre Nosotros",
+    "about": "Sobre Mí",
     "contact": "Contacto"
   },
   "home": {
     "welcome": "Bienvenido a Rafa Tutoring",
-    "description": "Ofrecemos los mejores servicios de tutoría para ayudarte a sobresalir."
+    "description": "Ofrecemos los mejores servicios de tutoría para ayudarte a sobresalir.",
+    "mentor_profile": "Soy Rafa, ingeniero comercial y desarrollador web certificado con una pasión por empoderar a otros para dominar lenguajes de programación y plataformas de trabajo remoto. Mi objetivo es ayudarte a construir las habilidades necesarias para tener éxito en el mundo digital.",
+    "info": "Más Información",
+    "contact": "Contacto",
+    "courses": {
+      "offer_title": "Lo que puedes aprender",
+      "offer_description": "Enseñando desde 2021 y con experiencia en negocios desde 2018. Ofrezco mentoría y consultoría en herramientas y plataformas clave para mejorar tus habilidades digitales.",
+      "web_development": "Desarrollo Web",
+      "web_details": "Desarrolla las habilidades para construir un sitio web de manera experta utilizando HTML, CSS y JavaScript, mientras utilizas plataformas y herramientas líderes en la industria como GitHub y Bootstrap para un desarrollo y diseño avanzados.",
+      "microsoft": "Microsoft Office",
+      "microsoft_details": "Aprende a dominar perfectamente las herramientas de Microsoft. Crea documentación en Word, presentaciones de alta calidad en PowerPoint, o hojas de cálculo avanzadas en Excel para gestionar, presentar o manejar datos de manera eficiente.",
+      "softwares": "Servicios de Software",
+      "softwares_details": "Domina plataformas valiosas para el mercado laboral de TI, como Power BI, Jira, Hubspot, Miro, Basecamp, entre muchas otras. Puedo enseñarte la importancia de las plataformas para potenciar tu trabajo en TI.",
+      "show_more": "Mostrar Más"
+    }
+  },
+  "services": {
+    "information": {
+      "web_development": "Desarrollo Web",
+      "web_details": "Desarrolla las habilidades para construir un sitio web de manera experta utilizando HTML, CSS y JavaScript, mientras utilizas plataformas y herramientas líderes en la industria como GitHub y Bootstrap para un desarrollo y diseño avanzados.",
+      "microsoft": "Microsoft Office",
+      "microsoft_details": "Aprende a dominar perfectamente las herramientas de Microsoft. Crea documentación en Word, presentaciones de alta calidad en PowerPoint, o hojas de cálculo avanzadas en Excel para gestionar, presentar o manejar datos de manera eficiente.",
+      "softwares": "Servicios de Software",
+      "softwares_details": "Domina plataformas valiosas para el mercado laboral de TI, como Power BI, Jira, Hubspot, Miro, Basecamp, entre muchas otras. Puedo enseñarte la importancia de las plataformas para potenciar tu trabajo en TI."
+    }
+  },
+  "contact": {
+    "get_in_touch": "Ponerse en contacto",
+    "fill_form": "Completa el formulario para iniciar una conversación",
+    "address": "Totalmente Remoto",
+    "phone": "+642902206952",
+    "email": "rafael.quinterosv@gmail.com",
+    "full_name": "Nombre Completo",
+    "email_label": "Correo Electrónico",
+    "telephone": "Número de Teléfono",
+    "submit": "Enviar"
+  },
+  "footer": {
+    "about_us": "About Us",
+    "about_us_text": "Rafa Tutoring is dedicated to providing quality online education in programming and remote work platforms.",
+    "follow_us": "Follow Us",
+    "contact_us": "Contact Us",
+    "contact_email": "contact@rafatutoring.com",
+    "contact_phone": "+1 234 567 890"
   }
 }
