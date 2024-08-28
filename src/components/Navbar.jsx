@@ -52,7 +52,6 @@ const Navbar = () => {
           <Link to="/" className="text-white">{t('navbar.home')}</Link>
           <Link to="/services" className="text-white">{t('navbar.services')}</Link>
           <Link to="/contact" className="text-white">{t('navbar.contact')}</Link>
-          <Link to="/about" className="text-white">{t('navbar.about')}</Link>
           <div className="relative">
             <button
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -98,7 +97,6 @@ const Navbar = () => {
         <div className="md:hidden">
           <Link to="/" className="block px-4 py-2 text-white">{t('navbar.home')}</Link>
           <Link to="/services" className="block px-4 py-2 text-white">{t('navbar.services')}</Link>
-          <Link to="/about" className="block px-4 py-2 text-white">{t('navbar.about')}</Link>
           <Link to="/contact" className="block px-4 py-2 text-white">{t('navbar.contact')}</Link>
         </div>
       )}

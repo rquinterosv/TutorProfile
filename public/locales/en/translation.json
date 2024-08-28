@@ -32,5 +32,16 @@
       "softwares": "Software Services",
       "softwares_details": "Master valuable platforms for the IT job market such as Power BI, Jira, Hubspot, Miro, Basecamp, among many others. I can teach you the importance of platforms to empower your IT work."
     }
+  },
+  "contact": {
+    "get_in_touch": "Get in touch",
+    "fill_form": "Fill in the form to start a conversation",
+    "address": "Full Remote",
+    "phone": "+642902206952",
+    "email": "rafael.quinterosv@gmail.com",
+    "full_name": "Full Name",
+    "email_label": "Email",
+    "telephone": "Telephone Number",
+    "submit": "Submit"
   }
 }

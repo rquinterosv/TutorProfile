@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import codeImage from "../assets/img/code.jpg";
 import computerImage from "../assets/img/computer.jpg";
 import meetingImage from "../assets/img/meeting.jpg";
@@ -18,9 +19,11 @@ const ServiceCard = ({ title, details, image }) => {
           <p className="flex-grow text-base text-gray-500 sm:text-lg md:text-xl">
             {details}
           </p>
-          <button className="mt-4 w-full px-8 py-3 text-base font-medium leading-6 text-blue-500 transition duration-150 ease-in-out bg-white border border-transparent rounded-md hover:text-blue-600 focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10">
-            {t("home.courses.show_more")}
-          </button>
+          <Link to="/services">
+            <button className="mt-4 w-full px-8 py-3 text-base font-medium leading-6 text-blue-500 transition duration-150 ease-in-out bg-white border border-transparent rounded-md hover:text-blue-600 focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10">
+              {t("home.courses.show_more")}
+            </button>
+          </Link>
         </div>
       </div>
     </div>

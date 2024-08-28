@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faPaintBrush, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Steps = () => {
   return (
@@ -38,9 +39,9 @@ const Steps = () => {
 
         {/* Botón Let's Begin */}
         <div className="mt-8">
-          <a href="#" className="px-6 py-3 text-lg font-semibold text-white bg-blue-500 hover:bg-blue-600 rounded-md">
-            Let's begin
-          </a>
+          <Link to="/contact" className="px-6 py-3 text-lg font-semibold text-white bg-blue-500 hover:bg-blue-600 rounded-md">
+            Let's Begin
+          </Link>
         </div>
       </div>
     </section>
