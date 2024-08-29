@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { db } from '../config/firebase.config'; // Asegúrate de importar el Firestore desde tu archivo de configuración
+import { collection, addDoc } from 'firebase/firestore';
 import perfilImage from '../assets/img/perfil.jpeg';
-
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -30,12 +31,11 @@ const Hero = () => {
       <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pl-10">
         <div className="relative w-full p-3 rounded md:p-8">
           <div className="rounded-lg bg-white text-black w-full">
-          <img 
+            <img 
               src={perfilImage} 
               alt="Profile" 
               className="rounded-full object-cover w-full h-full"
-          />
-
+            />
           </div>
         </div>
       </div>
@@ -45,6 +45,28 @@ const Hero = () => {
 
 const Form = () => {
   const { t } = useTranslation();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await addDoc(collection(db, 'contactForm'), formData);
+      alert('Formulario enviado exitosamente!');
+      setFormData({ name: '', email: '', message: '' }); // Limpiar formulario
+    } catch (error) {
+      console.error('Error al enviar formulario: ', error);
+      alert('Hubo un error al enviar el formulario.');
+    }
+  };
 
   return (
     <div>
@@ -134,13 +156,15 @@ const Form = () => {
                 </div>
               </div>
 
-              <form className="p-6 flex flex-col justify-center">
+              <form onSubmit={handleSubmit} className="p-6 flex flex-col justify-center">
                 <div className="flex flex-col mb-4">
                   <label htmlFor="name" className="text-blue-700 font-semibold">{t('contact.full_name')}</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     placeholder={t('contact.full_name')}
                     className="w-full mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-blue-700 font-semibold focus:border-blue-500 focus:outline-none"
                   />
@@ -152,20 +176,24 @@ const Form = () => {
                     type="email"
                     name="email"
                     id="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     placeholder={t('contact.email_label')}
                     className="w-full mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-blue-700 font-semibold focus:border-blue-500 focus:outline-none"
                   />
                 </div>
 
                 <div className="flex flex-col mb-4">
-                  <label htmlFor="tel" className="text-blue-700 font-semibold">{t('contact.telephone')}</label>
-                  <input
-                    type="tel"
-                    name="tel"
-                    id="tel"
-                    placeholder={t('contact.telephone')}
+                  <label htmlFor="message" className="text-blue-700 font-semibold">{t('contact.message')}</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    placeholder={t('contact.message_placeholder')}
                     className="w-full mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-blue-700 font-semibold focus:border-blue-500 focus:outline-none"
-                  />
+                    maxLength="100"
+                  ></textarea>
                 </div>
 
                 <button

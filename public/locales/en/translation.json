@@ -42,6 +42,12 @@
     "full_name": "Full Name",
     "email_label": "Email",
     "telephone": "Telephone Number",
+    "select_service": "Select a Service",
+    "service1": "Consulting",
+    "service2": "Development",
+    "service3": "Training",
+    "message": "Message",
+    "message_placeholder": "Write your message (max 100 words)",
     "submit": "Submit"
   },
   "footer": {
@@ -49,7 +55,7 @@
     "about_us_text": "Rafa Tutoring is dedicated to providing quality online education in programming and remote work platforms.",
     "follow_us": "Follow Us",
     "contact_us": "Contact Us",
-    "contact_email": "contact@rafatutoring.com",
-    "contact_phone": "+1 234 567 890"
+    "contact_email": "rafael.quinterosv@gmail.com",
+    "contact_phone": "+64 29 0220 6952"
   }
 }
