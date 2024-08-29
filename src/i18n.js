@@ -7,8 +7,7 @@ i18n
   .use(initReactI18next)
   .init({
     backend: {
-      // Path to your translation files
-      loadPath: '/locales/{{lng}}/translation.json'
+      loadPath: 'locales/{{lng}}/translation.json' // Path to your translation files
     },
     lng: localStorage.getItem('language') || 'en', // Default to 'en' if no language is stored
     fallbackLng: 'en',
@@ -18,4 +17,3 @@ i18n
   });
 
 export default i18n;
-

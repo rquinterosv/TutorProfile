@@ -48,8 +48,7 @@
         "description": "Investigamos, estudiamos y trabajamos en lo que deseas aprender."
       }
     }
-  }
-
+  },
   "contact": {
     "get_in_touch": "Ponerse en contacto",
     "fill_form": "Completa el formulario para iniciar una conversación",
@@ -62,8 +61,8 @@
     "submit": "Enviar"
   },
   "footer": {
-    "about_us": "Rafa Tutorimg",
-    "about_us_text": "Enseñando desde 2021 y con experiencia en negocios desde 2018. Ofrezco mentoría y consultoría en herramientas y plataformas clave para mejorar tus habilidades digitales",
+    "about_us": "Rafa Tutoring",
+    "about_us_text": "Enseñando desde 2021 y con experiencia en negocios desde 2018. Ofrezco mentoría y consultoría en herramientas y plataformas clave para mejorar tus habilidades digitales.",
     "follow_us": "Sígueme en Redes Sociales",
     "contact_us": "Contacto",
     "contact_email": "rafael.quinterosv@gmail.com",
