@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import person1 from '../assets/img/andres.jpeg';
 import person2 from '../assets/img/ivan.jpeg';
 import person3 from '../assets/img/ale.jpeg';
+import person4 from '../assets/img/pipe.jpeg';
 
 const references = [
   {
@@ -13,7 +14,7 @@ const references = [
     photo: person1,
     name: 'Andres Gallardo',
     position: 'General Manager at Desafío Latam',
-    description: "We count on Rafa commitment and leadership, which helped us in the creation of different businesses and services that we are still running today in Desafío Latam. I would like to highlight his dynamism and responsibility to work autonomously, where he has shown to deliver with quality and on time the challenges we entrust him with."
+    description: "We count on Rafa's commitment and leadership, which helped us in the creation of different businesses and services that we are still running today in Desafío Latam. I would like to highlight his dynamism and responsibility to work autonomously, where he has shown to deliver with quality and on time the challenges we entrust him with."
   },
   {
     id: 2,
@@ -27,23 +28,32 @@ const references = [
     photo: person3,
     name: 'Alejandro Harcha',
     position: 'Product Manager at OOH Planning',
-    description: "Rafa has a strategic vision for product creation. By raising hypotheses and presenting the analysis for the continuous improvement of proposals, we manage to implement technological solutions and quantitatively demonstrate the success or learnings of our work. "
+    description: "Rafa has a strategic vision for product creation. By raising hypotheses and presenting the analysis for the continuous improvement of proposals, we manage to implement technological solutions and quantitatively demonstrate the success or learnings of our work."
   },
+  {
+    id: 4,
+    photo: person4,
+    name: 'Felipe Vera',
+    position: 'Front End Developer at Quiebre Marketing Inmobiliario',
+    description: "I have taken my first class with Rafael. It has been a wonderful experience where he helped me to install the necessary programs to make our first code together. You can see that he is an experienced person and the class was extremely dynamic."
+  }
 ];
 
 const ReferenceCard = ({ photo, name, position, description }) => {
   return (
-    <div className="p-6 rounded-lg shadow-lg bg-blue-500">
-      <div className="flex justify-center">
+    <div className="flex flex-col items-center bg-blue-500 rounded-lg shadow-lg p-6 text-center h-full">
+      <div className="flex justify-center mb-4">
         <img 
           src={photo} 
           alt={name} 
           className="w-24 h-24 object-cover rounded-full border-4 border-black"
         />
       </div>
-      <h3 className="mt-4 text-xl font-semibold text-white">{name}</h3>
-      <p className="mt-2 text-md font-medium text-white">{position}</p>
-      <p className="mt-2 text-base text-white">{description}</p>
+      <div className="flex flex-col flex-grow">
+        <h3 className="text-xl font-semibold text-white mb-2">{name}</h3>
+        <p className="text-md font-medium text-white mb-2">{position}</p>
+        <p className="text-base text-white">{description}</p>
+      </div>
     </div>
   );
 };
@@ -56,7 +66,7 @@ const Reference = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000, // Cambié el tiempo a 5000ms para que sea más lento
+    autoplaySpeed: 5000,
     responsive: [
       {
         breakpoint: 768,
@@ -69,21 +79,15 @@ const Reference = () => {
   };
 
   return (
-    <section className="py-12 overflow-x-hidden"> {/* overflow-x-hidden previene el desplazamiento horizontal */}
+    <section className="py-12">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold text-blue-500 mb-6">
           What People Are Saying
         </h2>
         <Slider {...settings}>
           {references.map((ref) => (
-            <div key={ref.id} className="p-4">
-              <div className="flex flex-wrap -mx-4">
-                {references.slice(ref.id - 1, ref.id + 2).map((item) => (
-                  <div key={item.id} className="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
-                    <ReferenceCard {...item} />
-                  </div>
-                ))}
-              </div>
+            <div key={ref.id} className="flex justify-center">
+              <ReferenceCard {...ref} />
             </div>
           ))}
         </Slider>
