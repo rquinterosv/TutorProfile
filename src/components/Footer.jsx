@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
 
@@ -8,7 +8,7 @@ const Footer = () => {
   const { t } = useTranslation(); // Hook para traducción
 
   return (
-    <footer className="bg-blue-500 text-white py-8">
+    <footer className="bg-blue-500 text-white p-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Columna 1: Título y párrafo */}
         <div>
@@ -26,7 +26,7 @@ const Footer = () => {
               <FontAwesomeIcon icon={faFacebook} size="2x" />
             </a>
             <a href="https://twitter.com" className="hover:text-gray-300">
-              <FontAwesomeIcon icon={faTwitter} size="2x" />
+              <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>
             <a href="https://linkedin.com" className="hover:text-gray-300">
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
