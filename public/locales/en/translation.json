@@ -31,6 +31,22 @@
       "microsoft_details": "Learn to master Microsoft tools perfectly. Create documentation in Word, high-quality presentations in PowerPoint, or advanced Excel spreadsheets to manage, present, or handle data efficiently.",
       "softwares": "Software Services",
       "softwares_details": "Master valuable platforms for the IT job market such as Power BI, Jira, Hubspot, Miro, Basecamp, among many others. I can teach you the importance of platforms to empower your IT work."
+    },
+    "steps": {
+      "title": "My Process",
+      "description": "This is how I manage my courses and tutoring",
+      "meet": {
+        "title": "We Meet!",
+        "description": "Let's start with a conversation about your expectations and what you want to learn in order to prepare for our tutorials."
+      },
+      "schedule": {
+        "title": "Schedule",
+        "description": "We will coordinate a session for further tutoring via Google Meet."
+      },
+      "learn": {
+        "title": "We Learn",
+        "description": "Investiguemos, estudiemos y trabajemos en lo que tienes ganas de aprender."
+      }
     }
   },
   "contact": {

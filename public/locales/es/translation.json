@@ -26,13 +26,30 @@
   "services": {
     "information": {
       "web_development": "Desarrollo Web",
-      "web_details": "Desarrolla las habilidades para construir un sitio web de manera experta utilizando HTML, CSS y JavaScript, mientras utilizas plataformas y herramientas líderes en la industria como GitHub y Bootstrap para un desarrollo y diseño avanzados.",
+      "web_details": "Desarrolla las habilidades para construir un sitio web utilizando HTML, CSS y JavaScript, mientras utilizas plataformas y herramientas líderes en la industria como GitHub y Bootstrap para el desarrollo y diseño avanzado.",
       "microsoft": "Microsoft Office",
-      "microsoft_details": "Aprende a dominar perfectamente las herramientas de Microsoft. Crea documentación en Word, presentaciones de alta calidad en PowerPoint, o hojas de cálculo avanzadas en Excel para gestionar, presentar o manejar datos de manera eficiente.",
+      "microsoft_details": "Aprende a dominar las herramientas de Microsoft perfectamente. Crea documentación en Word, presentaciones de alta calidad en PowerPoint o hojas de cálculo avanzadas en Excel para gestionar, presentar o manejar datos de manera eficiente.",
       "softwares": "Servicios de Software",
-      "softwares_details": "Domina plataformas valiosas para el mercado laboral de TI, como Power BI, Jira, Hubspot, Miro, Basecamp, entre muchas otras. Puedo enseñarte la importancia de las plataformas para potenciar tu trabajo en TI."
+      "softwares_details": "Domina plataformas valiosas para el mercado laboral en TI como Power BI, Jira, Hubspot, Miro, Basecamp, entre muchas otras. Puedo enseñarte la importancia de las plataformas para potenciar tu trabajo en TI."
+    },
+    "steps": {
+      "title": "Mi Proceso",
+      "description": "Así es como gestiono mis cursos y tutorías",
+      "meet": {
+        "title": "¡Nos Conocemos!",
+        "description": "Comencemos con una conversación sobre tus expectativas y lo que quieres aprender para prepararnos para nuestras tutorías."
+      },
+      "schedule": {
+        "title": "Programa",
+        "description": "Coordinaré una sesión para tutorías adicionales a través de Google Meet."
+      },
+      "learn": {
+        "title": "Aprendemos",
+        "description": "Investigamos, estudiamos y trabajamos en lo que deseas aprender."
+      }
     }
-  },
+  }
+
   "contact": {
     "get_in_touch": "Ponerse en contacto",
     "fill_form": "Completa el formulario para iniciar una conversación",
