@@ -3,7 +3,8 @@
     "home": "Home",
     "services": "Services",
     "about": "About Me",
-    "contact": "Contact"
+    "contact": "Contact",
+    "language":"Language"
   },
   "home": {
     "welcome": "Welcome to Rafa Tutoring",
@@ -45,7 +46,7 @@
       },
       "learn": {
         "title": "We Learn",
-        "description": "Investiguemos, estudiemos y trabajemos en lo que tienes ganas de aprender."
+        "description": "Let's investigate, study, and work on what you want to learn."
       }
     }
   },

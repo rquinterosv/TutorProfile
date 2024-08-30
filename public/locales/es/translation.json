@@ -3,7 +3,9 @@
     "home": "Inicio",
     "services": "Servicios",
     "about": "Sobre Mí",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "language":"Idioma"
+
   },
   "home": {
     "welcome": "Bienvenido a Rafa Tutoring",

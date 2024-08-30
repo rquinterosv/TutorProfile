@@ -4,5 +4,7 @@
 
 body {
     @apply font-sans; /* Aplica la fuente Montserrat como la fuente predeterminada */
+    margin: 0;
+    padding: 0;
   }
   
