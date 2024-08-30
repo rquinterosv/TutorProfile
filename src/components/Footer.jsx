@@ -22,13 +22,13 @@ const Footer = () => {
         <div className="flex flex-col items-center">
           <h4 className="text-lg font-semibold mb-2">{t('footer.follow_us')}</h4>
           <div className="flex space-x-4">
-            <a href="https://facebook.com" className="hover:text-gray-300">
+            <a href="https://www.facebook.com/profile.php?id=61565201338073">
               <FontAwesomeIcon icon={faFacebook} size="2x" />
             </a>
-            <a href="https://twitter.com" className="hover:text-gray-300">
+            <a href="https://github.com/rquinterosv" className="hover:text-gray-300">
               <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>
-            <a href="https://linkedin.com" className="hover:text-gray-300">
+            <a href="https://www.linkedin.com/in/rafael-quinteros/" className="hover:text-gray-300">
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
           </div>
