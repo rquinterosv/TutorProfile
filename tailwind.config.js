@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'], // Montserrat será la fuente principal
+        sans: ['Calibri', 'sans-serif'], 
       },
     },
   },

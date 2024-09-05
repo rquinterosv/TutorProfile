@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import logo from '../assets/img/rlogo.png'
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -20,8 +21,12 @@ const Navbar = () => {
       <div className="max-w-screen-xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <span className="text-2xl font-semibold text-gray-900 dark:text-white">Rafael Quinteros</span>
+          <h1 className="text-4xl">
+            <span className="text-[#252a9c] font-bold">R</span>
+            <span className="text-white font-light">afaQuinteros</span>
+          </h1>
         </a>
+
         {/* Menu y Botón de Idioma */}
         <div className="flex items-center space-x-4 md:space-x-8">
           {/* Botón de Idioma */}

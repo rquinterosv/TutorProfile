@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply font-sans; /* Aplica la fuente Montserrat como la fuente predeterminada */
+    @apply font-sans;
     margin: 0;
     padding: 0;
-  }
-  
+}

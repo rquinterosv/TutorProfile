@@ -6,7 +6,7 @@ import Reference from '../components/Reference'
 const Home = () => {
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Hero />
       <Courses />
       <Reference />
