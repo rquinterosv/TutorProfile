@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
 import perfilImage from '../assets/img/perfil.jpeg';
@@ -17,17 +17,18 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className={`relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 p-2 transition-opacity duration-1000 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>   
-      <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
+    <div className={`relative flex flex-col items-center max-w-screen-xl px-4 mx-auto lg:flex-row sm:px-6 p-2 transition-opacity duration-1000 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>   
+      <div className="flex items-center py-5 lg:w-1/2 lg:pb-20 lg:pt-10 lg:pr-10">
         <div className="text-center md:text-left">
-          <h2 className="text-6xl font-bold leading-10 tracking-tight text-gray-800 sm:text-7xl sm:leading-none md:text-7xl">
-          <span className="font-bold text-blue-500 block sm:inline p-2">Tech</span>
-            Tutor
+          <h2 className="text-6xl font-bold leading-10 tracking-tight text-gray-800 sm:text-7xl sm:leading-none md:text-7xl text-center">
+          <span className="font-bold text-blue-500 block sm:inline p-2">Web</span>
+            Developer
           </h2>
-          <p className="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+          <p  className="max-w-md mx-auto mt-3 text-center text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">👨‍💻 Web Developer | 🎓 Business Management | 📚 Tech Tutor</p>
+          <p className="max-w-md mx-auto mt-3 text-center text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
           {t('home.mentor_profile')}
           </p>
-          <div className="mt-5 sm:flex md:mt-8 justify-center md:justify-start">
+          <div className="mt-5 sm:flex md:mt-8 justify-center md:justify-center">
             <div className="rounded-md shadow">
             <Link
                 to="/services"
@@ -53,7 +54,7 @@ const Hero = () => {
             <img 
                   src={perfilImage} 
                   alt="Profile" 
-                  className="rounded-full object-cover w-full h-full"
+                  className="rounded-full object-cover"
               />
             </div>
         </div>

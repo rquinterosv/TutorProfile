@@ -10,7 +10,7 @@ const App = () => {
   return (
     <Router>
       <Helmet>
-        <title>Rafa Quinteros | Digital Transformation Expert</title>
+        <title>Rafa Quinteros | 👨‍💻 Web Developer | 🎓 Business Management | 📚 Tech Tutor</title>
         <meta name="description" content="Discover the best digital transformation services and programming courses offered by Rafael Quinteros." />
 
         

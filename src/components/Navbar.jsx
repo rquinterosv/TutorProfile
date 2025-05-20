@@ -46,7 +46,7 @@ const Navbar = () => {
                   <li>
                     <button
                       onClick={() => changeLanguage('en')}
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white w-full"
                     >
                       English
                     </button>
@@ -54,7 +54,7 @@ const Navbar = () => {
                   <li>
                     <button
                       onClick={() => changeLanguage('es')}
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white w-full"
                     >
                       Español
                     </button>
