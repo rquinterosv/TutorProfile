@@ -68,6 +68,9 @@ const Navbar = () => {
             <Link to="/" className="text-gray-900 dark:text-white hover:text-blue-500 dark:hover:text-blue-400">
               {t('navbar.home')}
             </Link>
+            <Link to="/experience" className="text-gray-900 dark:text-white hover:text-blue-500 dark:hover:text-blue-400">
+              {t('navbar.experience')}
+            </Link>
             <Link to="/services" className="text-gray-900 dark:text-white hover:text-blue-500 dark:hover:text-blue-400">
               {t('navbar.services')}
             </Link>

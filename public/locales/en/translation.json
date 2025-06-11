@@ -2,6 +2,7 @@
   "navbar": {
     "home": "Home",
     "services": "Services",
+    "experience": "Experience",
     "about": "About Me",
     "contact": "Contact",
     "language":"Language"
@@ -13,8 +14,8 @@
     "info": "More Info",
     "contact": "Contact",
     "courses": {
-      "offer_title": "What you can learn",
-      "offer_description": "Teaching since 2021 and business experience since 2018. I offer mentoring and consulting on key tools and platforms to boost your digital skills.",
+      "offer_title": "What can I do to help you",
+      "offer_description": "Teaching since 2021 and business experience since 2018. I'm offering personalized classes for you to learn programming or using platforms that I have extensive experience with from my previous jobs.",
       "web_development": "Web Development",
       "web_details": "Develop the skills to expertly build a website using HTML, CSS, and JavaScript, while utilizing industry-leading platforms and tools like GitHub and Bootstrap for advanced development and design.",
       "microsoft": "Microsoft Office",

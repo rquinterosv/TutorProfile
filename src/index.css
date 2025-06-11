@@ -7,3 +7,12 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.company__content {
+    padding: 100px 200px;
+}
+
+.logo-item {
+    display: flex;
+    align-items: center;
+}

@@ -36,7 +36,7 @@ const Courses = () => {
   return (
     <section className="pb-12 pt-20 bg-gradient-to-r from-blue-500 to-blue-700 dark:bg-dark lg:pb-[90px] lg:pt-[120px] overflow-x-hidden">
       <div className="container mx-auto text-center">
-        <div className="mb-12 max-w-[510px] mx-auto lg:mb-20">
+        <div className="mb-12 max-w-[710px] mx-auto lg:mb-20">
           <h2 className="text-5xl font-bold leading-[1.2] text-white sm:text-4xl md:text-[40px] mb-3">
             {t("home.courses.offer_title")}
           </h2>
