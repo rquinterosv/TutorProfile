@@ -21,17 +21,19 @@ const logos = [
 const LogoGrid = () => {
   return (
     <div className="company__content text-center">
-          <h1 className="text-5xl font-semibold text-blue-500 mb-12">
-            Work Experience
-          </h1>
+      <h1 className="text-5xl font-semibold text-blue-500 mb-12">
+        Work Experience
+      </h1>
 
-      <div className="grid grid-cols-3 gap-20 justify-items-center">
+      {/* Grid con clases responsivas */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 justify-items-center">
         {logos.map((logo, index) => (
           <div key={index} className="logo-item transition-transform duration-300 hover:scale-110">
             <img src={logo.src} alt={logo.alt} className="w-64 h-auto" />
           </div>
         ))}
       </div>
+
       <Link to="/experience">
         <button className="mt-8 px-6 py-3 bg-blue-500 text-white rounded-lg text-lg hover:bg-blue-600 transition duration-300">
           More Information
@@ -40,5 +42,6 @@ const LogoGrid = () => {
     </div>
   );
 };
+
 
 export default LogoGrid;
