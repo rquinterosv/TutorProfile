@@ -23,6 +23,10 @@
       "softwares": "Software Services",
       "softwares_details": "Master valuable platforms for the IT job market such as Power BI, Jira, Hubspot, Miro, Basecamp, among many others. I can teach you the importance of platforms to empower your IT work.",
       "show_more": "Show More"
+    },
+    "portfolio" : {
+      "title": "Welcome to my portfolio!",
+      "subtitle": "Here, you’ll find a collection of web design and development projects that showcase my passion for creating clean, functional, and visually engaging websites. Each project reflects my commitment to providing innovative solutions tailored to the unique needs of my clients. Whether it's building responsive websites, crafting user-friendly interfaces, or implementing cutting-edge technologies, my goal is to deliver exceptional results that enhance the user experience and drive success."
     }
   },
   "services": {
