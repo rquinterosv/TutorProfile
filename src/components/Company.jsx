@@ -29,7 +29,9 @@ const LogoGrid = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 justify-items-center">
         {logos.map((logo, index) => (
           <div key={index} className="logo-item transition-transform duration-300 hover:scale-110">
-            <img src={logo.src} alt={logo.alt} className="w-64 h-auto" />
+            <Link to="/experience"> 
+              <img src={logo.src} alt={logo.alt} className="w-80 h-auto"/>
+            </Link>
           </div>
         ))}
       </div>
