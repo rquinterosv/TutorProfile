@@ -2,8 +2,8 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJs, faGithub, faBootstrap, faMicrosoft, faJira, faHubspot } from '@fortawesome/free-brands-svg-icons';
-import codeImage from "../assets/img/code.jpg";
-import computerImage from "../assets/img/computer.jpg";
+import codeImage from "../assets/img/computer.jpg";
+import computerImage from "../assets/img/code.jpg";
 import meetingImage from "../assets/img/meeting.jpg";
 import { Link } from 'react-router-dom';
 
@@ -15,11 +15,11 @@ const InformationCard = ({ image, title, details, logos, buttonText }) => {
       <div className="p-6 flex flex-col justify-center lg:w-1/2">
         <h3 className="text-2xl font-semibold text-blue-500 mb-4">{title}</h3>
         <p className="text-gray-700 mb-6">{details}</p>
-        <div className="flex space-x-4 mb-4">
+        {/* <div className="flex space-x-4 mb-4">
           {logos.map((logo, index) => (
             <FontAwesomeIcon key={index} icon={logo} size="2x" className="text-blue-500" />
           ))}
-        </div>
+        </div> */}
         <div className="mt-8">
           <Link to="/contact" className="px-6 py-3 text-lg font-semibold text-white bg-blue-500 hover:bg-blue-600 rounded-md">
             {buttonText}

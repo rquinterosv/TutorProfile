@@ -27,12 +27,12 @@
   },
   "services": {
     "information": {
-      "web_development": "Desarrollo Web",
-      "web_details": "Desarrolla las habilidades para construir un sitio web utilizando HTML, CSS y JavaScript, mientras utilizas plataformas y herramientas líderes en la industria como GitHub y Bootstrap para el desarrollo y diseño avanzado.",
-      "microsoft": "Microsoft Office",
-      "microsoft_details": "Aprende a dominar las herramientas de Microsoft perfectamente. Crea documentación en Word, presentaciones de alta calidad en PowerPoint o hojas de cálculo avanzadas en Excel para gestionar, presentar o manejar datos de manera eficiente.",
-      "softwares": "Servicios de Software",
-      "softwares_details": "Domina plataformas valiosas para el mercado laboral en TI como Power BI, Jira, Hubspot, Miro, Basecamp, entre muchas otras. Puedo enseñarte la importancia de las plataformas para potenciar tu trabajo en TI."
+      "web_development": "Creación de soluciones tecnológicas personalizadas para tu negocio",
+      "web_details": "Soy un desarrollador fullstack freelance con experiencia en la creación de aplicaciones web dinámicas y escalables. Trabajo con tecnologías modernas como JavaScript, Vue, PHP, Node.js, React, Ruby on Rails, Docker, MySQL y bases de datos SQL/NoSQL. También tengo experiencia con BEM, Tailwind CSS, Bootstrap y otros frameworks. Mi enfoque está en entregar soluciones personalizadas, de alta calidad y eficientes, adaptadas a las necesidades de tu proyecto.",
+      "microsoft": "Enseñando los fundamentos para reconvertir tu carrera hacia el desarrollo web",
+      "microsoft_details": "He estado enseñando desde 2022 en una academia de tecnología y trabajando como instructor y revisor de código para estudiantes que aspiran a convertirse en desarrolladores fullstack. Tengo un plan de estudios integral que me permite enseñar desde lo más básico, como HTML y CSS, hasta tecnologías más avanzadas como React y Node.",
+      "softwares": "Hablemos de ideas de negocio; los mejores proyectos se crean con una buena conversación y un café.",
+      "softwares_details": "En mis roles en gestión de proyectos y administración de negocios, he creado con éxito varios MVP para empresas, contribuido a mejorar la eficiencia de equipos y desarrollado e implementado proyectos escalables para aumentar las ganancias de mis empresas."
     },
     "steps": {
       "title": "Estos son mis pasos para ponernos en contacto.",

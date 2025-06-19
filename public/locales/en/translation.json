@@ -16,10 +16,10 @@
     "courses": {
       "offer_title": "This is how I can help you",
       "offer_description": "I have experience in business, web development, and IT education, where I have contributed with my ideas and commitment to various companies worldwide. This is how we can start our conversation:",
-      "web_development": "Building customized technological solutions for your business",
+      "web_development": "Do you want to build a website, application or need support in one of your project?",
       "web_details": "I am a freelance fullstack developer with experience in building dynamic and scalable web applications. I work with modern technologies like JavaScript, Vue, PHP, Node.js, React, Ruby on Rails, Docker, MySQL, and SQL/NoSQL databases. I also have experience with BEM, Tailwind CSS, Bootstrap, and other frameworks. My focus is on delivering high-quality, customized, and efficient solutions tailored to your project's needs.",
-      "microsoft": "Teaching the fundamentals to pivot your career towards web development",
-      "microsoft_details": "Learn to master Microsoft tools perfectly. Create documentation in Word, high-quality presentations in PowerPoint, or advanced Excel spreadsheets to manage, present, or handle data efficiently.",
+      "microsoft": "Do you want to learn how to build your own website or master the fundamentals of programming?",
+      "microsoft_details": "I have been teaching since 2022 at a technology academy and working as an instructor and code reviewer for students aspiring to become fullstack developers. I have a comprehensive curriculum that allows me to teach everything from the basics, such as HTML and CSS, to more advanced technologies like React and Node.",
       "softwares": "Building and managing new projects to boost your business",
       "softwares_details": "Master valuable platforms for the IT job market such as Power BI, Jira, Hubspot, Miro, Basecamp, among many others. I can teach you the importance of platforms to empower your IT work.",
       "show_more": "Show More"
@@ -32,11 +32,11 @@
   "services": {
     "information": {
       "web_development": "Building customized technological solutions for your business",
-      "web_details": "Develop the skills to expertly build a website using HTML, CSS, and JavaScript, while utilizing industry-leading platforms and tools like GitHub and Bootstrap for advanced development and design.",
+      "web_details": "I am a freelance fullstack developer with experience in building dynamic and scalable web applications. I work with modern technologies like JavaScript, Vue, PHP, Node.js, React, Ruby on Rails, Docker, MySQL, and SQL/NoSQL databases. I also have experience with BEM, Tailwind CSS, Bootstrap, and other frameworks. My focus is on delivering high-quality, customized, and efficient solutions tailored to your project's needs.",
       "microsoft": "Teaching the fundamentals to pivot your career towards web development",
-      "microsoft_details": "Learn to master Microsoft tools perfectly. Create documentation in Word, high-quality presentations in PowerPoint, or advanced Excel spreadsheets to manage, present, or handle data efficiently.",
-      "softwares": "Building and managing new projects to boost your business",
-      "softwares_details": "Master valuable platforms for the IT job market such as Power BI, Jira, Hubspot, Miro, Basecamp, among many others. I can teach you the importance of platforms to empower your IT work."
+      "microsoft_details": "I have been teaching since 2022 at a technology academy and working as an instructor and code reviewer for students aspiring to become fullstack developers. I have a comprehensive curriculum that allows me to teach everything from the basics, such as HTML and CSS, to more advanced technologies like React and Node.",
+      "softwares": "Let's talk business ideas; the best projects are created with a good conversation and a coffee.",
+      "softwares_details": "In my roles in project management and business administration, I have successfully created several MVPs for companies, contributed to improving team efficiency, and developed and implemented scalable projects to increase the profit of my companies."
     },
     "steps": {
       "title": "This is how I move foward with my partners",
@@ -51,7 +51,7 @@
       },
       "learn": {
         "title": "We Work",
-        "description": "We research, implement, and work."
+        "description": "We research, implement, and work.*"
       }
     }
   },
