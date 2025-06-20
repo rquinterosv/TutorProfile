@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import RouterComponent from './Router';
+import ScrollToTop from './components/Scroll';
 import { Helmet } from 'react-helmet';
 import './i18n';
 
@@ -28,6 +29,7 @@ const App = () => {
       <Navbar />
       <div className="flex flex-col min-h-screen"> 
         <div className="flex-grow"> 
+          <ScrollToTop /> 
           <RouterComponent /> 
         </div>
         <Footer /> 

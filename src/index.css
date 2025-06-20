@@ -16,3 +16,10 @@ body {
     display: flex;
     align-items: center;
 }
+
+.company_logo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
