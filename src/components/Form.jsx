@@ -51,20 +51,39 @@ const Form = () => {
     message: ''
   });
 
+  // Estado para confirmar si el formulario fue enviado
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  
+  // Estado para indicar que el formulario se está enviando
+  const [loading, setLoading] = useState(false);
+  
+  // Manejador de cambios en el formulario
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
+  // Manejador del envío del formulario
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);  // Activar el estado de carga (se está enviando el formulario)
+    
     try {
+      // Aquí estamos agregando los datos del formulario a Firestore
       await addDoc(collection(db, 'contactForm'), formData);
-      alert('Formulario enviado exitosamente!');
+      setIsSubmitted(true); // El formulario fue enviado correctamente, mostrar mensaje de éxito
       setFormData({ name: '', email: '', message: '' }); // Limpiar formulario
+
+      // Opcional: Resetear el estado `isSubmitted` después de 3 segundos
+      setTimeout(() => {
+        setIsSubmitted(false);
+      }, 3000);
+      
     } catch (error) {
       console.error('Error al enviar formulario: ', error);
       alert('Hubo un error al enviar el formulario.');
+    } finally {
+      setLoading(false);  // Desactivar el estado de carga (ya terminó de enviar)
     }
   };
 
@@ -197,11 +216,19 @@ const Form = () => {
                 </div>
 
                 <button
-                  type="submit"
-                  className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-lg mt-3 transition ease-in-out duration-300"
-                >
-                  {t('contact.submit')}
-                </button>
+                type="submit"
+                className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-lg mt-3 transition ease-in-out duration-300"
+                disabled={loading}
+              >
+                {loading ? 'Sending...' : t('contact.submit')}
+              </button>
+
+              {/* Mostrar el mensaje de confirmación después de enviar el formulario */}
+              {isSubmitted && (
+                <div className="mt-4 text-green-500 text-lg font-semibold">
+                  {t('contact.form_success')}
+                </div>
+              )}
               </form>
             </div>
           </div>

@@ -41,7 +41,7 @@ const references = [
 
 const ReferenceCard = ({ photo, name, position, description }) => {
   return (
-    <div className="flex flex-col items-center bg-blue-500 rounded-lg shadow-lg p-6 text-center h-full">
+    <div className="flex flex-col items-center bg-blue-500 rounded-lg shadow-lg p-6 text-center m-5 min-h-[450px]">
       <div className="flex justify-center mb-4">
         <img 
           src={photo} 
@@ -49,9 +49,9 @@ const ReferenceCard = ({ photo, name, position, description }) => {
           className="w-24 h-24 object-cover rounded-full border-4 border-black"
         />
       </div>
-      <div className="flex flex-col flex-grow">
+      <div className="flex flex-col flex-grow h-full justify-evenly">
         <h3 className="text-xl font-semibold text-white mb-2">{name}</h3>
-        <p className="text-md font-medium text-white mb-2">{position}</p>
+        <p className="text-md italic text-white mb-2">{position}</p>
         <p className="text-base text-white">{description}</p>
       </div>
     </div>
@@ -63,7 +63,7 @@ const Reference = () => {
     dots: true,
     infinite: true,
     speed: 700,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
@@ -81,7 +81,7 @@ const Reference = () => {
   return (
     <section className="py-12">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-bold text-blue-500 mb-6">
+        <h2 className="text-5xl font-bold text-blue-500 mb-12"> 
           What People Are Saying
         </h2>
         <Slider {...settings}>

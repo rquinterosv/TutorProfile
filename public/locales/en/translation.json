@@ -22,7 +22,7 @@
       "web_details": "I am a freelance fullstack developer with experience in building dynamic and scalable web applications. I work with modern technologies like JavaScript, Vue, PHP, Node.js, React, Ruby on Rails, Docker, MySQL, and SQL/NoSQL databases. I also have experience with BEM, Tailwind CSS, Bootstrap, and other frameworks. My focus is on delivering high-quality, customized, and efficient solutions tailored to your project's needs.",
       "microsoft": "Do you want to learn how to build your own website or master the fundamentals of programming?",
       "microsoft_details": "I have been teaching since 2022 at a technology academy and working as an instructor and code reviewer for students aspiring to become fullstack developers. I have a comprehensive curriculum that allows me to teach everything from the basics, such as HTML and CSS, to more advanced technologies like React and Node.",
-      "softwares": "Building and managing new projects to boost your business",
+      "softwares": "Do you need support in the research, creation, implementation, or analysis of your projects?",
       "softwares_details": "Master valuable platforms for the IT job market such as Power BI, Jira, Hubspot, Miro, Basecamp, among many others. I can teach you the importance of platforms to empower your IT work.",
       "show_more": "Show More"
     },
@@ -61,18 +61,19 @@
     "get_in_touch": "Get in touch",
     "fill_form": "Fill in the form to start a conversation",
     "address": "Full Remote",
-    "phone": "+642902206952",
+    "phone": "+420777990829",
     "email": "rafael.quinterosv@gmail.com",
     "full_name": "Full Name",
     "email_label": "Email",
-    "telephone": "Telephone Number",
+    "telephone": "Telephon0e Number",
     "select_service": "Select a Service",
     "service1": "Consulting",
     "service2": "Development",
     "service3": "Training",
     "message": "Message",
     "message_placeholder": "Write your message (max 100 words)",
-    "submit": "Submit"
+    "submit": "Submit",
+    "form_success": "Thanks for your contact, we will be in touch soon!"
   },
   "footer": {
     "about_us": "Rafa Tutoring",

@@ -23,9 +23,9 @@ const LogoGrid = () => {
 
   return (
     <div className="company__content text-center">
-      <h1 className="text-5xl font-semibold text-blue-500 mb-12">
+      <h2 className="text-5xl font-bold text-blue-500 mb-12"> 
         Work Experience
-      </h1>
+      </h2>
 
       {/* Grid con clases responsivas */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 justify-items-center">

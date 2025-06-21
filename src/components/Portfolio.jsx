@@ -78,7 +78,7 @@ const Projects = () => {
         <h2 className="text-5xl font-bold text-white mb-12">
           {t("home.portfolio.title")}
         </h2>
-        <p className="font-bold text-white mb-12">
+        <p className="mx-auto mt-3 text-center text-white mb-12 sm:text-lg md:mt-5 md:text-xl">
           {t("home.portfolio.subtitle")}
         </p>
 
