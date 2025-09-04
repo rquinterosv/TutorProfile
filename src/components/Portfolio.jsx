@@ -70,6 +70,18 @@ const Projects = () => {
       link: "https://www.pronachem.cz/",
       linkname: "www.pronachem.cz/",
     },
+    {
+      title: t("Ekoplant"),
+      description: t("Updated the homepage, including banners and functionality, allowing users to easily update information based on their specific needs. Also improved the user experience by making the interface more intuitive and responsive."),
+      link: "https://www.ekoplant.cz/",
+      linkname: "www.ekoplant.cz/",
+    },
+    {
+      title: t("MYJOYS"),
+      description: t("Updated the homepage, including banners and functionality, allowing users to easily update information based on their specific needs. Also improved the user experience by making the interface more intuitive and responsive."),
+      link: "https://www.myjoysbad.de/",
+      linkname: "www.myjoysbad.de/",
+    },
   ];
 
   return (
@@ -85,16 +97,16 @@ const Projects = () => {
         {/* Hero cards */}
         <div className="flex flex-wrap -mx-4 mb-16">
           <ProjectHeroCard
-            title={t("MYJOYS")}
+            title={t("Zámecký catering")}
             description={t("Project in which I participated in the initial creation of the pages. It features a well-structured design and logic that enable users and administrators to dynamically modify the page content, improving flexibility and ease of use. Check the responsivnes and user experience that have the website")}
             image={heroImage1}
-            link={("https://www.myjoysbad.de/")}
+            link={("https://www.zamecky-catering.cz/")}
           />
           <ProjectHeroCard
-            title={t("Ekoplant")}
+            title={t("Adam Růžička")}
             description={t("Another project in which I participated in the initial creation, developed with direct code. It includes a custom design and logic tailored to the user's requirements, with a dynamic structure that allows for real-time modifications based on user input, ensuring a personalized and adaptable experience.")}
             image={heroImage2}
-            link={("https://www.ekoplant.cz/")}
+            link={("https://www.adamruzickareality.cz/")}
           />
         </div>
 
