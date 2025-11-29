@@ -34,10 +34,46 @@ const Projects = () => {
 
   const miniProjects = [
     {
+      title: t("Fencee"),
+      description: t("I contributed to enhancing various elements of the website by working on both the front-end and back-end development."),
+      link: "https://www.fencee.cz",
+      linkname: "www.fencee.cz",
+    },
+    {
       title: t("Dogtrace"),
       description: t("I contributed to enhancing various elements of the website by working on both the front-end and back-end development."),
       link: "https://www.dogtrace.com/",
       linkname: "www.dogtrace.com/",
+    },
+    {
+      title: t("Sysel Polak"),
+      description: t("I created the page from scratch, managing to program  the back and front end of the project following the UX/UI team's graphics 100%."),
+      link: "https://www.sysel-polak.cz/",
+      linkname: "www.sysel-polak.cz",
+    },
+    {
+      title: t("Doucebnice"),
+      description: t("I created the page from scratch, managing to program  the back and front end of the project following the UX/UI team's graphics 100%. "),
+      link: "https://www.doucebnice.cz/",
+      linkname: "www.doucebnice.cz",
+    },
+    {
+      title: t("Autojeraby Horak"),
+      description: t("I created the page from scratch, managing to program  the back and front end of the project following the UX/UI team's graphics 100%. "),
+      link: "https://www.autojerabyhorak.cz/",
+      linkname: "www.autojerabyhorak.cz",
+    },
+    {
+      title: t("Starlux"),
+      description: t("I created the page from scratch, managing to program  the back and front end of the project following the UX/UI team's graphics 100%. "),
+      link: "https://www.starlux.cz/",
+      linkname: "www.starlux.cz",
+    },
+    {
+      title: t("Chytré střechy"),
+      description: t("I created the page from scratch, managing to program  the back and front end of the project following the UX/UI team's graphics 100%. "),
+      link: "https://www.chytrestrechy.cz/",
+      linkname: "www.chytrestrechy.cz",
     },
     {
       title: t("Centrum veterinární péče"),
@@ -45,12 +81,6 @@ const Projects = () => {
       link: "https://www.veterinar-palan.cz/",
       linkname: "www.veterinar-palan.cz/",
     
-    },
-    {
-      title: t("Fencee"),
-      description: t("I contributed to enhancing various elements of the website by working on both the front-end and back-end development."),
-      link: "https://www.fencee.cz",
-      linkname: "www.fencee.cz",
     },
     {
       title: t("Desafío Latam"),
@@ -97,10 +127,10 @@ const Projects = () => {
         {/* Hero cards */}
         <div className="flex flex-wrap -mx-4 mb-16">
           <ProjectHeroCard
-            title={t("Zámecký catering")}
+            title={t("Prohopo")}
             description={t("Project in which I participated in the initial creation of the pages. It features a well-structured design and logic that enable users and administrators to dynamically modify the page content, improving flexibility and ease of use. Check the responsivnes and user experience that have the website")}
             image={heroImage1}
-            link={("https://www.zamecky-catering.cz/")}
+            link={("https://www.prohopo.cz/")}
           />
           <ProjectHeroCard
             title={t("Adam Růžička")}
