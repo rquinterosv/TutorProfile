@@ -2,27 +2,76 @@
   "navbar": {
     "home": "Inicio",
     "services": "Servicios",
+    "experience": "Experiencia",
     "about": "Sobre Mí",
     "contact": "Contacto",
-    "language":"Idioma"
-
+    "language": "Idioma"
   },
   "home": {
     "welcome": "Bienvenido a Rafa Tutoring",
     "description": "Ofrecemos los mejores servicios de tutoría para ayudarte a sobresalir.",
-    "mentor_profile": "Soy Rafa, desarrollador web con formación en Business Management e Ingeniería Comercial, apasionado por crear soluciones digitales que no solo sean técnicamente sólidas, sino también estratégicamente efectivas. Mi experiencia multidisciplinaria me permite conectar el mundo de la tecnología con el de los negocios, comprendiendo las necesidades reales de los usuarios y del mercado.Como tutor tecnológico, disfruto ayudar a otros a crecer en su camino en el mundo tech, haciendo que los temas complejos sean más fáciles de entender e inspirando el aprendizaje continuo.",
+    "mentor_profile": "Soy Rafa, Ingeniero Comercial convertido en Desarrollador Full Stack, con experiencia en ventas B2B enterprise, desarrollo de software y educación tech. Conecto equipos técnicos con la estrategia de negocio, traduciendo problemas complejos en productos que realmente funcionan para usuarios y stakeholders. Ya sea liderando procesos de onboarding, definiendo decisiones de producto o mentoreando desarrolladores, aporto la profundidad técnica y el pensamiento comercial que los roles híbridos requieren.",
     "info": "Más Información",
     "contact": "Contacto",
+    "experience_title": "Esta es mi experiencia laboral",
+    "experience_perex": "Encontrarás una experiencia diversa y multicultural que me permite trabajar en distintos espacios y en distintos idiomas",
+    "hero": {
+      "title_prefix": "Desarrollador",
+      "title_suffix": "Web",
+      "roles": "🧩 Ingeniero Comercial | 💻 Desarrollador Full Stack | 🚀 Producto & Customer Success"
+    },
+    "company": {
+      "title": "Experiencia Laboral",
+      "more": "Más Información"
+    },
     "courses": {
       "offer_title": "Así es como puedo ayudarte",
       "offer_description": "Cuento con experiencia en negocios, desarrollo web y docencia en tecnologías de la información, donde he aportado con mis ideas y compromiso a diversas empresas a nivel global. Así es como podemos iniciar nuestra conversación:",
-      "web_development": "Construcción de soluciones tecnológicas personalizadas para tu negocio",
+      "web_development": "¿Quieres construir un sitio web, una aplicación, o necesitas apoyo en uno de tus proyectos?",
       "web_details": "Soy un desarrollador fullstack freelance con experiencia en la creación de aplicaciones web dinámicas y escalables. Trabajo con tecnologías modernas como JavaScript, Vue, PHP, Node.js, React, Ruby on Rails, Docker, MySQL, y bases de datos SQL/NoSQL. También tengo experiencia con BEM, Tailwind CSS, Bootstrap y otros frameworks. Mi enfoque está en entregar soluciones personalizadas, de alta calidad y eficientes, adaptadas a las necesidades de tu proyecto.",
-      "microsoft": "Enseñando las bases para reorientar tu carrera al desarrollo web",
-      "microsoft_details": "Aprende a dominar perfectamente las herramientas de Microsoft. Crea documentación en Word, presentaciones de alta calidad en PowerPoint, o hojas de cálculo avanzadas en Excel para gestionar, presentar o manejar datos de manera eficiente.",
-      "softwares": "Construcción y gestión de nuevos proyectos para potenciar tu negocio",
+      "microsoft": "¿Quieres aprender a construir tu propio sitio web o dominar los fundamentos de la programación?",
+      "microsoft_details": "He estado enseñando desde 2022 en una academia de tecnología y trabajando como instructor y revisor de código para estudiantes que aspiran a convertirse en desarrolladores fullstack. Tengo un plan de estudios integral que me permite enseñar desde lo más básico, como HTML y CSS, hasta tecnologías más avanzadas como React y Node.",
+      "softwares": "¿Necesitas apoyo en la investigación, creación, implementación o análisis de tus proyectos?",
       "softwares_details": "Domina plataformas valiosas para el mercado laboral de TI, como Power BI, Jira, Hubspot, Miro, Basecamp, entre muchas otras. Puedo enseñarte la importancia de las plataformas para potenciar tu trabajo en TI.",
       "show_more": "Mostrar Más"
+    },
+    "portfolio": {
+      "eyebrow": "Trabajos Seleccionados",
+      "title": "¡Bienvenido a mi portafolio!",
+      "subtitle": "Aquí encontrarás una colección de proyectos de diseño y desarrollo web que reflejan mi pasión por crear sitios limpios, funcionales y visualmente atractivos. Cada proyecto demuestra mi compromiso con entregar soluciones innovadoras adaptadas a las necesidades de cada cliente.",
+      "featured": "Destacado",
+      "visit": "Visitar sitio",
+      "filter_all": "Todos",
+      "hero1_desc": "Plataforma inmobiliaria construida desde cero con un admin tipo CMS totalmente dinámico, donde el contenido, listados e imágenes pueden actualizarse en tiempo real. Entregué una UX responsive y pulida, optimizada para navegación móvil.",
+      "hero2_desc": "Sitio web inmobiliario a medida, programado directamente sin CMS. Diseño personalizado y lógica adaptada que entregan una estructura dinámica editable por el cliente, que ajusta contenido según la interacción del usuario.",
+      "descriptions": {
+        "Fencee": "Contribuí en toda la stack, entregando mejoras tanto en el storefront de cara al cliente como en las herramientas internas de esta marca checa de cercas.",
+        "Dogtrace": "Trabajé de punta a punta en nuevas funciones y fixes para un sitio de producto de rastreo GPS para perros, equilibrando contenido de marketing con páginas técnicas de producto.",
+        "Sysel Polak": "Construido desde cero, implementando el handoff UX/UI completo pixel-perfect en front y back end para este bufete legal checo.",
+        "Doucebnice": "Entregué la plataforma completa desde cero — fidelidad de UI, comportamiento responsive y flujo de datos, todo implementado 1:1 con los mockups del equipo de diseño.",
+        "Autojeraby Horak": "Construí el sitio desde cero para una empresa checa de alquiler de grúas, traduciendo los gráficos del equipo UX/UI en un front + back end totalmente funcional.",
+        "Starlux": "Build de punta a punta para una marca de iluminación: entregué la implementación completa de front y back end respetando el design system al pixel.",
+        "Chytré střechy": "Creado desde cero para una empresa checa de techos — implementación UX/UI fiel más el back-end necesario para mantener el contenido editable.",
+        "Centrum veterinární péče": "Reconstruí la lógica de agendamiento para una red de clínicas veterinarias multi-sede, enfocándome en manejo de fechas y configuración de horarios por clínica.",
+        "Desafío Latam": "Tutor tech para aspirantes a desarrolladores full-stack — enseñé fundamentos de React y Node.js y ejecuté revisiones de código en proyectos capstone de estudiantes.",
+        "Grime Fighters": "Desarrollé el sitio completo para una empresa canadiense de servicios de limpieza. Front-end limpio en HTML/CSS respaldado por lógica sólida y mantenible.",
+        "Pronachem": "Reconstruí la homepage — banners, CTAs y bloques de contenido editable — y afiné el comportamiento responsive para un mejor flujo móvil.",
+        "Ekoplant": "Modernicé la homepage y su superficie de contenido editable, además de mejorar el comportamiento responsive para que el equipo de marketing pueda auto-gestionar actualizaciones.",
+        "MYJOYS": "Renové la homepage de una marca alemana de productos de baño, entregando banners editables y actualizaciones de UI intuitivas para un flujo de compra más fluido."
+      },
+      "categories": {
+        "Real Estate": "Inmobiliario",
+        "E-commerce": "E-commerce",
+        "Services": "Servicios",
+        "Corporate": "Corporativo",
+        "Education": "Educación"
+      }
+    },
+    "driftertrip": {
+      "eyebrow": "Proyecto Propio",
+      "tagline": "Una plataforma de agencia de viajes que estoy construyendo desde cero — viajes curados, experiencias seleccionadas y un flujo de reserva diseñado para viajeros modernos.",
+      "description": "Diseñado, desarrollado y lanzado de punta a punta: branding, decisiones de producto, front-end y deployment. Actualmente en preview.",
+      "cta": "Visitar Driftertrip"
     }
   },
   "services": {
@@ -35,7 +84,7 @@
       "softwares_details": "En mis roles en gestión de proyectos y administración de negocios, he creado con éxito varios MVP para empresas, contribuido a mejorar la eficiencia de equipos y desarrollado e implementado proyectos escalables para aumentar las ganancias de mis empresas."
     },
     "steps": {
-      "title": "Estos son mis pasos para ponernos en contacto.",
+      "title": "Estos son mis pasos para ponernos en contacto",
       "description": "Así es como gestiono mis cursos y tutorías",
       "meet": {
         "title": "¡Nos Conocemos!",
@@ -43,11 +92,11 @@
       },
       "schedule": {
         "title": "Definimos fechas",
-        "description": "Alineamos objetivos y coordinamos fechas"
+        "description": "Alineamos objetivos y coordinamos fechas."
       },
       "learn": {
         "title": "Trabajamos",
-        "description": "Investigamos, implementamos y trabajamos"
+        "description": "Investigamos, implementamos y trabajamos."
       }
     }
   },
@@ -55,19 +104,27 @@
     "get_in_touch": "Ponerse en contacto",
     "fill_form": "Completa el formulario para iniciar una conversación",
     "address": "Totalmente Remoto",
-    "phone": "+642902206952",
+    "phone": "+420 777 990 829",
     "email": "rafael.quinterosv@gmail.com",
     "full_name": "Nombre Completo",
     "email_label": "Correo Electrónico",
     "telephone": "Número de Teléfono",
-    "submit": "Enviar"
+    "select_service": "Selecciona un Servicio",
+    "service1": "Consultoría",
+    "service2": "Desarrollo",
+    "service3": "Capacitación",
+    "message": "Mensaje",
+    "message_placeholder": "Escribe tu mensaje (máx 100 palabras)",
+    "submit": "Enviar",
+    "sending": "Enviando...",
+    "form_success": "¡Gracias por contactarnos, estaremos en contacto pronto!"
   },
   "footer": {
-    "about_us": "Rafa Tutoring",
-    "about_us_text": "Enseñando desde 2021 y con experiencia en negocios desde 2018. Ofrezco mentoría y consultoría en herramientas y plataformas clave para mejorar tus habilidades digitales.",
+    "about_us": "Rafael Quinteros",
+    "about_us_text": "Ingeniero Comercial y Desarrollador Full Stack que conecta equipos técnicos con la estrategia de negocio. Ayudo a lanzar productos, liderar procesos de onboarding y mentorear desarrolladores.",
     "follow_us": "Sígueme en Redes Sociales",
     "contact_us": "Contacto",
     "contact_email": "rafael.quinterosv@gmail.com",
-    "contact_phone": "+1 234 567 890"
+    "contact_phone": "+420 777 990 829"
   }
 }

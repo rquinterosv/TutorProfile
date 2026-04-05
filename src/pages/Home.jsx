@@ -3,6 +3,7 @@ import Courses from '../components/Courses'
 import Reference from '../components/Reference'
 import Company from '../components/Company'
 import Portfolio from '../components/Portfolio'
+import Driftertrip from '../components/Driftertrip'
 
 // Companies logos
 import logo1 from '../assets/img/czechgroup.svg';
@@ -15,6 +16,7 @@ const Home = () => {
       <Hero />
       <Portfolio />
       <Company />
+      <Driftertrip />
       <Courses />
       <Reference />
     </div>

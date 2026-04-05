@@ -21,10 +21,10 @@ const Hero = () => {
       <div className="flex items-center py-5 lg:w-1/2 lg:pb-20 lg:pt-10 lg:pr-10">
         <div className="text-center md:text-left">
           <h2 className="text-6xl font-bold leading-10 tracking-tight text-gray-800 sm:text-7xl sm:leading-none md:text-7xl text-center">
-          <span className="font-bold text-blue-500 block sm:inline p-2">Web</span>
-            Developer
+          <span className="font-bold text-blue-500 block sm:inline p-2">{t('home.hero.title_prefix')}</span>
+            {t('home.hero.title_suffix')}
           </h2>
-          <p  className="max-w-md mx-auto mt-3 text-center text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">👨‍💻 Web Developer | 🎓 Business Management | 📚 Tech Tutor</p>
+          <p  className="max-w-md mx-auto mt-3 text-center text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">{t('home.hero.roles')}</p>
           <p className="max-w-md mx-auto mt-3 text-center text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
           {t('home.mentor_profile')}
           </p>

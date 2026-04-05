@@ -11,12 +11,12 @@ const App = () => {
   return (
     <Router>
       <Helmet>
-        <title>Rafa Quinteros | 👨‍💻 Web Developer | 🎓 Business Management | 📚 Tech Tutor</title>
-        <meta name="description" content="Discover the best digital transformation services and programming courses offered by Rafael Quinteros." />
+        <title>Rafael Quinteros — Portfolio</title>
+        <meta name="description" content="Rafael Quinteros — Business Engineer & Full Stack Developer bridging technical teams and business strategy. Portfolio, experience, and services." />
 
-        
-        <meta property="og:title" content="Rafa Quinteros | Expert in Digital Transformation" />
-        <meta property="og:description" content="Programming courses and professional digital transformation services." />
+
+        <meta property="og:title" content="Rafael Quinteros — Portfolio" />
+        <meta property="og:description" content="Business Engineer & Full Stack Developer bridging tech and business strategy." />
         <meta property="og:url" content="https://rafaquinterosv.com" />
         <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/rafa-tutoring.appspot.com/o/r.png?alt=media&token=4ab2273b-3b86-454d-af10-4b02196b994d" />
         <meta property="og:image:alt" content="Image description for accessibility" />

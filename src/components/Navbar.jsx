@@ -35,6 +35,11 @@ const Navbar = () => {
               onClick={toggleDropdown}
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-white rounded-lg bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
+              <img
+                src={`https://flagcdn.com/24x18/${i18n.language?.startsWith('es') ? 'es' : 'gb'}.png`}
+                alt=""
+                className="w-5 h-auto mr-2 rounded-sm ring-1 ring-white/30"
+              />
               {t('navbar.language')}
               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
@@ -46,16 +51,18 @@ const Navbar = () => {
                   <li>
                     <button
                       onClick={() => changeLanguage('en')}
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white w-full"
+                      className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white w-full"
                     >
+                      <img src="https://flagcdn.com/24x18/gb.png" alt="" className="w-5 h-auto mr-3 rounded-sm ring-1 ring-gray-200" />
                       English
                     </button>
                   </li>
                   <li>
                     <button
                       onClick={() => changeLanguage('es')}
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white w-full"
+                      className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white w-full"
                     >
+                      <img src="https://flagcdn.com/24x18/es.png" alt="" className="w-5 h-auto mr-3 rounded-sm ring-1 ring-gray-200" />
                       Español
                     </button>
                   </li>
@@ -116,8 +123,13 @@ const Navbar = () => {
           <div className="mt-4">
             <button
               onClick={toggleDropdown}
-              className="w-full px-4 py-2 text-sm font-medium text-white rounded-lg bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white rounded-lg bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
+              <img
+                src={`https://flagcdn.com/24x18/${i18n.language?.startsWith('es') ? 'es' : 'gb'}.png`}
+                alt=""
+                className="w-5 h-auto mr-2 rounded-sm ring-1 ring-white/30"
+              />
               {t('navbar.language')}
               <svg className="w-4 h-4 ml-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
@@ -129,16 +141,18 @@ const Navbar = () => {
                   <li>
                     <button
                       onClick={() => changeLanguage('en')}
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white w-full text-left"
+                      className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white w-full text-left"
                     >
+                      <img src="https://flagcdn.com/24x18/gb.png" alt="" className="w-5 h-auto mr-3 rounded-sm ring-1 ring-gray-200" />
                       English
                     </button>
                   </li>
                   <li>
                     <button
                       onClick={() => changeLanguage('es')}
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white w-full text-left"
+                      className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white w-full text-left"
                     >
+                      <img src="https://flagcdn.com/24x18/es.png" alt="" className="w-5 h-auto mr-3 rounded-sm ring-1 ring-gray-200" />
                       Español
                     </button>
                   </li>

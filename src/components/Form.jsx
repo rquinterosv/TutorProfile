@@ -220,7 +220,7 @@ const Form = () => {
                 className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-lg mt-3 transition ease-in-out duration-300"
                 disabled={loading}
               >
-                {loading ? 'Sending...' : t('contact.submit')}
+                {loading ? t('contact.sending') : t('contact.submit')}
               </button>
 
               {/* Mostrar el mensaje de confirmación después de enviar el formulario */}
