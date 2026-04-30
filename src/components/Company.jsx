@@ -5,19 +5,15 @@ import { useTranslation } from 'react-i18next';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-// Import the images
-import logo1 from "../assets/img/czechgroup.png";
-import logo2 from "../assets/img/adl.png";
-import logo3 from "../assets/img/huawei.png";
-import logo4 from "../assets/img/ecom.png";
-import logo5 from "../assets/img/ts.png";
+// Import existing logo images
+import logo1 from "../assets/img/rlogo.png";
+import logo2 from "../assets/img/por1.png";
+import logo3 from "../assets/img/por2.png";
 
 const logos = [
-  { src: logo1, alt: 'Czech Group' },
-  { src: logo2, alt: 'Desafío Latam' },
-  { src: logo3, alt: 'Huawei' },
-  { src: logo4, alt: 'Ecom Energía' },
-  { src: logo5, alt: 'Travel Security' },
+  { src: logo1, alt: 'RafaQuinteros' },
+  { src: logo2, alt: 'Prohopo' },
+  { src: logo3, alt: 'Adam Růžička' },
 ];
 
 const LogoGrid = () => {

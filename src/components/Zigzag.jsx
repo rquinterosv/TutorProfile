@@ -1,11 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 
-import logo1 from "../assets/img/czechgroup.png";
-import logo2 from "../assets/img/adl.png";
-import logo3 from "../assets/img/huawei.png";
-import logo4 from "../assets/img/ecom.png";
-import logo5 from "../assets/img/ts.png";
+import logo1 from "../assets/img/rlogo.png";
 
 const data = [
   {
@@ -19,35 +15,35 @@ const data = [
     id: 2,
     titleKey: "experience.items.desafio.title",
     textKey: "experience.items.desafio.text",
-    imageUrl: logo2,
+    imageUrl: logo1,
     period: "2021 - 2022",
   },
   {
     id: 3,
     titleKey: "experience.items.product.title",
     textKey: "experience.items.product.text",
-    imageUrl: logo2,
+    imageUrl: logo1,
     period: "2020 - 2021",
   },
   {
     id: 4,
     titleKey: "experience.items.huawei.title",
     textKey: "experience.items.huawei.text",
-    imageUrl: logo3,
+    imageUrl: logo1,
     period: "2019 - 2020",
   },
   {
     id: 5,
     titleKey: "experience.items.ecom.title",
     textKey: "experience.items.ecom.text",
-    imageUrl: logo4,
+    imageUrl: logo1,
     period: "2018 - 2019",
   },
   {
     id: 6,
     titleKey: "experience.items.travel.title",
     textKey: "experience.items.travel.text",
-    imageUrl: logo5,
+    imageUrl: logo1,
     period: "2017 - 2018",
   },
 ];
