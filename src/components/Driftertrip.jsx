@@ -58,7 +58,7 @@ const Driftertrip = () => {
 
           {/* URL hint */}
           <p className="mt-5 text-xs text-stone-400 tracking-wide">
-            friendsaround.vercel.app
+drifter-trip.com
           </p>
         </div>
       </div>
