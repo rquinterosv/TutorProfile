@@ -1,11 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 
-import logo1 from "../assets/img/czechgroup.svg";
+import logo1 from "../assets/img/czechgroup.png";
 import logo2 from "../assets/img/adl.png";
-import logo3 from "../assets/img/huawei.svg";
+import logo3 from "../assets/img/huawei.png";
 import logo4 from "../assets/img/ecom.png";
-import logo5 from "../assets/img/ts.svg";
+import logo5 from "../assets/img/ts.png";
 
 const data = [
   {
