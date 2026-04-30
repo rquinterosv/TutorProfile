@@ -3,63 +3,81 @@ import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
 import perfilImage from '../assets/img/perfil.jpeg';
 
-
-
 const Hero = () => {
   const { t } = useTranslation();
-
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsVisible(true);
-    }, 200);
+    const timer = setTimeout(() => setIsVisible(true), 100);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className={`relative flex flex-col items-center max-w-screen-xl px-4 mx-auto lg:flex-row sm:px-6 p-2 transition-opacity duration-1000 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>   
-      <div className="flex items-center py-5 lg:w-1/2 lg:pb-20 lg:pt-10 lg:pr-10">
-        <div className="text-center md:text-left">
-          <h2 className="text-6xl font-bold leading-10 tracking-tight text-gray-800 sm:text-7xl sm:leading-none md:text-7xl text-center">
-          <span className="font-bold text-blue-500 block sm:inline p-2">{t('home.hero.title_prefix')}</span>
-            {t('home.hero.title_suffix')}
-          </h2>
-          <p  className="max-w-md mx-auto mt-3 text-center text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">{t('home.hero.roles')}</p>
-          <p className="max-w-md mx-auto mt-3 text-center text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-          {t('home.mentor_profile')}
+    <section className="section-padding bg-gradient-to-br from-neutral-50 via-white to-primary-50/30">
+      <div className={`container-width flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-16 transition-all duration-1000 ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+      }`}>
+        {/* Text Content */}
+        <div className="flex-1 text-center lg:text-left">
+          <span className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-primary-700 bg-primary-50 rounded-full">
+            {t('home.hero.eyebrow') || 'Web Developer & Tutor'}
+          </span>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-800 leading-tight mb-6">
+            <span className="text-primary-600">{t('home.hero.title_prefix')}</span>
+            <br className="hidden sm:block" />
+            <span className="sm:ml-2">{t('home.hero.title_suffix')}</span>
+          </h1>
+          <p className="text-lg text-neutral-500 max-w-xl mb-4 leading-relaxed">
+            {t('home.hero.roles')}
           </p>
-          <div className="mt-5 sm:flex md:mt-8 justify-center md:justify-center">
-            <div className="rounded-md shadow">
-            <Link
-                to="/services"
-                className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-500 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10"
-              >
-                {t('home.info')}
-              </Link>
+          <p className="text-base text-neutral-400 max-w-xl mb-8 leading-relaxed">
+            {t('home.mentor_profile')}
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <Link to="/services" className="btn-primary text-base px-8 py-3.5">
+              {t('home.info')}
+            </Link>
+            <Link to="/contact" className="btn-secondary text-base px-8 py-3.5">
+              {t('home.contact')}
+            </Link>
+          </div>
+
+          {/* Stats */}
+          <div className="flex gap-8 mt-12 pt-8 border-t border-neutral-200 justify-center lg:justify-start">
+            {[
+              { number: '5+', label: t('home.hero.experience_years') || 'Years Experience' },
+              { number: '15+', label: t('home.hero.projects_done') || 'Projects Done' },
+              { number: '100%', label: t('home.hero.client_satisfaction') || 'Satisfaction' },
+            ].map((stat, i) => (
+              <div key={i} className="text-center lg:text-left">
+                <p className="text-2xl font-bold text-primary-600">{stat.number}</p>
+                <p className="text-xs text-neutral-500 uppercase tracking-wide">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Profile Image */}
+        <div className="flex-1 flex justify-center lg:justify-end">
+          <div className="relative">
+            <div className="absolute -inset-4 bg-gradient-to-tr from-primary-200 to-accent-100 rounded-full blur-3xl opacity-40 animate-pulse" />
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden ring-4 ring-white shadow-2xl">
+              <img
+                src={perfilImage}
+                alt="Profile"
+                className="w-full h-full object-cover"
+              />
             </div>
-            <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-              <Link
-                to="/contact"
-                className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-blue-500 transition duration-150 ease-in-out bg-white border border-transparent rounded-md hover:text-blue-600 focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10"
-              >
-                {t('home.contact')}
-              </Link>
+            {/* Floating badges */}
+            <div className="absolute -bottom-4 -right-4 bg-white px-4 py-2 rounded-xl shadow-lg ring-1 ring-neutral-100">
+              <p className="text-sm font-semibold text-neutral-800">React & Node.js</p>
+              <p className="text-xs text-neutral-500">Full Stack Dev</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pl-10">
-        <div className="relative w-full p-3 rounded md:p-8">
-            <div className="rounded-lg bg-white text-black w-full">
-            <img 
-                  src={perfilImage} 
-                  alt="Profile" 
-                  className="rounded-full object-cover"
-              />
-            </div>
-        </div>
-        </div>
-    </div>
+    </section>
   );
 };
 

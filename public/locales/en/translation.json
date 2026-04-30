@@ -8,57 +8,39 @@
     "language": "Language"
   },
   "home": {
-    "welcome": "Welcome to Rafa Tutoring",
-    "description": "We offer the best tutoring services to help you excel.",
-    "mentor_profile": "I'm Rafa, a Business Engineer turned Full Stack Developer with a track record spanning enterprise B2B sales, software development, and tech education. I bridge the gap between technical teams and business strategy — translating complex problems into products that actually work for users and stakeholders. Whether leading onboarding processes, shaping product decisions, or mentoring developers, I bring both the technical depth and the commercial thinking that hybrid roles demand.",
+    "mentor_profile": "I'm Rafa, a Business Engineer turned Full Stack Developer with a track record spanning enterprise B2B sales, software development, and tech education. I bridge the gap between technical teams and business strategy — translating complex problems into products that actually work for users and stakeholders.",
     "info": "More Info",
     "contact": "Contact",
-    "experience_title": "This is my work Experience",
-    "experience_perex": "You can find a diverse and multicultural experience that allows me to work in different spaces and in different languages",
     "hero": {
+      "eyebrow": "Web Developer & Tutor",
       "title_prefix": "Web",
       "title_suffix": "Developer",
-      "roles": "🧩 Business Engineer | 💻 Full Stack Developer | 🚀 Product & Customer Success"
+      "roles": "🧩 Business Engineer | 💻 Full Stack Developer | 🚀 Product & Customer Success",
+      "experience_years": "Years Experience",
+      "projects_done": "Projects Done",
+      "client_satisfaction": "Satisfaction"
     },
     "company": {
+      "eyebrow": "Trusted by",
       "title": "Work Experience",
       "more": "More Information"
     },
     "courses": {
+      "eyebrow": "Services",
       "offer_title": "This is how I can help you",
-      "offer_description": "I have experience in business, web development, and IT education, where I have contributed with my ideas and commitment to various companies worldwide. This is how we can start our conversation:",
+      "offer_description": "I have experience in business, web development, and IT education, where I have contributed with my ideas and commitment to various companies worldwide.",
       "web_development": "Do you want to build a website, application or need support in one of your project?",
-      "web_details": "I am a freelance fullstack developer with experience in building dynamic and scalable web applications. I work with modern technologies like JavaScript, Vue, PHP, Node.js, React, Ruby on Rails, Docker, MySQL, and SQL/NoSQL databases. I also have experience with BEM, Tailwind CSS, Bootstrap, and other frameworks. My focus is on delivering high-quality, customized, and efficient solutions tailored to your project's needs.",
       "microsoft": "Do you want to learn how to build your own website or master the fundamentals of programming?",
-      "microsoft_details": "I have been teaching since 2022 at a technology academy and working as an instructor and code reviewer for students aspiring to become fullstack developers. I have a comprehensive curriculum that allows me to teach everything from the basics, such as HTML and CSS, to more advanced technologies like React and Node.",
       "softwares": "Do you need support in the research, creation, implementation, or analysis of your projects?",
-      "softwares_details": "Master valuable platforms for the IT job market such as Power BI, Jira, Hubspot, Miro, Basecamp, among many others. I can teach you the importance of platforms to empower your IT work.",
       "show_more": "Show More"
     },
     "portfolio": {
       "eyebrow": "Selected Work",
       "title": "Welcome to my portfolio!",
-      "subtitle": "Here, you'll find a collection of web design and development projects that showcase my passion for creating clean, functional, and visually engaging websites. Each project reflects my commitment to providing innovative solutions tailored to the unique needs of my clients.",
+      "subtitle": "Here, you'll find a collection of web design and development projects that showcase my passion for creating clean, functional, and visually engaging websites.",
       "featured": "Featured",
       "visit": "Visit site",
       "filter_all": "All",
-      "hero1_desc": "Real-estate platform built from the ground up with a fully dynamic CMS-style admin where content, listings and imagery can be updated in real time. Delivered a polished, responsive UX tuned for mobile browsing.",
-      "hero2_desc": "Bespoke real-estate website coded directly without a CMS. Custom design and tailored logic provide a dynamic, client-editable structure that adapts content based on user interaction.",
-      "descriptions": {
-        "Fencee": "Contributed across the full stack, shipping improvements to both the customer-facing storefront and back-office tooling for this Czech fencing brand.",
-        "Dogtrace": "Worked end-to-end on new features and fixes for a GPS dog-tracking product site, balancing marketing content with technical product detail pages.",
-        "Sysel Polak": "Built from scratch, implementing the full UX/UI handoff pixel-perfect across front and back end for this Czech legal-services firm.",
-        "Doucebnice": "Delivered the entire platform from zero — UI fidelity, responsive behavior and data flow all implemented 1:1 against the design team's mockups.",
-        "Autojeraby Horak": "Built the site from scratch for a Czech crane-rental company, translating the UX/UI team's graphics into a fully working front + back end.",
-        "Starlux": "End-to-end build for a lighting brand: shipped the complete front and back end implementation matching the design system to the pixel.",
-        "Chytré střechy": "Created from scratch for a Czech roofing company — faithful UX/UI implementation plus the supporting back-end required to keep content editable.",
-        "Centrum veterinární péče": "Rebuilt the scheduling logic for a multi-location vet clinic network, focusing on date handling and per-clinic operating-hours configuration.",
-        "Desafío Latam": "Tech tutor for aspiring full-stack developers — taught React and Node.js fundamentals and ran code reviews across student capstone projects.",
-        "Grime Fighters": "Developed the full site for a Canadian cleaning-services company. Clean HTML/CSS front end backed by solid, maintainable logic.",
-        "Pronachem": "Rebuilt the homepage — banners, calls-to-action and editable content blocks — and sharpened the responsive behavior for better mobile flow.",
-        "Ekoplant": "Modernized the homepage and its editable content surface, plus improved responsive behavior so the marketing team can self-serve updates.",
-        "MYJOYS": "Refreshed the homepage for a German bathroom-goods brand, shipping editable banners and intuitive UI updates for a smoother shopping flow."
-      },
       "categories": {
         "Real Estate": "Real Estate",
         "E-commerce": "E-commerce",
@@ -70,20 +52,17 @@
     "driftertrip": {
       "eyebrow": "Founder Project",
       "tagline": "A travel-agency platform I'm building from the ground up — curated trips, handpicked experiences, and a booking flow designed for modern travelers.",
-      "description": "Designed, developed and launched end-to-end: branding, product decisions, front-end, and deployment. Currently live in preview.",
+      "description": "Designed, developed and launched end-to-end: branding, product decisions, front-end, and deployment.",
       "cta": "Visit Driftertrip"
+    },
+    "reference": {
+      "eyebrow": "Testimonials",
+      "title": "What People Are Saying"
     }
   },
   "services": {
-    "information": {
-      "web_development": "Building customized technological solutions for your business",
-      "web_details": "I am a freelance fullstack developer with experience in building dynamic and scalable web applications. I work with modern technologies like JavaScript, Vue, PHP, Node.js, React, Ruby on Rails, Docker, MySQL, and SQL/NoSQL databases. I also have experience with BEM, Tailwind CSS, Bootstrap, and other frameworks. My focus is on delivering high-quality, customized, and efficient solutions tailored to your project's needs.",
-      "microsoft": "Teaching the fundamentals to pivot your career towards web development",
-      "microsoft_details": "I have been teaching since 2022 at a technology academy and working as an instructor and code reviewer for students aspiring to become fullstack developers. I have a comprehensive curriculum that allows me to teach everything from the basics, such as HTML and CSS, to more advanced technologies like React and Node.",
-      "softwares": "Let's talk business ideas; the best projects are created with a good conversation and a coffee.",
-      "softwares_details": "In my roles in project management and business administration, I have successfully created several MVPs for companies, contributed to improving team efficiency, and developed and implemented scalable projects to increase the profit of my companies."
-    },
     "steps": {
+      "eyebrow": "How it works",
       "title": "This is how I move forward with my partners",
       "description": "After we get in touch, this is my ideal scenario to move forward.",
       "meet": {
@@ -98,26 +77,92 @@
         "title": "We Work",
         "description": "We research, implement, and work."
       }
+    },
+    "information": {
+      "web_development": "Building customized technological solutions for your business",
+      "web_details": "I am a freelance fullstack developer with experience in building dynamic and scalable web applications. I work with modern technologies like JavaScript, Vue, PHP, Node.js, React, Ruby on Rails, Docker, MySQL, and SQL/NoSQL databases.",
+      "microsoft": "Teaching the fundamentals to pivot your career towards web development",
+      "microsoft_details": "I have been teaching since 2022 at a technology academy and working as an instructor and code reviewer for students aspiring to become fullstack developers.",
+      "softwares": "Let's talk business ideas; the best projects are created with a good conversation and a coffee.",
+      "softwares_details": "In my roles in project management and business administration, I have successfully created several MVPs for companies."
+    }
+  },
+  "experience": {
+    "eyebrow": "Work History",
+    "title": "My Work Experience",
+    "subtitle": "A journey through my professional career",
+    "items": {
+      "czechgroup": {
+        "title": "Full Stack Web Developer",
+        "text": "As a fullstack web developer, I am responsible for designing and developing complete web applications, working on both the client-side (front-end) and server-side (back-end). I use modern technologies, mostly PHP/Nette, MySQL, Vue and Docker among others."
+      },
+      "desafio": {
+        "title": "Full Stack Web Developer & Tutor",
+        "text": "As a full-stack developer, I have had the opportunity to teach aspiring individuals the fundamentals of programming, focusing on languages and frameworks such as React, Node.js, JavaScript, and Ruby on Rails."
+      },
+      "product": {
+        "title": "Product Manager",
+        "text": "Led the investigation, creation, and implementation of innovative products, aligning market needs with business goals. Managed cross-functional teams using Agile methodologies (Scrum)."
+      },
+      "huawei": {
+        "title": "Business Manager",
+        "text": "Served as the primary representative in sales negotiations with software companies for Huawei Mobile Services implementation, leading discussions on contract terms, pricing, and service agreements."
+      },
+      "ecom": {
+        "title": "Business Manager",
+        "text": "Sales business representation and negotiations within the electric industry in Chile, focusing on building partnerships, securing contracts, and driving business growth."
+      },
+      "travel": {
+        "title": "Finance & Administration",
+        "text": "Professional internship. Responsible for the transfer and management of data in the billing department, ensuring the accuracy and timeliness of financial records."
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "About Me",
+    "title": "About Me",
+    "subtitle": "Get to know me better",
+    "greeting": "Hi, I'm Rafael Quinteros",
+    "bio1": "I'm a Full Stack Developer with experience building web applications and teaching others.",
+    "bio2": "I've worked with companies across different industries, from real estate to e-commerce, delivering quality solutions.",
+    "skills_title": "Skills & Expertise",
+    "skills": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools",
+      "soft": "Soft Skills"
+    },
+    "info": {
+      "location": "Location",
+      "location_val": "Remote / Chile",
+      "experience": "Experience",
+      "experience_val": "5+ Years",
+      "projects": "Projects",
+      "projects_val": "15+",
+      "languages": "Languages",
+      "languages_val": "ES / EN"
     }
   },
   "contact": {
-    "get_in_touch": "Get in touch",
+    "eyebrow": "Get in Touch",
+    "get_in_touch": "Get in Touch",
     "fill_form": "Fill in the form to start a conversation",
+    "info_title": "Contact Information",
     "address": "Full Remote",
+    "address_val": "Full Remote",
     "phone": "+420 777 990 829",
+    "phone_val": "+420 777 990 829",
     "email": "rafael.quinterosv@gmail.com",
+    "email_val": "rafael.quinterosv@gmail.com",
     "full_name": "Full Name",
     "email_label": "Email",
-    "telephone": "Telephone Number",
-    "select_service": "Select a Service",
-    "service1": "Consulting",
-    "service2": "Development",
-    "service3": "Training",
     "message": "Message",
-    "message_placeholder": "Write your message (max 100 words)",
+    "message_placeholder": "Write your message",
     "submit": "Submit",
     "sending": "Sending...",
-    "form_success": "Thanks for your contact, we will be in touch soon!"
+    "form_success": "Thanks for your contact, we will be in touch soon!",
+    "form_success_detail": "I'll get back to you soon!",
+    "form_error": "Error sending message. Please try again."
   },
   "footer": {
     "about_us": "Rafael Quinteros",

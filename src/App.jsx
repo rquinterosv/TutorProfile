@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import RouterComponent from './Router';
@@ -7,32 +7,60 @@ import ScrollToTop from './components/Scroll';
 import { Helmet } from 'react-helmet';
 import './i18n';
 
+const PageSEO = () => {
+  const location = useLocation();
+
+  const seoData = {
+    '/': {
+      title: 'RafaQuinteros — Full Stack Developer & Tutor',
+      description: 'Full Stack Developer with 5+ years of experience building web applications and teaching others.',
+    },
+    '/experience': {
+      title: 'Experience — RafaQuinteros',
+      description: 'My professional journey through companies like Huawei, Desafío Latam, and Czech Group.',
+    },
+    '/services': {
+      title: 'Services — RafaQuinteros',
+      description: 'Web development, Microsoft training, and software platform services.',
+    },
+    '/contact': {
+      title: 'Contact — RafaQuinteros',
+      description: 'Get in touch for web development projects, tutoring, or consulting services.',
+    },
+    '/about': {
+      title: 'About — RafaQuinteros',
+      description: 'Learn more about Rafael Quinteros, Full Stack Developer and Tech Tutor.',
+    },
+  };
+
+  const currentSEO = seoData[location.pathname] || seoData['/'];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  return (
+    <Helmet>
+      <title>{currentSEO.title}</title>
+      <meta name="description" content={currentSEO.description} />
+      <meta property="og:title" content={currentSEO.title} />
+      <meta property="og:description" content={currentSEO.description} />
+      <meta property="og:url" content={`https://rafaquinterosv.com${location.pathname}`} />
+    </Helmet>
+  );
+};
+
 const App = () => {
   return (
     <Router>
-      <Helmet>
-        <title>Rafael Quinteros — Portfolio</title>
-        <meta name="description" content="Rafael Quinteros — Business Engineer & Full Stack Developer bridging technical teams and business strategy. Portfolio, experience, and services." />
-
-
-        <meta property="og:title" content="Rafael Quinteros — Portfolio" />
-        <meta property="og:description" content="Business Engineer & Full Stack Developer bridging tech and business strategy." />
-        <meta property="og:url" content="https://rafaquinterosv.com" />
-        <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/rafa-tutoring.appspot.com/o/r.png?alt=media&token=4ab2273b-3b86-454d-af10-4b02196b994d" />
-        <meta property="og:image:alt" content="Image description for accessibility" />
-        
-        
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/rafa-tutoring.appspot.com/o/r.png?alt=media&token=4ab2273b-3b86-454d-af10-4b02196b994d" />
-      </Helmet>
-
+      <PageSEO />
       <Navbar />
-      <div className="flex flex-col min-h-screen"> 
-        <div className="flex-grow"> 
-          <ScrollToTop /> 
-          <RouterComponent /> 
+      <div className="flex flex-col min-h-screen">
+        <div className="flex-grow">
+          <ScrollToTop />
+          <RouterComponent />
         </div>
-        <Footer /> 
+        <Footer />
       </div>
     </Router>
   );

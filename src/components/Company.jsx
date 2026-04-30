@@ -5,14 +5,12 @@ import { useTranslation } from 'react-i18next';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-// Importa las imágenes
 import logo1 from "../assets/img/czechgroup.svg";
 import logo2 from "../assets/img/adl.png";
 import logo3 from "../assets/img/huawei.svg";
 import logo4 from "../assets/img/ecom.png";
 import logo5 from "../assets/img/ts.svg";
 
-// Definir la constante con los logos importados
 const logos = [
   { src: logo1, alt: 'Czech Group' },
   { src: logo2, alt: 'Desafío Latam' },
@@ -23,6 +21,7 @@ const logos = [
 
 const LogoGrid = () => {
   const { t } = useTranslation();
+
   const settings = {
     dots: false,
     arrows: false,
@@ -42,32 +41,27 @@ const LogoGrid = () => {
   };
 
   return (
-    <section className="py-16">
-      <div className="company__content text-center container mx-auto px-4">
-        <h2 className="text-5xl font-bold text-blue-500 mb-12">
-          {t('home.company.title')}
-        </h2>
+    <section className="section-padding bg-white">
+      <div className="container-width text-center">
+        <span className="inline-block px-4 py-1.5 mb-4 text-xs font-semibold uppercase tracking-wider text-primary-700 bg-primary-50 rounded-full ring-1 ring-primary-100">
+          {t('home.company.eyebrow') || 'Trusted by'}
+        </span>
+        <h2 className="section-title">{t('home.company.title')}</h2>
 
-        <div className="logo-carousel">
+        <div className="mt-8 mb-10">
           <Slider {...settings}>
             {logos.map((logo, index) => (
               <div key={index} className="px-6">
-                <Link to="/experience" className="flex items-center justify-center h-24">
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    className="max-h-20 w-auto object-contain hover:scale-105 transition duration-300"
-                  />
+                <Link to="/experience" className="flex items-center justify-center h-20 p-4 rounded-xl hover:bg-neutral-50 transition-all duration-300">
+                  <img src={logo.src} alt={logo.alt} className="max-h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
                 </Link>
               </div>
             ))}
           </Slider>
         </div>
 
-        <Link to="/experience">
-          <button className="mt-12 px-6 py-3 bg-blue-500 text-white rounded-lg text-lg hover:bg-blue-600 transition duration-300">
-            {t('home.company.more')}
-          </button>
+        <Link to="/experience" className="btn-primary">
+          {t('home.company.more')}
         </Link>
       </div>
     </section>

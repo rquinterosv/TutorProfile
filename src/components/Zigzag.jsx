@@ -1,83 +1,87 @@
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 
-// Importa las imágenes
 import logo1 from "../assets/img/czechgroup.svg";
 import logo2 from "../assets/img/adl.png";
 import logo3 from "../assets/img/huawei.svg";
 import logo4 from "../assets/img/ecom.png";
 import logo5 from "../assets/img/ts.svg";
 
-
 const data = [
   {
     id: 1,
-    titleKey: "Fullstack web Developer",
-    textKey: "As a fullstack web developer, I am responsible for designing and developing complete web applications, working on both the client-side (front-end) and server-side (back-end). I use modern technologies, mostly I use PHP/Nette, MySQL, Vue and Docker among other, to create dynamic and scalable applications. My focus is on user experience, ensuring each project is efficient, functional, and easy to use and administrate by the clients.",
+    titleKey: "experience.items.czechgroup.title",
+    textKey: "experience.items.czechgroup.text",
     imageUrl: logo1,
+    period: "2022 - Present",
   },
   {
     id: 2,
-    titleKey: "Fullstack Web Developer",
-    textKey: "As a full-stack developer, I have had the opportunity to teach aspiring individuals the fundamentals of programming, focusing on languages and frameworks such as React, Node.js, JavaScript, and Ruby on Rails. Currently, I am involved in code review and correction for various projects undertaken by new developers enrolled in the course.",
+    titleKey: "experience.items.desafio.title",
+    textKey: "experience.items.desafio.text",
     imageUrl: logo2,
+    period: "2021 - 2022",
   },
   {
     id: 3,
-    titleKey: "Product Manager",
-    textKey: "Led the investigation, creation, and implementation of innovative products, aligning market needs with business goals to drive growth and customer satisfaction. Managed cross-functional teams, ensuring clear communication, prioritization, and optimal performance. Oversaw software project creation, coordinating with full-stack tech teams using Agile methodologies (Scrum) for timely delivery. Acted as a liaison between stakeholders and development teams, ensuring product requirements were met and providing regular progress updates. Focused on continuous product improvement through user feedback, and analyzed KPIs to evaluate product success and guide future projects.",
+    titleKey: "experience.items.product.title",
+    textKey: "experience.items.product.text",
     imageUrl: logo2,
+    period: "2020 - 2021",
   },
   {
     id: 4,
-    titleKey: "Business Manager",
-    textKey: "Served as the primary representative in sales negotiations with software companies for Huawei Mobile Services implementation, leading discussions on contract terms, pricing, and service agreements. Developed and executed sales and marketing strategies to enhance brand presence and increase adoption. Focused on market analysis, identifying opportunities, and crafting campaigns to drive growth. Built and maintained strong client relationships, addressing concerns and ensuring exceptional service. Collaborated with cross-functional teams to align business objectives and ensure successful project execution. Explored new business opportunities, expanded market reach, and tracked performance using data-driven insights to refine strategies and improve outcomes.",
+    titleKey: "experience.items.huawei.title",
+    textKey: "experience.items.huawei.text",
     imageUrl: logo3,
+    period: "2019 - 2020",
   },
   {
     id: 5,
-    titleKey: "Business Manager",
-    textKey: "Sales business representation and negotiations within the electric industry in Chile, focusing on building partnerships, securing contracts, and driving business growth through strategic discussions and relationship management.",
+    titleKey: "experience.items.ecom.title",
+    textKey: "experience.items.ecom.text",
     imageUrl: logo4,
+    period: "2018 - 2019",
   },
   {
     id: 6,
-    titleKey: "Finance & Administration",
-    textKey: "Professional Internship. Responsible for the transfer and management of data in the billing department, ensuring the accuracy and timeliness of financial records. Conducted detailed analysis of financial data and contributed to the preparation of reports and presentations based on the studies conducted within the finance area. Collaborated with senior team members to support decision-making processes and provide actionable insights, contributing to the efficiency and optimization of financial operations.",
+    titleKey: "experience.items.travel.title",
+    textKey: "experience.items.travel.text",
     imageUrl: logo5,
+    period: "2017 - 2018",
   },
 ];
 
-const ZigzagItem = ({ id, titleKey, textKey, imageUrl }) => {
+const ZigzagItem = ({ id, titleKey, textKey, imageUrl, period }) => {
   const { t } = useTranslation();
-
   const isEven = id % 2 === 0;
+  const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <>
-    <div className="container flex flex-col md:flex-row items-center md:justify-between w-full mx-auto">
-      {isEven ? (
-        <>
-                  <div className="company_logo">
-            <img src={imageUrl} alt={t(titleKey)} className="w-full" />
+    <div className={`w-full py-8 ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}
+      onViewportEnter={() => setIsVisible(true)}
+    >
+      <div className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 md:gap-12`}>
+        {/* Logo/Image */}
+        <div className="w-full md:w-2/5">
+          <div className="p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center">
+            <img src={imageUrl} alt={t(titleKey)} className="max-h-20 w-auto object-contain" />
           </div>
-          <div className="container text-left mx-auto mb-12 max-w-[710px] lg:mb-20">
-            <h2 className="text-2xl font-bold mb-4">{t(titleKey)}</h2>
-            <p className="text-gray-700">{t(textKey)}</p>
-          </div>
+        </div>
 
-        </>
-      ) : (
-        <>
-          <div className="container text-left mx-auto max-w-[710px]">
-            <h2 className="text-3xl font-bold mb-4">{t(titleKey)}</h2>
-            <p className="text-gray-700">{t(textKey)}</p>
+        {/* Content */}
+        <div className="w-full md:w-3/5">
+          <span className="inline-block text-xs font-semibold text-primary-600 uppercase tracking-wider mb-2">{period}</span>
+          <h2 className="text-2xl font-bold text-neutral-800 mb-3">{t(titleKey)}</h2>
+          <p className="text-neutral-600 leading-relaxed">{t(textKey)}</p>
+
+          {/* Dot indicator */}
+          <div className="hidden md:block relative">
+            <div className={`absolute top-1/2 ${isEven ? '-left-6' : '-right-6'} w-3 h-3 rounded-full bg-primary-500 ring-4 ring-primary-100`} />
           </div>
-          <div className="company_logo">
-            <img src={imageUrl} alt={t(titleKey)} className="w-full" />
-          </div>
-        </>
-      )}
-    </div></>
+        </div>
+      </div>
+    </div>
   );
 };
 
@@ -85,17 +89,32 @@ export default function ZigzagList() {
   const { t } = useTranslation();
 
   return (
+    <section className="section-padding bg-white">
+      <div className="container-width">
+        <div className="text-center mb-16">
+          <span className="inline-block px-4 py-1.5 mb-4 text-xs font-semibold uppercase tracking-wider text-primary-700 bg-primary-50 rounded-full ring-1 ring-primary-100">
+            {t('experience.eyebrow') || 'Work History'}
+          </span>
+          <h2 className="section-title">{t('experience.title') || 'My Work Experience'}</h2>
+          <p className="section-subtitle">{t('experience.subtitle') || 'A journey through my professional career'}</p>
+        </div>
 
-    <div>
-      {/* Iteración sobre los items */}
-      {data.map((item) => (
-        <ZigzagItem
-          key={item.id}
-          id={item.id}
-          titleKey={item.titleKey}
-          textKey={item.textKey}
-          imageUrl={item.imageUrl} />
-      ))}
-    </div>
+        <div className="relative">
+          {/* Vertical line */}
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-neutral-200 -translate-x-1/2" />
+
+          {data.map((item) => (
+            <ZigzagItem
+              key={item.id}
+              id={item.id}
+              titleKey={item.titleKey}
+              textKey={item.textKey}
+              imageUrl={item.imageUrl}
+              period={item.period}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
