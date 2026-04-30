@@ -1,41 +1,17 @@
 import React from 'react';
-import Slider from 'react-slick';
 import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
-// Import existing logo images
-import logo1 from "../assets/img/rlogo.png";
-import logo2 from "../assets/img/por1.png";
-import logo3 from "../assets/img/por2.png";
-
-const logos = [
-  { src: logo1, alt: 'RafaQuinteros' },
-  { src: logo2, alt: 'Prohopo' },
-  { src: logo3, alt: 'Adam Růžička' },
+const companies = [
+  { name: 'Czech Group', color: 'text-primary-600' },
+  { name: 'Desafío Latam', color: 'text-primary-600' },
+  { name: 'Huawei', color: 'text-primary-600' },
+  { name: 'Ecom Energía', color: 'text-primary-600' },
+  { name: 'Travel Security', color: 'text-primary-600' },
 ];
 
 const LogoGrid = () => {
   const { t } = useTranslation();
-
-  const settings = {
-    dots: false,
-    arrows: false,
-    infinite: true,
-    speed: 4000,
-    autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: 'linear',
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    pauseOnHover: true,
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 3 } },
-      { breakpoint: 768, settings: { slidesToShow: 2 } },
-      { breakpoint: 480, settings: { slidesToShow: 1 } },
-    ],
-  };
 
   return (
     <section className="section-padding bg-white">
@@ -45,16 +21,16 @@ const LogoGrid = () => {
         </span>
         <h2 className="section-title">{t('home.company.title')}</h2>
 
-        <div className="mt-8 mb-10">
-          <Slider {...settings}>
-            {logos.map((logo, index) => (
-              <div key={index} className="px-6">
-                <Link to="/experience" className="flex items-center justify-center h-20 p-4 rounded-xl hover:bg-neutral-50 transition-all duration-300">
-                  <img src={logo.src} alt={logo.alt} className="max-h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
-                </Link>
-              </div>
-            ))}
-          </Slider>
+        <div className="mt-8 mb-10 flex flex-wrap justify-center gap-8 md:gap-12">
+          {companies.map((company, index) => (
+            <Link
+              key={index}
+              to="/experience"
+              className="flex items-center justify-center px-6 py-4 rounded-xl hover:bg-neutral-50 transition-all duration-300"
+            >
+              <span className={`text-lg font-bold ${company.color}`}>{company.name}</span>
+            </Link>
+          ))}
         </div>
 
         <Link to="/experience" className="btn-primary">

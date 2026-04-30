@@ -26,7 +26,6 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="md:col-span-2">
             <Link to="/" className="inline-flex items-center gap-2 mb-4">
-              <img src={logo} alt="Logo" className="h-8 w-auto brightness-0 invert" />
               <span className="text-lg font-bold text-white">RafaQuinteros</span>
             </Link>
             <p className="text-sm text-neutral-400 max-w-md leading-relaxed">
