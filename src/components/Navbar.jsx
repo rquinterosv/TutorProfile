@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../assets/img/rlogo.png'
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -45,7 +44,6 @@ const Navbar = () => {
       <div className="container-width flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2 group">
-          <img src={logo} alt="Logo" className="h-8 w-auto md:h-10 transition-transform duration-300 group-hover:scale-105" />
           <h1 className="text-xl md:text-2xl font-bold">
             <span className={isScrolled ? 'text-primary-600' : 'text-primary-600'}>R</span>
             <span className={isScrolled ? 'text-neutral-800' : 'text-neutral-800'}>afaQuinteros</span>
@@ -126,7 +124,6 @@ const Navbar = () => {
           <div className="flex flex-col h-full p-6">
             <div className="flex items-center justify-between mb-8">
               <Link to="/" className="flex items-center space-x-2" onClick={toggleMenu}>
-                <img src={logo} alt="Logo" className="h-8 w-auto" />
                 <h1 className="text-xl font-bold">
                   <span className="text-primary-600">R</span>
                   <span className="text-neutral-800">afaQuinteros</span>
