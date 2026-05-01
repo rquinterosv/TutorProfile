@@ -22,11 +22,11 @@ const Driftertrip = () => {
             {t('home.driftertrip.eyebrow')}
           </span>
 
-          {/* Logo */}
-          <h2 className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tight mb-6 select-none">
-            <span className="text-white font-normal">DRIFTER</span>
-            <span className="text-accent-500 italic font-normal">TRIP</span>
-          </h2>
+           {/* Logo */}
+           <h2 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl tracking-tight mb-6 select-none">
+             <span className="text-white font-normal">DRIFTER</span>
+             <span className="text-accent-500 italic font-normal">TRIP</span>
+           </h2>
 
           {/* Tagline */}
           <p className="text-neutral-300 text-lg md:text-xl leading-relaxed mb-3 max-w-2xl mx-auto">

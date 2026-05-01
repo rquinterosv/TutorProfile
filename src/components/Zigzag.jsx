@@ -1,50 +1,54 @@
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
-import logo1 from "../assets/img/rlogo.png";
+import czechgroup from "../assets/img/czechgroup.svg";
+import adl from "../assets/img/adl.png";
+import ts from "../assets/img/ts.svg";
+import huawei from "../assets/img/huawei.svg";
+import ecom from "../assets/img/ecom.png";
 
 const data = [
   {
     id: 1,
     titleKey: "experience.items.czechgroup.title",
     textKey: "experience.items.czechgroup.text",
-    imageUrl: logo1,
-    period: "2022 - Present",
+    imageUrl: czechgroup,
+    period: "2024 - Present",
   },
   {
     id: 2,
     titleKey: "experience.items.desafio.title",
     textKey: "experience.items.desafio.text",
-    imageUrl: logo1,
-    period: "2021 - 2022",
+    imageUrl: adl,
+    period: "2022 - Present",
   },
   {
     id: 3,
     titleKey: "experience.items.product.title",
     textKey: "experience.items.product.text",
-    imageUrl: logo1,
-    period: "2020 - 2021",
+    imageUrl: adl,
+    period: "2021 - 2023",
   },
   {
     id: 4,
     titleKey: "experience.items.huawei.title",
     textKey: "experience.items.huawei.text",
-    imageUrl: logo1,
-    period: "2019 - 2020",
+    imageUrl: huawei,
+    period: "2019 - 2021",
   },
   {
     id: 5,
     titleKey: "experience.items.ecom.title",
     textKey: "experience.items.ecom.text",
-    imageUrl: logo1,
+    imageUrl: ecom,
     period: "2018 - 2019",
   },
   {
     id: 6,
     titleKey: "experience.items.travel.title",
     textKey: "experience.items.travel.text",
-    imageUrl: logo1,
-    period: "2017 - 2018",
+    imageUrl: ts,
+    period: "2016",
   },
 ];
 
@@ -52,11 +56,21 @@ const ZigzagItem = ({ id, titleKey, textKey, imageUrl, period }) => {
   const { t } = useTranslation();
   const isEven = id % 2 === 0;
   const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const node = ref.current;
+    if (!node) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) setIsVisible(true); },
+      { threshold: 0.1 }
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <div className={`w-full py-8 ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}
-      onViewportEnter={() => setIsVisible(true)}
-    >
+    <div ref={ref} className={`w-full py-8 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
       <div className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 md:gap-12`}>
         {/* Logo/Image */}
         <div className="w-full md:w-2/5">

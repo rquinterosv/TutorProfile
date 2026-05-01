@@ -11,7 +11,7 @@ const techIcons = {
   software: ['Jira', 'HubSpot', 'Trello', 'Notion'],
 };
 
-const InformationCard = ({ image, title, details, type }) => {
+const InformationCard = ({ image, title, details, type, contactText }) => {
   const icons = techIcons[type] || [];
   return (
     <div className="flex flex-col lg:flex-row w-full mb-8 bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
@@ -30,7 +30,7 @@ const InformationCard = ({ image, title, details, type }) => {
           ))}
         </div>
         <Link to="/contact" className="btn-primary w-fit">
-          {t("contact.get_in_touch")}
+          {contactText}
         </Link>
       </div>
     </div>
@@ -50,7 +50,7 @@ const Information = () => {
     <section className="section-padding bg-neutral-50">
       <div className="container-width">
         {courses.map((course, index) => (
-          <InformationCard key={index} {...course} />
+          <InformationCard key={index} {...course} contactText={t("contact.get_in_touch")} />
         ))}
       </div>
     </section>

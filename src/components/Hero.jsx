@@ -19,19 +19,17 @@ const Hero = () => {
       }`}>
         {/* Text Content */}
         <div className="flex-1 text-center lg:text-left">
-          <span className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-primary-700 bg-primary-50 rounded-full">
-            {t('home.hero.eyebrow') || 'Web Developer & Tutor'}
-          </span>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-800 leading-tight mb-6">
-            <span className="text-primary-600">{t('home.hero.title_prefix')}</span>
-            <br className="hidden sm:block" />
-            <span className="sm:ml-2">{t('home.hero.title_suffix')}</span>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-800 leading-tight mb-4">
+            Rafael Quinteros
           </h1>
-          <p className="text-lg text-neutral-500 max-w-xl mb-4 leading-relaxed">
-            {t('home.hero.roles')}
+          <p className="text-xl sm:text-2xl text-primary-600 font-semibold mb-6">
+            Business Engineer · Product Manager · Full Stack Developer
           </p>
-          <p className="text-base text-neutral-400 max-w-xl mb-8 leading-relaxed">
-            {t('home.mentor_profile')}
+          <p className="text-lg text-neutral-600 max-w-xl mb-4 leading-relaxed">
+            I build things that work — for users, for teams, and for business.
+          </p>
+          <p className="text-base text-neutral-500 max-w-xl mb-8 leading-relaxed">
+            I'm Rafa, a Business Engineer with experience across the full product spectrum: enterprise B2B sales, product management, and full-stack development. Based in Prague, open to the world. Whether I'm shipping code, defining a roadmap, or closing a deal — I bring the same thing to the table: a clear head and a builder's mindset.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -46,9 +44,8 @@ const Hero = () => {
           {/* Stats */}
           <div className="flex gap-8 mt-12 pt-8 border-t border-neutral-200 justify-center lg:justify-start">
             {[
-              { number: '5+', label: t('home.hero.experience_years') || 'Years Experience' },
-              { number: '15+', label: t('home.hero.projects_done') || 'Projects Done' },
-              { number: '100%', label: t('home.hero.client_satisfaction') || 'Satisfaction' },
+              { number: '10+', label: 'Years Experience' },
+              { number: '15+', label: 'Projects Done' },
             ].map((stat, i) => (
               <div key={i} className="text-center lg:text-left">
                 <p className="text-2xl font-bold text-primary-600">{stat.number}</p>
@@ -71,8 +68,8 @@ const Hero = () => {
             </div>
             {/* Floating badges */}
             <div className="absolute -bottom-4 -right-4 bg-white px-4 py-2 rounded-xl shadow-lg ring-1 ring-neutral-100">
-              <p className="text-sm font-semibold text-neutral-800">React & Node.js</p>
-              <p className="text-xs text-neutral-500">Full Stack Dev</p>
+              <p className="text-sm font-semibold text-neutral-800">Business Engineer</p>
+              <p className="text-xs text-neutral-500">Product & Code</p>
             </div>
           </div>
         </div>
