@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { db } from '../config/firebase.config';
-import { collection, addDoc } from 'firebase/firestore';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 
 const Form = () => {
   const { t } = useTranslation();
@@ -24,7 +24,7 @@ const Form = () => {
     try {
       await addDoc(collection(db, 'contactForm'), {
         ...formData,
-        timestamp: new Date(),
+        timestamp: serverTimestamp(),
       });
       setIsSubmitted(true);
       setFormData({ name: '', email: '', message: '' });
@@ -110,6 +110,7 @@ const Form = () => {
                       type="text"
                       name="name"
                       id="name"
+                      maxLength={100}
                       required
                       value={formData.name}
                       onChange={handleChange}
@@ -124,6 +125,7 @@ const Form = () => {
                       type="email"
                       name="email"
                       id="email"
+                      maxLength={200}
                       required
                       value={formData.email}
                       onChange={handleChange}
@@ -137,6 +139,7 @@ const Form = () => {
                     <textarea
                       name="message"
                       id="message"
+                      maxLength={5000}
                       required
                       rows="4"
                       value={formData.message}
