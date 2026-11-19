@@ -1,25 +1,18 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // /music content that isn't translatable text.
 //
-// VIDEOS — two sources, in this order:
-//   1. Behold feed (automatic): set VITE_BEHOLD_FEED_ID in .env.local and in the
-//      Vercel project's environment variables. The page fetches
-//      https://feeds.behold.so/<id> and renders the latest posts/reels itself.
-//   2. This curated list (fallback): used when there's no feed ID or the fetch
-//      fails. Rendered with Instagram's official embed (embed.js loads only on /music).
-//
-// TODO(rafa): paste reel/post URLs below, newest first. Format:
-//   'https://www.instagram.com/reel/ABC123xyz/'
-//   'https://www.instagram.com/p/ABC123xyz/'
-// While this list is empty (and there's no feed ID) the page shows a
-// "follow on Instagram" placeholder instead of videos.
+// INSTAGRAM — the "Recent shows" section shows the latest 3 posts automatically
+// through a free Behold.so feed (https://behold.so):
+//   1. Sign in to Behold and connect the Instagram account.
+//   2. Create a feed of type "JSON" and copy its Feed ID.
+//   3. Paste it below, commit and push.
+// The feed ID is public (the browser requests it directly), so it's fine in code.
+// While it's empty the page shows "follow on Instagram" buttons instead.
 // ─────────────────────────────────────────────────────────────────────────────
-export const musicVideos = [
-  // 'https://www.instagram.com/reel/REPLACE_ME/',
-];
+export const BEHOLD_FEED_ID = ''; // TODO(rafa): paste the Behold Feed ID here
 
-// Only well-formed Instagram post/reel URLs are embedded.
-export const INSTAGRAM_POST_RE = /^https:\/\/(www\.)?instagram\.com\/(reel|reels|p|tv)\/[A-Za-z0-9_-]+\/?$/;
+// How many of the latest posts to show.
+export const INSTAGRAM_POST_COUNT = 3;
 
 // TODO(rafa): live photo for the hero. Drop it in src/assets/img/music/ and import it here, e.g.
 //   import livePhoto from '../assets/img/music/live.jpg';
