@@ -1,68 +1,49 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter as Router, useLocation } from 'react-router-dom';
+import { BrowserRouter, useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import { useTranslation } from 'react-i18next';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import RouterComponent from './Router';
 import ScrollToTop from './components/Scroll';
-import { Helmet } from 'react-helmet';
-import './i18n';
+import { routes, SITE_URL } from './seo/routes';
 
 const PageSEO = () => {
-  const location = useLocation();
+  const { pathname } = useLocation();
+  const { t, i18n } = useTranslation();
 
-  const seoData = {
-    '/': {
-      title: 'RafaQuinteros — Full Stack Developer & Tutor',
-      description: 'Full Stack Developer with 5+ years of experience building web applications and teaching others.',
-    },
-    '/experience': {
-      title: 'Experience — RafaQuinteros',
-      description: 'My professional journey through companies like Huawei, Desafío Latam, and Czech Group.',
-    },
-    '/services': {
-      title: 'Services — RafaQuinteros',
-      description: 'Web development, Microsoft training, and software platform services.',
-    },
-    '/contact': {
-      title: 'Contact — RafaQuinteros',
-      description: 'Get in touch for web development projects, tutoring, or consulting services.',
-    },
-    '/about': {
-      title: 'About — RafaQuinteros',
-      description: 'Learn more about Rafael Quinteros, Full Stack Developer and Tech Tutor.',
-    },
-  };
-
-  const currentSEO = seoData[location.pathname] || seoData['/'];
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
+  const route = routes.find((r) => r.path === pathname) || routes[0];
+  const title = t(`seo.${route.seoKey}.title`);
+  const description = t(`seo.${route.seoKey}.description`);
+  const url = `${SITE_URL}${route.path}`;
 
   return (
-    <Helmet>
-      <title>{currentSEO.title}</title>
-      <meta name="description" content={currentSEO.description} />
-      <meta property="og:title" content={currentSEO.title} />
-      <meta property="og:description" content={currentSEO.description} />
-      <meta property="og:url" content={`https://rafaquinterosv.com${location.pathname}`} />
+    <Helmet htmlAttributes={{ lang: i18n.resolvedLanguage || 'en' }}>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content={t('common.brand_full')} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:url" content={url} />
+      <meta name="twitter:card" content="summary" />
+      <link rel="canonical" href={url} />
     </Helmet>
   );
 };
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <PageSEO />
+      <ScrollToTop />
       <Navbar />
       <div className="flex flex-col min-h-screen">
-        <div className="flex-grow">
-          <ScrollToTop />
+        <main className="flex-grow">
           <RouterComponent />
-        </div>
+        </main>
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 };
 

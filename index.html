@@ -2,20 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/img/r.png" />
+    <link rel="icon" type="image/png" href="/src/assets/img/r.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rafael Quinteros — Portfolio</title>
 
-    <!-- Fonts -->
+    <!--
+      Default SEO tags. The build step (seoPages plugin in vite.config.js) rewrites
+      these per route from public/locales/en/translation.json, so crawlers that do
+      not run JavaScript still see page-specific titles and Open Graph data.
+      data-react-helmet lets react-helmet replace them at runtime instead of duplicating.
+    -->
+    <title>Rafael Quinteros — Business Engineer · Product · Full Stack Development</title>
+    <meta data-react-helmet="true" name="description" content="Business Engineer with 8+ years of experience across B2B sales, product management and full stack development. Based in Prague." />
+    <meta data-react-helmet="true" property="og:type" content="website" />
+    <meta data-react-helmet="true" property="og:site_name" content="Rafael Quinteros" />
+    <meta data-react-helmet="true" property="og:title" content="Rafael Quinteros — Business Engineer · Product · Full Stack Development" />
+    <meta data-react-helmet="true" property="og:description" content="Business Engineer with 8+ years of experience across B2B sales, product management and full stack development. Based in Prague." />
+    <meta data-react-helmet="true" property="og:url" content="https://rafaquinterosv.com/" />
+    <meta data-react-helmet="true" name="twitter:card" content="summary" />
+    <link data-react-helmet="true" rel="canonical" href="https://rafaquinterosv.com/" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3dc9d66506.js" crossorigin="anonymous"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
-
