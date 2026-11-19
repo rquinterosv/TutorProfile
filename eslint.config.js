@@ -5,7 +5,12 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default [
-  { ignores: ['dist'] },
+  // functions/ is a separate Firebase Functions package with its own ESLint setup.
+  { ignores: ['dist', 'functions'] },
+  {
+    files: ['vite.config.js'],
+    languageOptions: { globals: globals.node },
+  },
   {
     files: ['**/*.{js,jsx}'],
     languageOptions: {
@@ -29,6 +34,8 @@ export default [
       ...react.configs['jsx-runtime'].rules,
       ...reactHooks.configs.recommended.rules,
       'react/jsx-no-target-blank': 'off',
+      // Plain JS project without PropTypes (deprecated in React 19).
+      'react/prop-types': 'off',
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },

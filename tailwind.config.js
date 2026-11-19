@@ -7,8 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Calibri', 'system-ui', '-apple-system', 'sans-serif'],
-        serif: ['Georgia', 'serif'],
+        sans: ['Montserrat', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+        // Display face used only on /music (loaded from that page via Helmet).
+        display: ['Fraunces', 'Georgia', 'serif'],
       },
       colors: {
         primary: {
@@ -40,7 +41,23 @@ export default {
           100: '#ffedd5',
           500: '#f97316',
           600: '#ea580c',
-        }
+        },
+        // /music palette: warm, dark "stage" tones with an ember accent.
+        stage: {
+          950: '#110c09',
+          900: '#1a130f',
+          800: '#261c16',
+          700: '#3a2b21',
+          600: '#57412f',
+        },
+        ember: {
+          200: '#f8d9b0',
+          300: '#f3c08a',
+          400: '#eda25f',
+          500: '#e0843a',
+          600: '#c2692a',
+        },
+        cream: '#f4ebde',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-out forwards',

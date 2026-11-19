@@ -41,19 +41,3 @@ body {
     @apply bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden;
   }
 }
-
-.company__content {
-    padding: 50px 20px;
-}
-
-.logo-item {
-    display: flex;
-    align-items: center;
-}
-
-.company_logo {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-}
