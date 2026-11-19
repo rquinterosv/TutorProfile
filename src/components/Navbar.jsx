@@ -23,8 +23,9 @@ const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
-  // /music has its own dark, warm look; the navbar follows it there.
-  const dark = location.pathname === '/music';
+  // /music is a standalone page for music visitors: dark, warm look, and only
+  // the brand + language selector (no site navigation).
+  const dark = location.pathname.replace(/\/+$/, '') === '/music';
   const current = i18n.resolvedLanguage || 'en';
 
   useEffect(() => {
@@ -64,13 +65,13 @@ const Navbar = () => {
   return (
     <nav className={`sticky top-0 z-50 transition-all duration-300 ${barClass}`}>
       <div className="container-width flex items-center justify-between h-16 md:h-20">
-        <Link to="/" aria-label={t('common.brand_full')}>
+        <Link to={dark ? '/music' : '/'} aria-label={t('common.brand_full')}>
           <Brand dark={dark} />
         </Link>
 
-        {/* Desktop menu */}
-        <div className="hidden lg:flex items-center space-x-1">
-          {NAV_LINKS.map((link) => (
+        {/* Desktop menu (on /music: language selector only, at every width) */}
+        <div className={`${dark ? 'flex' : 'hidden lg:flex'} items-center space-x-1`}>
+          {!dark && NAV_LINKS.map((link) => (
             <Link
               key={link.path}
               to={link.path}
@@ -114,6 +115,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile menu button */}
+        {!dark && (
         <button
           onClick={() => setIsMenuOpen(true)}
           className={`lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg transition-colors ${dark ? 'text-cream hover:bg-white/10' : 'text-neutral-700 hover:bg-neutral-100'}`}
@@ -123,10 +125,11 @@ const Navbar = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
+        )}
       </div>
 
       {/* Mobile menu */}
-      {isMenuOpen && (
+      {isMenuOpen && !dark && (
         <div className="lg:hidden fixed inset-0 z-40 bg-white animate-fade-in">
           <div className="flex flex-col h-full p-6">
             <div className="flex items-center justify-between mb-8">
