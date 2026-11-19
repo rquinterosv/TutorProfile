@@ -9,7 +9,7 @@
 // The feed ID is public (the browser requests it directly), so it's fine in code.
 // While it's empty the page shows "follow on Instagram" buttons instead.
 // ─────────────────────────────────────────────────────────────────────────────
-export const BEHOLD_FEED_ID = ''; // TODO(rafa): paste the Behold Feed ID here
+export const BEHOLD_FEED_ID = 'VNRkLFnrNHGUqfLFwiOe';
 
 // How many of the latest posts to show.
 export const INSTAGRAM_POST_COUNT = 3;

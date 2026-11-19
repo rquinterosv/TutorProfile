@@ -46,7 +46,7 @@ const FeedGrid = ({ posts }) => {
             href={post.permalink}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative block aspect-[4/5] overflow-hidden rounded-2xl bg-stage-800 ring-1 ring-cream/10 hover:ring-ember-400/60 transition-all duration-300"
+            className="group relative block aspect-square overflow-hidden rounded-2xl bg-stage-800 ring-1 ring-cream/10 hover:ring-ember-400/60 transition-all duration-300"
             aria-label={post.isVideo ? t('music.videos.watch_on_instagram') : t('music.videos.view_on_instagram')}
           >
             <img
@@ -98,7 +98,7 @@ const FollowPlaceholder = () => {
 const Skeleton = () => (
   <ul className={GRID} aria-hidden="true">
     {Array.from({ length: INSTAGRAM_POST_COUNT }, (_, i) => (
-      <li key={i} className="aspect-[4/5] rounded-2xl bg-cream/5 animate-pulse" />
+      <li key={i} className="aspect-square rounded-2xl bg-cream/5 animate-pulse" />
     ))}
   </ul>
 );
