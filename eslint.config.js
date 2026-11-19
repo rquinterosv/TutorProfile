@@ -8,7 +8,7 @@ export default [
   // functions/ is a separate Firebase Functions package with its own ESLint setup.
   { ignores: ['dist', 'functions'] },
   {
-    files: ['vite.config.js'],
+    files: ['vite.config.js', 'api/**/*.js'],
     languageOptions: { globals: globals.node },
   },
   {

@@ -50,7 +50,7 @@ const Field = ({ id, label, optionalLabel, hint, error, children }) => (
 );
 
 const BookingForm = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [data, setData] = useState(EMPTY);
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState('idle'); // idle | sending | success | error
@@ -94,6 +94,16 @@ const BookingForm = () => {
       };
       if (data.date) doc.eventDate = data.date;
       await addDoc(collection(db, 'contactForm'), doc);
+
+      // Email notification (api/booking.js). The request is already saved above,
+      // so a failed email doesn't fail the submission.
+      fetch('/api/booking', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...doc, timestamp: undefined, date: data.date, lang: i18n.resolvedLanguage }),
+        keepalive: true,
+      }).catch((err) => console.warn('Booking email notification failed:', err));
+
       setData(EMPTY);
       setStatus('success');
     } catch (err) {
