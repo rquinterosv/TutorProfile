@@ -14,11 +14,11 @@ export const BEHOLD_FEED_ID = 'VNRkLFnrNHGUqfLFwiOe';
 // How many of the latest posts to show.
 export const INSTAGRAM_POST_COUNT = 3;
 
-// TODO(rafa): live photo for the hero. Drop it in src/assets/img/music/ and import it here, e.g.
-//   import livePhoto from '../assets/img/music/live.jpg';
-//   export const heroPhoto = livePhoto;
-// While null, the hero shows a styled placeholder.
-export const heroPhoto = null;
+// Hero photo (4:5). Taken from the Instagram post https://www.instagram.com/p/Dfxe52glBMJ/
+// and stored locally so the hero never depends on the feed being up.
+// Set to null to show the styled placeholder instead.
+import livePhoto from '../assets/img/music/live.jpg';
+export const heroPhoto = livePhoto;
 
 // Music projects (handles are proper nouns; descriptions are in music.projects.<id>).
 export const musicProjects = [
