@@ -26,4 +26,12 @@ export const musicProjects = [
   { id: 'nomads', name: 'Nomads Collective', handle: 'nomadscollective_' },
 ];
 
-export const instagramUrl = (handle) => `https://www.instagram.com/${handle}/`;
+// Original songs (titles are proper names, not translated). Add new titles to the end.
+export const originalSongs = [
+  'Empezando el viaje',
+  'Lo que siento en verdad',
+  'Manteniendo a Chile en alto',
+  'Pensando en ti',
+];
+
+export const instagramUrl =(handle) => `https://www.instagram.com/${handle}/`;

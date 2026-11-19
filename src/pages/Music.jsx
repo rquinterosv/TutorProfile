@@ -1,11 +1,12 @@
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
 import InstagramVideos from '../components/music/InstagramVideos';
-import { heroPhoto, musicProjects, instagramUrl } from '../data/musicVideos';
+import BookingForm from '../components/music/BookingForm';
+import MusicFooter from '../components/music/MusicFooter';
+import ScrollLink from '../components/music/ScrollLink';
+import { heroPhoto, musicProjects, originalSongs, instagramUrl } from '../data/musicVideos';
 import { INSTAGRAM_ICON } from '../data/social';
 
-const BOOKING_PATH = '/contact?topic=music';
 const LINEUPS = ['solo', 'duo', 'band'];
 const SETS = ['party', 'calm'];
 
@@ -19,13 +20,14 @@ const Heading = ({ eyebrow, title, text, center = false }) => (
   </div>
 );
 
+// Scrolls to the booking form further down this page.
 const BookButton = ({ children, className = '' }) => (
-  <Link
-    to={BOOKING_PATH}
+  <ScrollLink
+    to="booking"
     className={`inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-ember-500 text-stage-950 font-semibold shadow-lg shadow-ember-500/25 hover:bg-ember-400 hover:-translate-y-0.5 transition-all duration-300 ${className}`}
   >
     {children}
-  </Link>
+  </ScrollLink>
 );
 
 const Section = ({ id, children, className = '' }) => (
@@ -47,24 +49,24 @@ const Hero = () => {
 
       <div className="relative container-width grid lg:grid-cols-2 gap-12 items-center pt-10 pb-20 md:pt-16 md:pb-28">
         <div className="text-center lg:text-left">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-ember-400 mb-5">{t('music.hero.eyebrow')}</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-ember-400 mb-5">{t('music.hero.tagline')}</p>
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-cream leading-[1.05] mb-6">
             {t('music.hero.title')}
           </h1>
-          <p className="font-display italic text-xl sm:text-2xl text-ember-200 leading-snug mb-6">{t('music.hero.tagline')}</p>
+          <p className="font-display italic text-xl sm:text-2xl text-ember-200 leading-snug mb-6">{t('music.hero.genre')}</p>
           <p className="text-cream/70 leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">{t('music.hero.text')}</p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
             <BookButton>{t('music.hero.cta_book')}</BookButton>
-            <a
-              href="#videos"
+            <ScrollLink
+              to="videos"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full ring-1 ring-cream/25 text-cream font-semibold hover:bg-cream/5 hover:ring-cream/40 transition-all duration-300"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M8 5v14l11-7z" />
               </svg>
               {t('music.hero.cta_watch')}
-            </a>
+            </ScrollLink>
           </div>
 
           {Array.isArray(chips) && (
@@ -162,32 +164,12 @@ const Formats = () => {
   );
 };
 
-const Venues = () => {
-  const { t } = useTranslation();
-  const venues = t('music.venues.list', { returnObjects: true });
-  return (
-    <Section className="bg-stage-900">
-      <Heading eyebrow={t('music.venues.eyebrow')} title={t('music.venues.title')} />
-      {Array.isArray(venues) && (
-        <ul className="divide-y divide-cream/10 border-y border-cream/10">
-          {venues.map((venue, i) => (
-            <li key={venue} className="flex items-baseline gap-6 py-5">
-              <span className="text-sm tabular-nums text-ember-400/70">{String(i + 1).padStart(2, '0')}</span>
-              <span className="font-display text-2xl md:text-3xl text-cream">{venue}</span>
-            </li>
-          ))}
-        </ul>
-      )}
-    </Section>
-  );
-};
-
 const Repertoire = () => {
   const { t } = useTranslation();
   const genres = t('music.repertoire.genres', { returnObjects: true });
   const songs = t('music.repertoire.songs', { returnObjects: true });
   return (
-    <Section>
+    <Section className="bg-stage-900">
       <div className="grid lg:grid-cols-2 gap-12">
         <div>
           <Heading eyebrow={t('music.repertoire.eyebrow')} title={t('music.repertoire.title')} text={t('music.repertoire.text')} />
@@ -214,6 +196,15 @@ const Repertoire = () => {
             </ul>
           )}
           <p className="mt-5 text-sm text-cream/50">{t('music.repertoire.more')}</p>
+          <ScrollLink
+            to="booking"
+            className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-full ring-1 ring-ember-400/50 text-ember-300 font-semibold hover:bg-ember-400/10 transition-colors"
+          >
+            {t('music.repertoire.request')}
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </ScrollLink>
         </div>
       </div>
     </Section>
@@ -223,12 +214,20 @@ const Repertoire = () => {
 const Original = () => {
   const { t } = useTranslation();
   return (
-    <Section className="bg-stage-900">
+    <Section>
       <div className="relative overflow-hidden rounded-3xl p-8 md:p-14 bg-gradient-to-br from-stage-700 via-stage-800 to-stage-950 ring-1 ring-ember-400/20">
         <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-ember-500/20 blur-3xl" />
         <p className="relative text-xs font-semibold uppercase tracking-[0.25em] text-ember-400 mb-4">{t('music.original.eyebrow')}</p>
-        <h2 className="relative font-display italic text-4xl md:text-6xl text-cream mb-6">{t('music.original.title')}</h2>
-        <p className="relative max-w-2xl text-cream/75 text-lg leading-relaxed mb-8">{t('music.original.text')}</p>
+        <h2 className="relative font-display text-3xl md:text-5xl text-cream leading-tight mb-4">{t('music.original.title')}</h2>
+        <p className="relative max-w-2xl text-cream/70 leading-relaxed mb-8">{t('music.original.text')}</p>
+        <ol className="relative grid sm:grid-cols-2 gap-x-10 border-t border-cream/10 mb-8">
+          {originalSongs.map((song, i) => (
+            <li key={song} className="flex items-baseline gap-5 py-4 border-b border-cream/10">
+              <span className="text-sm tabular-nums text-ember-400/70">{String(i + 1).padStart(2, '0')}</span>
+              <span className="font-display italic text-2xl md:text-3xl text-cream">{song}</span>
+            </li>
+          ))}
+        </ol>
         <span className="relative inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cream/5 ring-1 ring-cream/15 text-sm text-cream/80">
           <span className="h-2 w-2 rounded-full bg-ember-400 animate-pulse" aria-hidden="true" />
           {t('music.original.status')}
@@ -241,13 +240,15 @@ const Original = () => {
 const Booking = () => {
   const { t } = useTranslation();
   return (
-    <Section className="relative overflow-hidden">
+    <Section id="booking" className="relative overflow-hidden bg-stage-900 scroll-mt-16 md:scroll-mt-20">
       <div className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 h-80 w-[40rem] max-w-full rounded-full bg-ember-500/15 blur-3xl" />
-      <div className="relative text-center max-w-2xl mx-auto">
-        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-ember-400 mb-4">{t('music.booking.eyebrow')}</p>
-        <h2 className="font-display text-4xl md:text-5xl text-cream mb-5">{t('music.booking.title')}</h2>
-        <p className="text-cream/70 leading-relaxed mb-10">{t('music.booking.text')}</p>
-        <BookButton className="text-lg px-10">{t('music.booking.cta')}</BookButton>
+      <div className="relative max-w-3xl mx-auto">
+        <div className="text-center mb-10">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-ember-400 mb-4">{t('music.booking.eyebrow')}</p>
+          <h2 className="font-display text-4xl md:text-5xl text-cream mb-5">{t('music.booking.title')}</h2>
+          <p className="text-cream/70 leading-relaxed">{t('music.booking.text')}</p>
+        </div>
+        <BookingForm />
       </div>
     </Section>
   );
@@ -269,17 +270,17 @@ const Music = () => {
 
       <Hero />
 
-      <Section id="videos" className="scroll-mt-20">
+      <Section id="videos" className="scroll-mt-16 md:scroll-mt-20">
         <Heading eyebrow={t('music.videos.eyebrow')} title={t('music.videos.title')} text={t('music.videos.text')} />
         <InstagramVideos />
       </Section>
 
       <Projects />
       <Formats />
-      <Venues />
       <Repertoire />
       <Original />
       <Booking />
+      <MusicFooter />
     </div>
   );
 };

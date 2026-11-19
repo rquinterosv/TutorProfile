@@ -32,8 +32,8 @@
       "description": "Ingeniero Comercial con profundidad técnica: más de 8 años conectando estrategia de negocio e ingeniería. Basado en Praga, República Checa."
     },
     "music": {
-      "title": "Rafael Quinteros — Música en vivo en Praga · Rock, Blues y Pop Latino",
-      "description": "Rock, blues y pop latino en vivo en Praga, en inglés y español. Solo, dúo o banda para bares, matrimonios y eventos privados. Reserva un show."
+      "title": "Rafael Quinteros — Música en vivo en Praga · Rock latino y pop-rock",
+      "description": "Rock latino y pop-rock en vivo en Praga, en inglés y español. Solo, dúo o banda para bares, matrimonios y eventos privados. Reserva el show."
     },
     "contact": {
       "title": "Contacto — Rafael Quinteros",
@@ -85,17 +85,31 @@
         "consulting": {
           "title": "Consultoría TI",
           "description": "Infraestructura cloud, plataformas web y herramientas digitales para pequeñas y medianas empresas — diseñadas, implementadas y operadas con los costos bajo control.",
-          "tags": ["AWS", "Arquitectura cloud", "WordPress", "Marketing digital"]
+          "tags": [
+            "AWS",
+            "Arquitectura cloud",
+            "WordPress",
+            "Marketing digital"
+          ]
         },
         "business": {
           "title": "Negocio y Producto",
           "description": "Ventas B2B enterprise y gestión de producto: entender lo que necesitan los clientes, definir el roadmap y liderar equipos con Scrum.",
-          "tags": ["Ventas B2B", "Product management", "Certified Scrum Master"]
+          "tags": [
+            "Ventas B2B",
+            "Product management",
+            "Certified Scrum Master"
+          ]
         },
         "fullstack": {
           "title": "Desarrollo Full Stack",
           "description": "Aplicaciones web en producción construidas de punta a punta, desde la base de datos hasta la interfaz, en equipos de agencia y de producto.",
-          "tags": ["PHP / Nette", "Vue", "React", "Node.js"]
+          "tags": [
+            "PHP / Nette",
+            "Vue",
+            "React",
+            "Node.js"
+          ]
         }
       }
     },
@@ -212,7 +226,7 @@
     "music_teaser": {
       "eyebrow": "Fuera de la oficina",
       "title": "También en el escenario — música en vivo en Praga",
-      "text": "Rock, blues y pop latino en inglés y español — solo, en dúo o con banda completa.",
+      "text": "Rock latino y pop-rock en inglés y español — solo, en dúo o con banda completa.",
       "cta": "Descubre la música"
     },
     "cta": {
@@ -237,7 +251,15 @@
           "Sitios WordPress e integraciones, por ejemplo sistemas de reservas como FareHarbor",
           "Optimización de rendimiento, mantenimiento y documentación clara para el traspaso"
         ],
-        "tags": ["PHP / Nette", "Vue", "React", "Node.js", "MySQL", "Docker", "WordPress"],
+        "tags": [
+          "PHP / Nette",
+          "Vue",
+          "React",
+          "Node.js",
+          "MySQL",
+          "Docker",
+          "WordPress"
+        ],
         "cta": "Cuéntame tu proyecto"
       },
       "consulting": {
@@ -249,7 +271,13 @@
           "Discovery de producto, roadmap y entrega con Scrum (Certified Scrum Master)",
           "Configuración de marketing digital y campañas pagadas en redes sociales"
         ],
-        "tags": ["AWS", "Arquitectura cloud", "Product management", "Scrum", "Marketing digital"],
+        "tags": [
+          "AWS",
+          "Arquitectura cloud",
+          "Product management",
+          "Scrum",
+          "Marketing digital"
+        ],
         "cta": "Agenda una consultoría"
       }
     },
@@ -342,26 +370,49 @@
     "greeting": "Hola, soy Rafael Quinteros",
     "bio1": "Soy Ingeniero Comercial, chileno y basado en Praga. Desde 2018 he trabajado en todo el espectro de producto: ventas B2B enterprise en Huawei, gestión de producto en Desafío Latam y desarrollo full stack en Czech Group.",
     "bio2": "Hoy trabajo como consultor TI independiente: diseño y opero infraestructura cloud, construyo plataformas web y ayudo a las empresas a convertir sus objetivos en productos que salen a producción. Lo que aporto es la combinación: puedo hablar de números con el negocio y de arquitectura con los ingenieros.",
-    "music_line": "Cuando no estoy frente al teclado, normalmente estoy sobre un escenario tocando rock, blues y pop latino en Praga. <musicLink>Descubre mi música</musicLink>",
+    "music_line": "Cuando no estoy frente al teclado, normalmente estoy sobre un escenario tocando rock latino y pop-rock en Praga. <musicLink>Descubre mi música</musicLink>",
     "cta_contact": "Contáctame",
     "cta_experience": "Ver mi experiencia",
     "skills_title": "Habilidades y experiencia",
     "skills": {
       "business": {
         "title": "Negocio y Producto",
-        "items": ["Ventas B2B y negociación", "Product management", "Certified Scrum Master", "Gestión de stakeholders"]
+        "items": [
+          "Ventas B2B y negociación",
+          "Product management",
+          "Certified Scrum Master",
+          "Gestión de stakeholders"
+        ]
       },
       "frontend": {
         "title": "Frontend",
-        "items": ["Vue", "React", "JavaScript", "Tailwind CSS", "Diseño responsive"]
+        "items": [
+          "Vue",
+          "React",
+          "JavaScript",
+          "Tailwind CSS",
+          "Diseño responsive"
+        ]
       },
       "backend": {
         "title": "Backend",
-        "items": ["PHP / Nette", "Node.js", "MySQL", "MongoDB", "APIs REST"]
+        "items": [
+          "PHP / Nette",
+          "Node.js",
+          "MySQL",
+          "MongoDB",
+          "APIs REST"
+        ]
       },
       "cloud": {
         "title": "Cloud y herramientas",
-        "items": ["AWS (EC2)", "Docker", "Git", "WordPress", "Jira / Notion"]
+        "items": [
+          "AWS (EC2)",
+          "Docker",
+          "Git",
+          "WordPress",
+          "Jira / Notion"
+        ]
       }
     },
     "info": {
@@ -377,13 +428,17 @@
   },
   "music": {
     "hero": {
-      "eyebrow": "Música en vivo · Praga",
+      "tagline": "En vivo en Praga · Inglés y español",
       "title": "Rafael Quinteros",
-      "tagline": "Rock, blues y pop latino — en vivo en Praga, en inglés y español",
+      "genre": "Rock latino / mezcla de pop-rock latino",
       "text": "Música en vivo para bares, eventos privados y matrimonios — de los clásicos del rock a los hits latinos para la fiesta, solo, en dúo o con banda completa.",
-      "cta_book": "Reserva un show",
+      "cta_book": "Reserva el show",
       "cta_watch": "Ver videos",
-      "chips": ["Inglés y español", "Solo · Dúo · Banda", "Sets de ~50 min"],
+      "chips": [
+        "Inglés y español",
+        "Solo · Dúo · Banda",
+        "Sets de ~50 min"
+      ],
       "photo_alt": "Rafael Quinteros tocando en vivo",
       "photo_placeholder": "Foto en vivo próximamente"
     },
@@ -401,7 +456,7 @@
       "title": "Dos formas de escucharlo",
       "solo": {
         "label": "Proyecto solista",
-        "text": "Mi proyecto propio: clásicos del rock, el blues y el pop latino tocados en vivo en inglés y español."
+        "text": "Mi proyecto propio: clásicos del rock latino y el pop-rock tocados en vivo en inglés y español."
       },
       "nomads": {
         "label": "Banda",
@@ -438,36 +493,79 @@
         }
       }
     },
-    "venues": {
-      "eyebrow": "Escenarios",
-      "title": "Dónde he tocado",
-      "list": ["Prague Beer Museum", "McCarthy's Irish Pub", "Oktoberfest", "Prague Beer House", "Gatsby Hall"]
-    },
     "repertoire": {
       "eyebrow": "Repertorio",
       "title": "Canciones que todos conocen",
-      "text": "Rock clásico, blues, reggae y pop latino — en inglés y español, para que todo el lugar cante.",
-      "genres": ["Rock clásico", "Blues", "Reggae", "Pop latino"],
+      "text": "Rock latino, pop-rock, reggae y pop latino — en inglés y español, para que todo el lugar cante.",
+      "genres": [
+        "Rock latino",
+        "Pop-rock",
+        "Reggae",
+        "Pop latino"
+      ],
       "songs_title": "Podrías escuchar",
       "songs": [
-        { "title": "Hey Jude", "artist": "The Beatles" },
-        { "title": "No Woman, No Cry", "artist": "Bob Marley" },
-        { "title": "La Bamba", "artist": "Ritchie Valens" },
-        { "title": "Sex on Fire", "artist": "Kings of Leon" }
+        {
+          "title": "No Woman, No Cry",
+          "artist": "Bob Marley"
+        },
+        {
+          "title": "La Bamba",
+          "artist": "Ritchie Valens"
+        },
+        {
+          "title": "Despacito",
+          "artist": "Luis Fonsi"
+        },
+        {
+          "title": "Let It Be",
+          "artist": "The Beatles"
+        }
       ],
-      "more": "…y muchas más. Se aceptan pedidos."
+      "more": "…y muchas más.",
+      "request": "Pide más canciones"
     },
     "original": {
       "eyebrow": "Música original",
-      "title": "Empezando el viaje",
-      "text": "Una canción que escribí cuando empecé a viajar fuera de Chile.",
+      "title": "Canciones escritas en el camino",
+      "text": "Escritas desde que salí de Chile a recorrer el mundo — ahora en camino al estudio.",
       "status": "Grabación de estudio próximamente"
     },
     "booking": {
       "eyebrow": "Reservas",
       "title": "Hagamos que tu evento suene increíble",
       "text": "Cuéntame la fecha, el lugar y el tipo de noche que imaginas, y te respondo con opciones y disponibilidad.",
-      "cta": "Reserva un show"
+      "form": {
+        "name": "Nombre",
+        "name_placeholder": "Tu nombre",
+        "email": "Email",
+        "email_placeholder": "tu@ejemplo.com",
+        "venue": "Lugar / evento",
+        "venue_placeholder": "ej. bar en Praga 2, matrimonio, fiesta privada",
+        "date": "Fecha",
+        "date_hint": "Déjala vacía si aún no está definida.",
+        "message": "Mensaje",
+        "message_placeholder": "Número de invitados, horario, canciones que te gustaría escuchar…",
+        "optional": "opcional",
+        "honeypot": "Deja este campo vacío",
+        "submit": "Enviar solicitud",
+        "sending": "Enviando…",
+        "success_title": "¡Gracias — solicitud recibida!",
+        "success_text": "Te respondo pronto con la disponibilidad.",
+        "send_another": "Enviar otra solicitud",
+        "error": "Algo salió mal y tu solicitud no se envió. Inténtalo de nuevo en un momento o escríbeme por Instagram.",
+        "errors": {
+          "required": "Este campo es obligatorio.",
+          "email": "Ingresa un email válido.",
+          "date": "Elige una fecha desde hoy en adelante."
+        }
+      }
+    },
+    "footer": {
+      "tagline": "Rock latino / mezcla de pop-rock latino · En vivo en Praga",
+      "follow": "Sígueme",
+      "book": "Reserva el show",
+      "back_home": "Consultoría IT y desarrollo"
     }
   },
   "contact": {

@@ -31,6 +31,12 @@ const PageSEO = () => {
   );
 };
 
+// /music renders its own footer (MusicFooter) to match its dark stage design.
+const SiteFooter = () => {
+  const { pathname } = useLocation();
+  return pathname.replace(/\/+$/, '') === '/music' ? null : <Footer />;
+};
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -41,7 +47,7 @@ const App = () => {
         <main className="flex-grow">
           <RouterComponent />
         </main>
-        <Footer />
+        <SiteFooter />
       </div>
     </BrowserRouter>
   );
