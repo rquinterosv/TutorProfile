@@ -1,175 +1,511 @@
 {
+  "common": {
+    "brand": "RafaQuinteros",
+    "brand_full": "Rafael Quinteros",
+    "photo_alt": "Retrato de Rafael Quinteros"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español"
+  },
+  "social": {
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
+  "seo": {
+    "home": {
+      "title": "Rafael Quinteros — Ingeniero Comercial · Producto · Desarrollo Full Stack",
+      "description": "Ingeniero Comercial con más de 8 años de experiencia en ventas B2B, gestión de producto y desarrollo full stack. Consultoría TI desde Praga, República Checa."
+    },
+    "experience": {
+      "title": "Experiencia — Rafael Quinteros",
+      "description": "Más de 8 años en consultoría TI, desarrollo full stack (PHP/Nette, Vue, React, Node), gestión de producto y ventas B2B en empresas como Huawei, Desafío Latam y Czech Group."
+    },
+    "services": {
+      "title": "Servicios — Rafael Quinteros",
+      "description": "Desarrollo web y consultoría TI y de producto: desde el diagnóstico y el alcance hasta construir, lanzar y operar tu plataforma."
+    },
+    "about": {
+      "title": "Sobre mí — Rafael Quinteros",
+      "description": "Ingeniero Comercial con profundidad técnica: más de 8 años conectando estrategia de negocio e ingeniería. Basado en Praga, República Checa."
+    },
+    "music": {
+      "title": "Rafael Quinteros — Música en vivo en Praga · Rock, Blues y Pop Latino",
+      "description": "Rock, blues y pop latino en vivo en Praga, en inglés y español. Solo, dúo o banda para bares, matrimonios y eventos privados. Reserva un show."
+    },
+    "contact": {
+      "title": "Contacto — Rafael Quinteros",
+      "description": "Escríbeme sobre desarrollo web, consultoría TI y de producto, o para reservar música en vivo en Praga."
+    }
+  },
   "navbar": {
     "home": "Inicio",
-    "services": "Servicios",
     "experience": "Experiencia",
-    "about": "Sobre Mí",
+    "services": "Servicios",
+    "about": "Sobre mí",
+    "music": "Música",
     "contact": "Contacto",
-    "language": "Idioma"
+    "language": "Idioma",
+    "open_menu": "Abrir menú",
+    "close_menu": "Cerrar menú"
   },
   "home": {
-    "mentor_profile": "Soy Rafa, Ingeniero Comercial convertido en Desarrollador Full Stack, con experiencia en ventas B2B enterprise, desarrollo de software y educación tech. Conecto equipos técnicos con la estrategia de negocio, traduciendo problemas complejos en productos que realmente funcionan para usuarios y stakeholders.",
-    "info": "Más Información",
-    "contact": "Contacto",
     "hero": {
-      "eyebrow": "Desarrollador Web y Tutor",
-      "title_prefix": "Desarrollador",
-      "title_suffix": "Web",
-      "roles": "🧩 Ingeniero Comercial | 💻 Desarrollador Full Stack | 🚀 Producto & Customer Success",
-      "experience_years": "Años de Experiencia",
-      "projects_done": "Proyectos Realizados",
-      "client_satisfaction": "Satisfacción"
+      "eyebrow": "Basado en Praga · Abierto a proyectos",
+      "subtitle": "Ingeniero Comercial · Producto · Desarrollo Full Stack",
+      "tagline": "Construyo cosas que funcionan — para los usuarios, para los equipos y para el negocio.",
+      "intro": "Soy Rafa, Ingeniero Comercial con más de 8 años de experiencia en ventas B2B, gestión de producto y desarrollo full stack. Hoy trabajo como consultor TI: diseño y opero infraestructura cloud, construyo plataformas web y convierto objetivos de negocio en productos que salen a producción.",
+      "cta_primary": "Qué hago",
+      "cta_secondary": "Contáctame",
+      "stats": {
+        "years": {
+          "value": "8+",
+          "label": "Años de experiencia"
+        },
+        "projects": {
+          "value": "15+",
+          "label": "Proyectos entregados"
+        },
+        "scrum": {
+          "value": "CSM",
+          "label": "Certified Scrum Master"
+        }
+      },
+      "badge_title": "Ingeniero Comercial",
+      "badge_subtitle": "Producto y código"
     },
-    "company": {
-      "eyebrow": "Confiado por",
-      "title": "Experiencia Laboral",
-      "more": "Más Información"
-    },
-    "courses": {
-      "eyebrow": "Servicios",
-      "offer_title": "Así es como puedo ayudarte",
-      "offer_description": "Cuento con experiencia en negocios, desarrollo web y docencia en tecnologías de la información, donde he aportado con mis ideas y compromiso a diversas empresas a nivel global.",
-      "web_development": "¿Quieres construir un sitio web, una aplicación, o necesitas apoyo en uno de tus proyectos?",
-      "microsoft": "¿Quieres aprender a construir tu propio sitio web o dominar los fundamentos de la programación?",
-      "softwares": "¿Necesitas apoyo en la investigación, creación, implementación o análisis de tus proyectos?",
-      "show_more": "Mostrar Más"
+    "what_i_do": {
+      "eyebrow": "Qué hago",
+      "title": "Visión de negocio, profundidad técnica",
+      "subtitle": "Trabajo donde se encuentran los objetivos de negocio y la tecnología, y puedo llevar un proyecto desde la primera conversación hasta un sistema funcionando.",
+      "cta": "Ver servicios",
+      "cards": {
+        "consulting": {
+          "title": "Consultoría TI",
+          "description": "Infraestructura cloud, plataformas web y herramientas digitales para pequeñas y medianas empresas — diseñadas, implementadas y operadas con los costos bajo control.",
+          "tags": ["AWS", "Arquitectura cloud", "WordPress", "Marketing digital"]
+        },
+        "business": {
+          "title": "Negocio y Producto",
+          "description": "Ventas B2B enterprise y gestión de producto: entender lo que necesitan los clientes, definir el roadmap y liderar equipos con Scrum.",
+          "tags": ["Ventas B2B", "Product management", "Certified Scrum Master"]
+        },
+        "fullstack": {
+          "title": "Desarrollo Full Stack",
+          "description": "Aplicaciones web en producción construidas de punta a punta, desde la base de datos hasta la interfaz, en equipos de agencia y de producto.",
+          "tags": ["PHP / Nette", "Vue", "React", "Node.js"]
+        }
+      }
     },
     "portfolio": {
-      "eyebrow": "Trabajos Seleccionados",
-      "title": "¡Bienvenido a mi portafolio!",
-      "subtitle": "Aquí encontrarás una colección de proyectos de diseño y desarrollo web que reflejan mi pasión por crear sitios limpios, funcionales y visualmente atractivos.",
+      "eyebrow": "Trabajos seleccionados",
+      "title": "Proyectos que he construido y opero",
+      "subtitle": "Infraestructura cloud, sitios para clientes y plataformas web — desde mis clientes de consultoría hasta los sitios que he construido en Czech Group.",
       "featured": "Destacado",
       "visit": "Visitar sitio",
       "filter_all": "Todos",
       "categories": {
-        "Real Estate": "Inmobiliario",
-        "E-commerce": "E-commerce",
-        "Services": "Servicios",
-        "Corporate": "Corporativo",
-        "Education": "Educación"
+        "cloud": "Cloud",
+        "real_estate": "Inmobiliario",
+        "ecommerce": "E-commerce",
+        "services": "Servicios",
+        "corporate": "Corporativo",
+        "education": "Educación",
+        "travel": "Turismo"
+      },
+      "projects": {
+        "bikespezl": {
+          "subtitle": "Arquitectura cloud en AWS para un configurador de geometría de bicicletas",
+          "description": "Un configurador web que calcula la geometría de bicicletas con Rhino/Grasshopper en la nube. Diseñé la infraestructura y la administro en el día a día.",
+          "highlights": [
+            "Diseño y administración de la infraestructura AWS: EC2 con Rhino.Compute",
+            "Comunicación en tiempo real entre la app web y Rhino/Grasshopper",
+            "Control de costos con apagado automático de instancias"
+          ],
+          "arch": {
+            "caption": "Cómo encaja todo",
+            "web": "App web",
+            "web_sub": "Configurador",
+            "cloud": "AWS EC2",
+            "cloud_sub": "Rhino.Compute",
+            "geometry": "Grasshopper",
+            "geometry_sub": "Motor de geometría",
+            "cost": "Las instancias se apagan automáticamente cuando no se usan para mantener los costos bajos"
+          }
+        },
+        "prohopo": {
+          "description": "Plataforma inmobiliaria construida desde cero con un administrador dinámico tipo CMS, donde contenido, propiedades e imágenes se actualizan en tiempo real."
+        },
+        "adam_ruzicka": {
+          "description": "Sitio inmobiliario a medida, con diseño propio y lógica personalizada que adapta el contenido según la interacción del usuario."
+        },
+        "cayman": {
+          "description": "Sitio web, marketing digital y campañas pagadas en redes para un tour operator de day trips en Praga, más una propuesta de rediseño integrada con las reservas de FareHarbor."
+        },
+        "fencee": {
+          "description": "Mejoras full stack en la tienda online y las herramientas de back-office de esta marca checa de cercas."
+        },
+        "dogtrace": {
+          "description": "Funcionalidades de punta a punta para el sitio de un producto de rastreo GPS para perros, con páginas comerciales y técnicas."
+        },
+        "sysel_polak": {
+          "description": "Construido desde cero con una implementación UX/UI fiel al diseño para este estudio jurídico checo."
+        },
+        "doucebnice": {
+          "description": "Plataforma completa desde cero: UI, comportamiento responsive y flujo de datos implementados 1:1 con los mockups."
+        },
+        "autojeraby": {
+          "description": "Sitio completo para una empresa de arriendo de grúas, con implementación de front-end y back-end."
+        },
+        "starlux": {
+          "description": "Desarrollo de punta a punta para una marca de iluminación, con front y back end alineados a su sistema de diseño."
+        },
+        "chytre_strechy": {
+          "description": "Creado desde cero para una empresa de techumbres, con UX/UI fiel al diseño y un back end editable."
+        },
+        "veterinar": {
+          "description": "Rehice la lógica de agendamiento de una red de clínicas veterinarias con varias sedes, incluido el manejo de fechas."
+        },
+        "grimefighters": {
+          "description": "Sitio completo para una empresa canadiense de servicios de limpieza, con un front end limpio y lógica mantenible."
+        },
+        "pronachem": {
+          "description": "Rediseño de la página de inicio con banners, CTAs y mejor comportamiento responsive para móviles."
+        },
+        "ekoplant": {
+          "description": "Página de inicio modernizada con contenido editable y mejor comportamiento responsive."
+        },
+        "myjoys": {
+          "description": "Renovación de la página de inicio de una marca alemana de productos de baño, con banners editables y mejoras de UI."
+        }
       }
     },
-    "driftertrip": {
-      "eyebrow": "Proyecto Propio",
-      "tagline": "Una plataforma de agencia de viajes que estoy construyendo desde cero — viajes curados, experiencias seleccionadas y un flujo de reserva diseñado para viajeros modernos.",
-      "description": "Diseñado, desarrollado y lanzado de punta a punta: branding, decisiones de producto, front-end y deployment.",
-      "cta": "Visitar Driftertrip"
+    "company": {
+      "eyebrow": "Experiencia",
+      "title": "Empresas con las que he trabajado",
+      "more": "Ver mi experiencia"
     },
     "reference": {
       "eyebrow": "Testimonios",
-      "title": "Lo que dicen sobre mí"
+      "title": "Lo que dicen sobre mí",
+      "items": {
+        "andres": {
+          "position": "Gerente General en Desafío Latam",
+          "quote": "Contamos con el compromiso y liderazgo de Rafa, que nos ayudó en la creación de distintos negocios y servicios que todavía hoy mantenemos en Desafío Latam. Quiero destacar su dinamismo y responsabilidad para trabajar de forma autónoma, entregando con calidad y a tiempo los desafíos que le encomendamos."
+        },
+        "ivan": {
+          "position": "Senior Ecosystem Manager en Huawei",
+          "quote": "Tuvimos a Rafa en la venta de servicios tecnológicos en Huawei, donde demostró con responsabilidad la integración de diversas tecnologías en la cartera de clientes que gestionaba. En su trabajo mostró proactividad para atraer más clientes, creando proyectos y levantando capital interno para cumplir los objetivos que se le encomendaron."
+        },
+        "alejandro": {
+          "position": "Product Manager en OOH Planning",
+          "quote": "Rafa tiene una visión estratégica para la creación de productos. Levantando hipótesis y presentando el análisis para la mejora continua de las propuestas, logramos implementar soluciones tecnológicas y demostrar cuantitativamente el éxito o los aprendizajes de nuestro trabajo."
+        },
+        "felipe": {
+          "position": "Front End Developer en Quiebre Marketing",
+          "quote": "Tuve mi primera clase con Rafael. Fue una experiencia maravillosa: me ayudó a instalar los programas necesarios para escribir nuestro primer código juntos. Se nota que es una persona con experiencia y la clase fue sumamente dinámica."
+        }
+      }
+    },
+    "music_teaser": {
+      "eyebrow": "Fuera de la oficina",
+      "title": "También en el escenario — música en vivo en Praga",
+      "text": "Rock, blues y pop latino en inglés y español — solo, en dúo o con banda completa.",
+      "cta": "Descubre la música"
+    },
+    "cta": {
+      "title": "¿Tienes un proyecto en mente?",
+      "text": "Ya sea una plataforma web, infraestructura cloud o un producto que necesita dirección, conversemos.",
+      "button": "Contáctame"
     }
   },
   "services": {
-    "steps": {
-      "eyebrow": "Cómo funciona",
-      "title": "Estos son mis pasos para ponernos en contacto",
-      "description": "Así es como gestiono mis cursos y tutorías",
-      "meet": {
-        "title": "¡Nos Conocemos!",
-        "description": "Comencemos con una conversación sobre tus expectativas y lo que quieres aprender para prepararnos para nuestras tutorías."
+    "header": {
+      "eyebrow": "Servicios",
+      "title": "Cómo puedo ayudarte",
+      "subtitle": "Dos formas de trabajar juntos — y muchas veces van de la mano."
+    },
+    "items": {
+      "web": {
+        "title": "Desarrollo web",
+        "subtitle": "Sitios y aplicaciones web hechos para durar",
+        "description": "Desarrollo full stack desde la base de datos hasta la interfaz: plataformas nuevas, nuevas funcionalidades sobre productos existentes o integraciones con las herramientas que ya usas.",
+        "points": [
+          "Aplicaciones web y sitios a medida",
+          "Sitios WordPress e integraciones, por ejemplo sistemas de reservas como FareHarbor",
+          "Optimización de rendimiento, mantenimiento y documentación clara para el traspaso"
+        ],
+        "tags": ["PHP / Nette", "Vue", "React", "Node.js", "MySQL", "Docker", "WordPress"],
+        "cta": "Cuéntame tu proyecto"
       },
-      "schedule": {
-        "title": "Definimos fechas",
-        "description": "Alineamos objetivos y coordinamos fechas."
-      },
-      "learn": {
-        "title": "Trabajamos",
-        "description": "Investigamos, implementamos y trabajamos."
+      "consulting": {
+        "title": "Consultoría TI y de producto",
+        "subtitle": "Del objetivo de negocio al sistema funcionando",
+        "description": "Ayudo a pequeñas y medianas empresas a decidir qué construir y cómo operarlo: infraestructura cloud, herramientas digitales y dirección de producto, siempre con el caso de negocio a la vista.",
+        "points": [
+          "Arquitectura y operación cloud en AWS, con control de costos desde el diseño",
+          "Discovery de producto, roadmap y entrega con Scrum (Certified Scrum Master)",
+          "Configuración de marketing digital y campañas pagadas en redes sociales"
+        ],
+        "tags": ["AWS", "Arquitectura cloud", "Product management", "Scrum", "Marketing digital"],
+        "cta": "Agenda una consultoría"
       }
     },
-    "information": {
-      "web_development": "Creación de soluciones tecnológicas personalizadas para tu negocio",
-      "web_details": "Soy un desarrollador fullstack freelance con experiencia en la creación de aplicaciones web dinámicas y escalables. Trabajo con tecnologías modernas como JavaScript, Vue, PHP, Node.js, React, Ruby on Rails, Docker, MySQL y bases de datos SQL/NoSQL.",
-      "microsoft": "Enseñando los fundamentos para reconvertir tu carrera hacia el desarrollo web",
-      "microsoft_details": "He estado enseñando desde 2022 en una academia de tecnología y trabajando como instructor y revisor de código para estudiantes que aspiran a convertirse en desarrolladores fullstack.",
-      "softwares": "Hablemos de ideas de negocio; los mejores proyectos se crean con una buena conversación y un café.",
-      "softwares_details": "En mis roles en gestión de proyectos y administración de negocios, he creado con éxito varios MVP para empresas."
+    "steps": {
+      "eyebrow": "Cómo trabajo",
+      "title": "De la primera llamada al sistema en marcha",
+      "description": "Un proceso simple y transparente: siempre sabes qué viene y cuánto cuesta.",
+      "cta": "Empecemos con una llamada",
+      "discover": {
+        "title": "Llamada inicial",
+        "description": "Conversamos sobre tus objetivos, restricciones y plazos para entender el problema real."
+      },
+      "propose": {
+        "title": "Propuesta y alcance",
+        "description": "Recibes un alcance, un enfoque y una estimación claros, para acordar qué significa el éxito."
+      },
+      "deliver": {
+        "title": "Construcción e iteración",
+        "description": "Trabajo en iteraciones cortas con revisiones periódicas, para que veas avances desde temprano."
+      },
+      "support": {
+        "title": "Lanzamiento y soporte",
+        "description": "Lanzamos, medimos y seguimos mejorando, con soporte continuo cuando lo necesites."
+      }
     }
   },
   "experience": {
-    "eyebrow": "Historial Laboral",
-    "title": "Mi Experiencia Laboral",
-    "subtitle": "Un recorrido por mi carrera profesional",
+    "eyebrow": "Trayectoria",
+    "title": "Mi experiencia",
+    "subtitle": "Más de 8 años entre negocio, producto e ingeniería",
     "items": {
+      "freelance": {
+        "title": "Consultor TI",
+        "company": "Freelance · por proyecto",
+        "period": "Mar 2026 – Actualidad",
+        "text": "Consultoría independiente para pequeñas y medianas empresas: infraestructura cloud, plataformas web y crecimiento digital, desde la definición del alcance hasta la operación diaria.",
+        "clients": {
+          "bikespezl": {
+            "name": "BikeSPEZL",
+            "text": "Diseñé y administro la infraestructura AWS (EC2 + Rhino.Compute) de un configurador de geometría de bicicletas, con comunicación en tiempo real entre la app web y Rhino/Grasshopper, y control de costos mediante el apagado automático de instancias."
+          },
+          "cayman": {
+            "name": "Cayman Travel — tour operator de day trips en Praga",
+            "text": "Gestiono el sitio WordPress, el marketing digital y las campañas pagadas en redes sociales, y preparé una propuesta de rediseño integrada con FareHarbor."
+          }
+        }
+      },
       "czechgroup": {
-        "title": "Desarrollador Web Full Stack",
-        "text": "Como desarrollador web full stack, soy responsable de diseñar y desarrollar aplicaciones web completas, trabajando tanto en el lado del cliente (front-end) como en el servidor (back-end). Uso tecnologías modernas, mayormente PHP/Nette, MySQL, Vue y Docker entre otros."
+        "title": "Desarrollador Full Stack (PHP)",
+        "company": "Czech Group",
+        "period": "2024 – Actualidad",
+        "text": "Diseño y desarrollo aplicaciones web completas para clientes de la agencia, tanto en front end como en back end, principalmente con PHP/Nette, MySQL, Vue y Docker."
       },
       "desafio": {
-        "title": "Desarrollador Web Full Stack y Tutor",
-        "text": "Como desarrollador full-stack, he tenido la oportunidad de enseñar a personas aspirantes los fundamentos de la programación, enfocándome en lenguajes y frameworks como React, Node.js, JavaScript y Ruby on Rails."
+        "title": "Tutor Full Stack",
+        "company": "Desafío Latam",
+        "period": "2022 – 2025",
+        "text": "Enseñé los fundamentos del desarrollo full stack — JavaScript, React, Node.js y Ruby on Rails — y revisé los proyectos finales de los estudiantes."
       },
       "product": {
         "title": "Product Manager",
-        "text": "Lideré la investigación, creación e implementación de productos innovadores, alineando las necesidades del mercado con los objetivos comerciales. Gestioné equipos multifuncionales usando metodologías Agile (Scrum)."
+        "company": "Desafío Latam",
+        "period": "2021 – 2023",
+        "text": "Lideré la investigación, creación y lanzamiento de nuevos productos, alineando las necesidades del mercado con los objetivos del negocio. Gestioné equipos multifuncionales con metodologías ágiles (Scrum)."
       },
       "huawei": {
         "title": "Business Manager",
-        "text": "Me desempeñé como representante principal en negociaciones de ventas con empresas de software para la implementación de Huawei Mobile Services, liderando discusiones sobre términos contractuales, precios y acuerdos de servicio."
+        "company": "Huawei",
+        "period": "2019 – 2021",
+        "text": "Representante principal en negociaciones comerciales con empresas de software para la implementación de Huawei Mobile Services, liderando las conversaciones sobre términos contractuales, precios y acuerdos de servicio."
       },
       "ecom": {
         "title": "Business Manager",
-        "text": "Representación y negociación comercial dentro de la industria eléctrica en Chile, enfocándome en construir asociaciones, asegurar contratos e impulsar el crecimiento del negocio."
+        "company": "Ecom Energía",
+        "period": "2018 – 2019",
+        "text": "Representación comercial y negociaciones de venta en la industria eléctrica en Chile, enfocado en construir alianzas, cerrar contratos e impulsar el crecimiento."
       },
       "travel": {
-        "title": "Finanzas y Administración",
-        "text": "Prácticas profesionales. Responsable de la transferencia y gestión de datos en el departamento de facturación, asegurando la precisión y puntualidad de los registros financieros."
+        "title": "Práctica en Finanzas y Administración",
+        "company": "Travel Security",
+        "period": "2016",
+        "text": "Práctica profesional en el área de facturación, gestionando y traspasando datos para mantener los registros financieros precisos y al día."
       }
     }
   },
   "about": {
-    "eyebrow": "Sobre Mí",
-    "title": "Sobre Mí",
-    "subtitle": "Conoceme mejor",
+    "eyebrow": "Sobre mí",
+    "title": "Sobre mí",
+    "subtitle": "Ingeniero Comercial con profundidad técnica",
     "greeting": "Hola, soy Rafael Quinteros",
-    "bio1": "Soy un Desarrollador Full Stack con experiencia construyendo aplicaciones web y enseñando a otros.",
-    "bio2": "He trabajado con empresas a través de diferentes industrias, desde bienes raíces hasta e-commerce, entregando soluciones de calidad.",
-    "skills_title": "Habilidades y Experiencia",
+    "bio1": "Soy Ingeniero Comercial, chileno y basado en Praga. Desde 2018 he trabajado en todo el espectro de producto: ventas B2B enterprise en Huawei, gestión de producto en Desafío Latam y desarrollo full stack en Czech Group.",
+    "bio2": "Hoy trabajo como consultor TI independiente: diseño y opero infraestructura cloud, construyo plataformas web y ayudo a las empresas a convertir sus objetivos en productos que salen a producción. Lo que aporto es la combinación: puedo hablar de números con el negocio y de arquitectura con los ingenieros.",
+    "music_line": "Cuando no estoy frente al teclado, normalmente estoy sobre un escenario tocando rock, blues y pop latino en Praga. <musicLink>Descubre mi música</musicLink>",
+    "cta_contact": "Contáctame",
+    "cta_experience": "Ver mi experiencia",
+    "skills_title": "Habilidades y experiencia",
     "skills": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "tools": "Herramientas",
-      "soft": "Habilidades Blandas"
+      "business": {
+        "title": "Negocio y Producto",
+        "items": ["Ventas B2B y negociación", "Product management", "Certified Scrum Master", "Gestión de stakeholders"]
+      },
+      "frontend": {
+        "title": "Frontend",
+        "items": ["Vue", "React", "JavaScript", "Tailwind CSS", "Diseño responsive"]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": ["PHP / Nette", "Node.js", "MySQL", "MongoDB", "APIs REST"]
+      },
+      "cloud": {
+        "title": "Cloud y herramientas",
+        "items": ["AWS (EC2)", "Docker", "Git", "WordPress", "Jira / Notion"]
+      }
     },
     "info": {
       "location": "Ubicación",
-      "location_val": "Remoto / Chile",
+      "location_val": "Praga, República Checa",
       "experience": "Experiencia",
-      "experience_val": "5+ Años",
+      "experience_val": "8+ años",
       "projects": "Proyectos",
       "projects_val": "15+",
       "languages": "Idiomas",
-      "languages_val": "ES / EN"
+      "languages_val": "Español / Inglés"
+    }
+  },
+  "music": {
+    "hero": {
+      "eyebrow": "Música en vivo · Praga",
+      "title": "Rafael Quinteros",
+      "tagline": "Rock, blues y pop latino — en vivo en Praga, en inglés y español",
+      "text": "Música en vivo para bares, eventos privados y matrimonios — de los clásicos del rock a los hits latinos para la fiesta, solo, en dúo o con banda completa.",
+      "cta_book": "Reserva un show",
+      "cta_watch": "Ver videos",
+      "chips": ["Inglés y español", "Solo · Dúo · Banda", "Sets de ~50 min"],
+      "photo_alt": "Rafael Quinteros tocando en vivo",
+      "photo_placeholder": "Foto en vivo próximamente"
+    },
+    "videos": {
+      "eyebrow": "Mira",
+      "title": "Shows recientes",
+      "text": "Clips de las últimas tocatas — siempre hay más en Instagram.",
+      "watch_on_instagram": "Ver en Instagram",
+      "view_on_instagram": "Ver en Instagram",
+      "placeholder_title": "Videos próximamente",
+      "placeholder_text": "Mientras tanto, mira los últimos clips en Instagram."
+    },
+    "projects": {
+      "eyebrow": "Proyectos",
+      "title": "Dos formas de escucharlo",
+      "solo": {
+        "label": "Proyecto solista",
+        "text": "Mi proyecto propio: clásicos del rock, el blues y el pop latino tocados en vivo en inglés y español."
+      },
+      "nomads": {
+        "label": "Banda",
+        "text": "Una banda con percusión que trae toda la energía de un grupo en vivo — hecha para bailar y celebrar."
+      }
+    },
+    "formats": {
+      "eyebrow": "Formatos",
+      "title": "A la medida de tu evento",
+      "text": "De una cena íntima a una pista de baile llena — el formato y el set se adaptan al lugar.",
+      "duration": "Los shows se tocan en sets de aproximadamente 50 minutos.",
+      "lineups": {
+        "solo": {
+          "title": "Solo",
+          "text": "Ideal para bares, cenas y lugares más pequeños."
+        },
+        "duo": {
+          "title": "Dúo",
+          "text": "Un segundo músico para un sonido más lleno y más energía."
+        },
+        "band": {
+          "title": "Banda",
+          "text": "Banda completa con percusión para fiestas, festivales y grandes celebraciones."
+        }
+      },
+      "sets": {
+        "party": {
+          "title": "Set fiesta",
+          "text": "Rock, reggae y hits latinos para que todos canten y bailen."
+        },
+        "calm": {
+          "title": "Set tranquilo — jazz y baladas",
+          "text": "Jazz y baladas más suaves para matrimonios, recepciones y eventos elegantes."
+        }
+      }
+    },
+    "venues": {
+      "eyebrow": "Escenarios",
+      "title": "Dónde he tocado",
+      "list": ["Prague Beer Museum", "McCarthy's Irish Pub", "Oktoberfest", "Prague Beer House", "Gatsby Hall"]
+    },
+    "repertoire": {
+      "eyebrow": "Repertorio",
+      "title": "Canciones que todos conocen",
+      "text": "Rock clásico, blues, reggae y pop latino — en inglés y español, para que todo el lugar cante.",
+      "genres": ["Rock clásico", "Blues", "Reggae", "Pop latino"],
+      "songs_title": "Podrías escuchar",
+      "songs": [
+        { "title": "Hey Jude", "artist": "The Beatles" },
+        { "title": "No Woman, No Cry", "artist": "Bob Marley" },
+        { "title": "La Bamba", "artist": "Ritchie Valens" },
+        { "title": "Sex on Fire", "artist": "Kings of Leon" }
+      ],
+      "more": "…y muchas más. Se aceptan pedidos."
+    },
+    "original": {
+      "eyebrow": "Música original",
+      "title": "Empezando el viaje",
+      "text": "Una canción que escribí cuando empecé a viajar fuera de Chile.",
+      "status": "Grabación de estudio próximamente"
+    },
+    "booking": {
+      "eyebrow": "Reservas",
+      "title": "Hagamos que tu evento suene increíble",
+      "text": "Cuéntame la fecha, el lugar y el tipo de noche que imaginas, y te respondo con opciones y disponibilidad.",
+      "cta": "Reserva un show"
     }
   },
   "contact": {
-    "eyebrow": "Ponerse en Contacto",
-    "get_in_touch": "Ponerse en contacto",
-    "fill_form": "Completa el formulario para iniciar una conversación",
-    "info_title": "Información de Contacto",
-    "address": "Totalmente Remoto",
-    "address_val": "Prague, open to relocate",
-    "phone": "+420 777 990 829",
+    "eyebrow": "Contacto",
+    "title": "Conversemos",
+    "fill_form": "Completa el formulario y te responderé pronto.",
+    "info_title": "Información de contacto",
+    "labels": {
+      "location": "Ubicación",
+      "phone": "Teléfono",
+      "email": "Correo"
+    },
+    "address_val": "Praga, República Checa",
     "phone_val": "+420 777 990 829",
-    "email": "rafael.quinterosv@gmail.com",
     "email_val": "rafael.quinterosv@gmail.com",
-    "full_name": "Nombre Completo",
-    "email_label": "Correo Electrónico",
+    "full_name": "Nombre completo",
+    "email_label": "Correo electrónico",
+    "topic_label": "¿Sobre qué es?",
+    "topics": {
+      "general": "Consulta general",
+      "development": "Desarrollo web",
+      "consulting": "Consultoría TI y de producto",
+      "music": "Reserva de música en vivo"
+    },
     "message": "Mensaje",
-    "message_placeholder": "Escribe tu mensaje",
-    "submit": "Enviar",
+    "message_placeholder": "Cuéntame un poco sobre tu proyecto",
+    "message_placeholder_music": "Fecha, lugar, tipo de evento y número aproximado de invitados",
+    "submit": "Enviar mensaje",
     "sending": "Enviando...",
-    "form_success": "¡Gracias por contactarnos, estaremos en contacto pronto!",
-    "form_success_detail": "¡Te responderé pronto!",
-    "form_error": "Error al enviar mensaje. Por favor intenta de nuevo."
+    "form_success": "¡Gracias por escribirme!",
+    "form_success_detail": "Te responderé pronto.",
+    "form_error": "Error al enviar el mensaje. Por favor intenta de nuevo."
   },
   "footer": {
-    "about_us": "Rafael Quinteros",
-    "about_us_text": "Ingeniero Comercial y Desarrollador Full Stack que conecta equipos técnicos con la estrategia de negocio. Ayudo a lanzar productos, liderar procesos de onboarding y mentorear desarrolladores.",
-    "follow_us": "Sígueme en Redes Sociales",
-    "contact_us": "Contacto",
-    "contact_email": "rafael.quinterosv@gmail.com",
-    "contact_phone": "+420 777 990 829"
+    "about_text": "Ingeniero Comercial con profundidad técnica — consultoría TI, producto y desarrollo full stack desde Praga. También sobre el escenario, tocando música en vivo por la ciudad.",
+    "quick_links": "Páginas",
+    "contact_title": "Contacto",
+    "music_link": "Música en vivo y reservas",
+    "copyright": "© {{year}} Rafael Quinteros. Todos los derechos reservados."
   }
 }

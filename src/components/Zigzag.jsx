@@ -1,68 +1,47 @@
 import { useTranslation } from 'react-i18next';
 import { useState, useRef, useEffect } from 'react';
+import SectionHeader from './SectionHeader';
 
-import czechgroup from "../assets/img/czechgroup.svg";
-import adl from "../assets/img/adl.png";
-import ts from "../assets/img/ts.svg";
-import huawei from "../assets/img/huawei.svg";
-import ecom from "../assets/img/ecom.png";
+import czechgroup from '../assets/img/czechgroup.svg';
+import adl from '../assets/img/adl.png';
+import ts from '../assets/img/ts.svg';
+import huawei from '../assets/img/huawei.svg';
+import ecom from '../assets/img/ecom.png';
 
+// Newest first. Title, company, period and text are translated under experience.items.<id>.
 const data = [
-  {
-    id: 1,
-    titleKey: "experience.items.czechgroup.title",
-    textKey: "experience.items.czechgroup.text",
-    imageUrl: czechgroup,
-    period: "2024 - Present",
-  },
-  {
-    id: 2,
-    titleKey: "experience.items.desafio.title",
-    textKey: "experience.items.desafio.text",
-    imageUrl: adl,
-    period: "2022 - Present",
-  },
-  {
-    id: 3,
-    titleKey: "experience.items.product.title",
-    textKey: "experience.items.product.text",
-    imageUrl: adl,
-    period: "2021 - 2023",
-  },
-  {
-    id: 4,
-    titleKey: "experience.items.huawei.title",
-    textKey: "experience.items.huawei.text",
-    imageUrl: huawei,
-    period: "2019 - 2021",
-  },
-  {
-    id: 5,
-    titleKey: "experience.items.ecom.title",
-    textKey: "experience.items.ecom.text",
-    imageUrl: ecom,
-    period: "2018 - 2019",
-  },
-  {
-    id: 6,
-    titleKey: "experience.items.travel.title",
-    textKey: "experience.items.travel.text",
-    imageUrl: ts,
-    period: "2016",
-  },
+  { id: 'freelance', imageUrl: null, clients: ['bikespezl', 'cayman'] },
+  { id: 'czechgroup', imageUrl: czechgroup },
+  { id: 'desafio', imageUrl: adl },
+  { id: 'product', imageUrl: adl },
+  { id: 'huawei', imageUrl: huawei },
+  { id: 'ecom', imageUrl: ecom },
+  { id: 'travel', imageUrl: ts },
 ];
 
-const ZigzagItem = ({ id, titleKey, textKey, imageUrl, period }) => {
+const FreelanceMark = ({ label }) => (
+  <div className="flex flex-col items-center gap-2 text-primary-600">
+    <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+    </svg>
+    <span className="text-sm font-semibold uppercase tracking-wider">{label}</span>
+  </div>
+);
+
+const ZigzagItem = ({ id, imageUrl, clients, index }) => {
   const { t } = useTranslation();
-  const isEven = id % 2 === 0;
+  const flip = index % 2 === 1;
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
+  const base = `experience.items.${id}`;
 
   useEffect(() => {
     const node = ref.current;
     if (!node) return;
     const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) setIsVisible(true); },
+      ([entry]) => {
+        if (entry.isIntersecting) setIsVisible(true);
+      },
       { threshold: 0.1 }
     );
     observer.observe(node);
@@ -70,28 +49,37 @@ const ZigzagItem = ({ id, titleKey, textKey, imageUrl, period }) => {
   }, []);
 
   return (
-    <div ref={ref} className={`w-full py-8 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-      <div className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 md:gap-12`}>
-        {/* Logo/Image */}
+    <article ref={ref} className={`w-full py-8 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <div className={`flex flex-col ${flip ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 md:gap-12`}>
         <div className="w-full md:w-2/5">
-          <div className="p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center">
-            <img src={imageUrl} alt={t(titleKey)} className="max-h-20 w-auto object-contain" />
+          <div className="p-8 min-h-[9rem] rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center">
+            {imageUrl ? (
+              <img src={imageUrl} alt={t(`${base}.company`)} loading="lazy" className="max-h-20 w-auto object-contain" />
+            ) : (
+              <FreelanceMark label={t(`${base}.company`)} />
+            )}
           </div>
         </div>
 
-        {/* Content */}
         <div className="w-full md:w-3/5">
-          <span className="inline-block text-xs font-semibold text-primary-600 uppercase tracking-wider mb-2">{period}</span>
-          <h2 className="text-2xl font-bold text-neutral-800 mb-3">{t(titleKey)}</h2>
-          <p className="text-neutral-600 leading-relaxed">{t(textKey)}</p>
+          <span className="inline-block text-xs font-semibold text-primary-600 uppercase tracking-wider mb-2">{t(`${base}.period`)}</span>
+          <h2 className="text-2xl font-bold text-neutral-800 mb-1">{t(`${base}.title`)}</h2>
+          <p className="text-sm font-medium text-neutral-500 mb-3">{t(`${base}.company`)}</p>
+          <p className="text-neutral-600 leading-relaxed">{t(`${base}.text`)}</p>
 
-          {/* Dot indicator */}
-          <div className="hidden md:block relative">
-            <div className={`absolute top-1/2 ${isEven ? '-left-6' : '-right-6'} w-3 h-3 rounded-full bg-primary-500 ring-4 ring-primary-100`} />
-          </div>
+          {clients && (
+            <ul className="mt-5 space-y-3">
+              {clients.map((client) => (
+                <li key={client} className="p-4 rounded-xl bg-neutral-50 ring-1 ring-neutral-100">
+                  <p className="text-sm font-semibold text-neutral-800 mb-1">{t(`${base}.clients.${client}.name`)}</p>
+                  <p className="text-sm text-neutral-600 leading-relaxed">{t(`${base}.clients.${client}.text`)}</p>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 
@@ -101,27 +89,18 @@ export default function ZigzagList() {
   return (
     <section className="section-padding bg-white">
       <div className="container-width">
-        <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 mb-4 text-xs font-semibold uppercase tracking-wider text-primary-700 bg-primary-50 rounded-full ring-1 ring-primary-100">
-            {t('experience.eyebrow') || 'Work History'}
-          </span>
-          <h2 className="section-title">{t('experience.title') || 'My Work Experience'}</h2>
-          <p className="section-subtitle">{t('experience.subtitle') || 'A journey through my professional career'}</p>
-        </div>
+        <SectionHeader
+          as="h1"
+          eyebrow={t('experience.eyebrow')}
+          title={t('experience.title')}
+          subtitle={t('experience.subtitle')}
+          className="mb-16"
+        />
 
         <div className="relative">
-          {/* Vertical line */}
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-neutral-200 -translate-x-1/2" />
-
-          {data.map((item) => (
-            <ZigzagItem
-              key={item.id}
-              id={item.id}
-              titleKey={item.titleKey}
-              textKey={item.textKey}
-              imageUrl={item.imageUrl}
-              period={item.period}
-            />
+          {data.map((item, index) => (
+            <ZigzagItem key={item.id} {...item} index={index} />
           ))}
         </div>
       </div>

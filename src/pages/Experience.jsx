@@ -1,13 +1,5 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next'; // Asegúrate de importar useTranslation
 import Zigzag from '../components/Zigzag';
 
-const Experience = () => {
-  return (
-    <Zigzag />
-  );
-};
+const Experience = () => <Zigzag />;
 
 export default Experience;
-
-

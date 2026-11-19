@@ -1,22 +1,23 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import SectionHeader from './SectionHeader';
 
 const steps = [
   {
-    icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>,
-    titleKey: 'services.steps.meet.title',
-    descKey: 'services.steps.meet.description',
+    key: 'discover',
+    icon: 'M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z',
   },
   {
-    icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>,
-    titleKey: 'services.steps.schedule.title',
-    descKey: 'services.steps.schedule.description',
+    key: 'propose',
+    icon: 'M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4',
   },
   {
-    icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>,
-    titleKey: 'services.steps.learn.title',
-    descKey: 'services.steps.learn.description',
+    key: 'deliver',
+    icon: 'M13 10V3L4 14h7v7l9-11h-7z',
+  },
+  {
+    key: 'support',
+    icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
   },
 ];
 
@@ -26,27 +27,29 @@ const Steps = () => {
   return (
     <section className="section-padding bg-white">
       <div className="container-width text-center">
-        <span className="inline-block px-4 py-1.5 mb-4 text-xs font-semibold uppercase tracking-wider text-primary-700 bg-primary-50 rounded-full ring-1 ring-primary-100">
-          {t('services.steps.eyebrow') || 'How it works'}
-        </span>
-        <h2 className="section-title">{t('services.steps.title')}</h2>
-        <p className="section-subtitle mb-12">{t('services.steps.description')}</p>
+        <SectionHeader
+          eyebrow={t('services.steps.eyebrow')}
+          title={t('services.steps.title')}
+          subtitle={t('services.steps.description')}
+        />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {steps.map((step, i) => (
-            <div key={i} className="group p-8 rounded-2xl bg-neutral-50 hover:bg-white hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <li key={step.key} className="group p-8 rounded-2xl bg-neutral-50 hover:bg-white hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-2xl bg-primary-50 text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
-                {step.icon}
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d={step.icon} />
+                </svg>
               </div>
               <span className="inline-block mb-3 text-3xl font-bold text-primary-100">0{i + 1}</span>
-              <h3 className="text-xl font-bold text-neutral-800 mb-3">{t(step.titleKey)}</h3>
-              <p className="text-sm text-neutral-500 leading-relaxed">{t(step.descKey)}</p>
-            </div>
+              <h3 className="text-xl font-bold text-neutral-800 mb-3">{t(`services.steps.${step.key}.title`)}</h3>
+              <p className="text-sm text-neutral-500 leading-relaxed">{t(`services.steps.${step.key}.description`)}</p>
+            </li>
           ))}
-        </div>
+        </ol>
 
-        <Link to="/contact" className="btn-primary text-base px-8 py-3.5">
-          {t('contact.get_in_touch')}
+        <Link to="/contact?topic=consulting" className="btn-primary text-base px-8 py-3.5">
+          {t('services.steps.cta')}
         </Link>
       </div>
     </section>

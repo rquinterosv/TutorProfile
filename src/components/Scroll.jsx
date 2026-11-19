@@ -1,12 +1,14 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
+// Scroll to top on page change. Depends on pathname only, so in-page
+// anchors (e.g. /music#videos) keep working.
 const ScrollToTop = () => {
-  const location = useLocation();
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Esto mueve el scroll al inicio
-  }, [location]);
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return null;
 };

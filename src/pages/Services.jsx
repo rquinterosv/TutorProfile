@@ -1,12 +1,11 @@
-import React from 'react';
-import Steps from '../components/Steps'
-import Information from '../components/Information'
+import Steps from '../components/Steps';
+import Information from '../components/Information';
 
-const Services = () => {
-  return (
-      <><Steps />
-      <Information /></>
-  );
-};
+const Services = () => (
+  <>
+    <Information />
+    <Steps />
+  </>
+);
 
 export default Services;

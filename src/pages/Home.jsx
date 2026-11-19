@@ -1,19 +1,21 @@
 import Hero from '../components/Hero';
-import Courses from '../components/Courses';
-import Reference from '../components/Reference';
-import Company from '../components/Company';
+import WhatIDo from '../components/WhatIDo';
 import Portfolio from '../components/Portfolio';
-import Driftertrip from '../components/Driftertrip';
+import Company from '../components/Company';
+import Reference from '../components/Reference';
+import MusicTeaser from '../components/MusicTeaser';
+import ContactCTA from '../components/ContactCTA';
 
 const Home = () => {
   return (
     <div className="overflow-x-hidden">
       <Hero />
+      <WhatIDo />
       <Portfolio />
       <Company />
-      <Driftertrip />
-      <Courses />
       <Reference />
+      <MusicTeaser />
+      <ContactCTA />
     </div>
   );
 };
